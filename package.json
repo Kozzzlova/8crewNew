@@ -1,11 +1,11 @@
 {
-   "name": "vanilla-app-template",
+   "name": "8crew-new",
    "private": true,
    "version": "1.0.0",
    "type": "module",
    "scripts": {
       "dev": "vite",
-      "build": "vite build --base=/vite-vanilla-starter/",
+      "build": "vite build --base=/8crewNew/",
       "preview": "vite preview"
    },
    "devDependencies": {
