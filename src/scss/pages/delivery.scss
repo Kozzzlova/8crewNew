@@ -79,7 +79,7 @@
       font-size: 16px;
    }
 
-   &__tabs {
+   &__accordion {
       display: flex;
       flex-direction: column;
       align-items: stretch;
@@ -90,7 +90,7 @@
    }
 }
 
-.tab {
+.accordion {
    display: flex;
    flex-direction: column;
    align-items: stretch;
@@ -99,16 +99,15 @@
    // .tab-wrapper__head
 
    &.hidden {
-      .tab__body {
+      .accordion__body {
          opacity: 0;
          max-height: 0;
          overflow: hidden;
          padding: 0 19px;
          transition: all 0.3s ease 0s;
       }
-
-      .tab__head::after {
-         transform: translateY(50%) rotate(180deg);
+      .accordion__arrow {
+         transform: rotate(180deg);
       }
    }
 
@@ -120,18 +119,18 @@
       align-items: center;
       position: relative;
       cursor: pointer;
+   }
+   &__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+   }
 
-      &::after {
-         display: inline-block;
-         content: url('./src/assets/svg/arrow-tab.svg');
-         position: absolute;
-         right: 16px;
-         bottom: 50%;
-         transform: translateY(50%);
-         width: 16px;
-         height: 16px;
-         transition: all 0.2s ease 0s;
-      }
+   &__arrow {
+      width: 16px;
+      height: 16px;
+      transition: all 0.3s ease 0s;
    }
 
    &__icon {

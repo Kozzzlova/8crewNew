@@ -1,8 +1,7 @@
-const tab = document.querySelectorAll('.tab');
+const tab = document.querySelectorAll('.accordion');
 tab.forEach((t) =>
    t.addEventListener('click', () => {
       t.classList.toggle('hidden');
-      console.log('fdfds');
    })
 );
 // tab.addEventListener('click', () => {
