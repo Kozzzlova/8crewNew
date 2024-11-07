@@ -9,7 +9,7 @@
 
       li + li::before {
          display: inline-block;
-         content: url('./src/assets/svg/arrow-crump.svg');
+         content: url('icon/arrow-crump.svg');
          margin-right: 9px;
          transform: translateY(15%);
       }
