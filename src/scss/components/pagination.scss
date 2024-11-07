@@ -1,0 +1,38 @@
+.pagination {
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   padding: 8px;
+   gap: 8px;
+   flex-wrap: wrap;
+   // .pagination__item
+
+   &__item {
+      color: var(--black-2);
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--biege-2);
+      transition: all 0.2s ease 0s;
+      border-radius: 2px;
+
+      &:hover {
+         background-color: var(--biege);
+      }
+
+      &.active {
+         background-color: var(--green-accent);
+         color: var(--white);
+         height: 32px;
+         width: 32px;
+      }
+
+      &.dots {
+         background-color: transparent;
+         width: max-content;
+         align-items: flex-end;
+      }
+   }
+}

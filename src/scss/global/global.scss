@@ -1,0 +1,30 @@
+html {
+   overflow-y: scroll;
+}
+
+body {
+   font-family: var(--font-primary);
+   font-weight: 400;
+   color: var(--black);
+   font-size: 14px;
+   min-height: 100vh;
+   background-color: var(--white);
+   line-height: 1.2;
+}
+
+.wrapper {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+.main {
+   flex: 1 1 auto;
+}
+
+.container {
+   max-width: 1190px;
+   margin: 0 auto;
+   padding: 0 15px;
+   width: 100%;
+   position: relative;
+}

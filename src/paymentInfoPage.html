@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Info</title>
+    <script type='module' src='/main.js'></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="header" id='header'>
+        </div>
+        <main class="main">
+            <div class="container">
+                <section class="articles-section common-section">
+                    <h4 class="articles-section__title heading-4">Оплата та оформлення</h4>
+                    <div class="articles-section__articles">
+                        <div class="article">
+                            <img src="./src/assets/svg/truck.svg" alt="Truck icon" class="article__icon">
+                            <div class="article__title">Товар під замовлення з США та Європи</div>
+                            <ol class="article__list">
+                                <li class="article__ordered">Для підтвердження замовлення необхідно внести передоплату у розмірі 20% від загальної вартості
+                                    товару. Залишок сплачується при отриманні та огляді товару у
+                                    відділенні «Нова Пошта».</li>
+                                <li class="article__orderer">У випадку, якщо пари немає в наявності у нашого дистриб'ютора, ми надаємо баєрські послуги. У
+                                    такому разі передоплата становить 50% від вартості товару +10% від
+                                    вартості товару за наші послуги, решту суми ви сплачуєте при отриманні товару у відділенні «Нова Пошта».
+                                    <br>
+                                    *Термін «баєрські послуги» означає, що ми доставимо товар необхідної вам моделі у потрібному вам розмірі. Це індивідуальне
+                                    замовлення, створене спеціально для
+                                    вас. Ми змушені стягувати передоплату в розмірі 50% від вартості та 10% за наші послуги, щоб бути впевненими, що ви
+                                    дочекаєтеся прибуття вашого замовлення.
+                                </li>
+                                <li class="article__orderer">Повна оплата замовлення. У разі здійснення повної оплати замовлення, доставка по території
+                                    України
+                                    здійснюється за наш рахунок.</li>
+                            </ol>
+                        </div>
+                        <div class="article">
+                            <img src="./src/assets/svg/check.svg" alt="Check icon" class="payment__icon">
+                            <div class="article__title">Товар у наявності</div>
+                            <ol class="article__list">
+                                <li class="article__orderer">Оплата при отриманні у відділеннях служби «Нова Пошта». Ви зможете здійснити оплату після
+                                    ретельного огляду та примірки товару. У такому випадку додатково
+                                    стягується комісія «Нової Пошти» за переказ коштів, 20 грн + 2% від суми замовлення.
+                                </li>
+                                <li class="article__orderer">Оплата на сайті або повна передоплата на картковий рахунок. У цьому випадку комісія за переказ
+                                    коштів не передбачається.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer id="footer" class='footer'>
+        </footer>
+    </div>
+
+    <script type="module">
+        async function loadHeader() {
+            const response = await fetch('./src/layout/header/header.html');
+            const html = await response.text();
+            document.getElementById('header').innerHTML = html;
+        }
+        loadHeader();
+    </script>
+    <script type="module">
+        async function loadFooter() {
+            const response = await fetch('./src/layout/footer/footer.html');
+            const html = await response.text();
+            document.getElementById('footer').innerHTML = html;
+        }
+        loadFooter();
+    </script>
+</body>
+
+</html>

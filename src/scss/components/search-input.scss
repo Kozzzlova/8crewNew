@@ -1,0 +1,32 @@
+.search-form {
+   position: relative;
+   max-width: 320px;
+   width: 100%;
+
+   &__wrapper {
+      position: relative;
+      width: 100%;
+   }
+
+   &__input {
+      background-color: var(--biege-2);
+      padding: 8px;
+      padding-left: 40px;
+      border-radius: 3px;
+      height: 40px;
+      outline: none;
+      width: 100%;
+      @media (max-width: 767px) {
+         padding-left: 0;
+      }
+   }
+   &__icon {
+      position: absolute;
+      top: 50%;
+      left: 8px; /* Расстояние от левого края */
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      pointer-events: none;
+   }
+}

@@ -1,0 +1,101 @@
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: inherit;
+}
+
+ul,
+ol {
+   padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+   margin: 0;
+   font-weight: inherit;
+   font-size: inherit;
+   line-height: inherit;
+   letter-spacing: inherit;
+   font-style: inherit;
+}
+
+ul[class] {
+   list-style: none;
+}
+
+img {
+   max-width: 100%;
+   display: block;
+}
+
+input,
+button,
+textarea,
+select {
+   font: inherit;
+   outline: none;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+   :focus {
+      outline: none;
+      text-decoration: none;
+      color: inherit;
+   }
+}
+button,
+input {
+   border: unset;
+}
+
+input,
+textarea {
+   border: unset;
+   background: transparent;
+   &::placeholder {
+   }
+}
+button {
+   background: transparent;
+   padding: unset;
+   cursor: pointer;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+   -webkit-appearance: none;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type='number']:hover,
+input[type='number']:focus {
+   appearance: none;
+   -moz-appearance: textfield;
+}

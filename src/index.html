@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta
-         name="viewport"
-         content="width=device-width, initial-scale=1.0" />
-      <title>Vanilla App Template</title>
-      <script
-         type="module"
-         src="./script/index.js"></script>
-   </head>
-   <body>
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Main page</title>
+   <script type="module" src="./script/index.js"></script>
+</head>
+
+<body>
+   <div class="wrapper">
+
       <load src="./components/header.html" />
 
-      <main class="red">Main</main>
+      <main class="main">
+         <div class="container">
+            main page
+            <svg>
+               <use xlink:href="#javascript"></use>
+            </svg>
+            <img src="img/logo.png" alt="" />
 
-      <img
-         src="img/logo.png"
-         alt="" />
 
-      <svg><use xlink:href="#javascript"></use></svg>
+         </div>
+      </main>
 
       <load src="./components/footer.html" />
-   </body>
+
+   </div>
+</body>
+
 </html>

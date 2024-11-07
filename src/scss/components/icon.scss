@@ -1,0 +1,21 @@
+.icon-link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 8px;
+   background-color: var(--biege-2);
+   border-radius: 2px;
+   transition: all 0.2s ease 0s;
+   &:hover {
+      background-color: var(--biege);
+
+      svg {
+         stroke: var(--green-accent);
+      }
+   }
+
+   svg {
+      fill: transparent;
+      stroke: var(--black-2);
+   }
+}

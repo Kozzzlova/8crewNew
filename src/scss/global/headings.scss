@@ -1,0 +1,16 @@
+.heading-3 {
+   font-family: var(--font-title);
+   color: var(--black);
+   font-size: 40px;
+   line-height: 1.2;
+}
+
+.heading-4 {
+   font-family: var(--font-title);
+   color: var(--black);
+   background-color: var(--white);
+   font-size: 28px;
+   @media (max-width: 767px) {
+      font-size: 20px;
+   }
+}

@@ -1,0 +1,22 @@
+.button {
+   padding: 16px 32px;
+   color: var(--green-accent);
+   border: 1px solid var(--green-accent);
+   border-radius: 3px;
+   font-size: 15px;
+   line-height: 1.1;
+   font-weight: 600;
+   display: inline-block;
+   transition: all 0.2s ease 0s;
+
+   &:hover {
+      color: var(--green-dark);
+      border-color: var(--green-dark);
+   }
+   &:disabled {
+      color: var(--gray);
+      border-color: var(--gray);
+      cursor: auto;
+      pointer-events: none;
+   }
+}

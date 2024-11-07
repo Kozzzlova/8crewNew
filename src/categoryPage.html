@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <script type='module' src='/main.js'></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header" id='header'></header>
+        <main class="main">
+            <div class="container">
+                <section class="catalog">
+                    <nav class="breadcrupms">
+                        <ul class="breadcrupms__list">
+                            <li class="breadcrupms__item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="breadcrupms__item">
+                                <a href="#">Adidas</a>
+                            </li>
+                            <li class="breadcrupms__item">
+                                <a href="#">Adidas Y-3</a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+                    <div class="catalog__header">
+                        <div class="catalog__image">
+                            <div class="catalog__heading hidden">
+                                <div class="catalog__title heading-4">Adidas Y-3</div>
+                                <p class='catalog__amount'>54 товари</p>
+                            </div>
+                            <img src="./src/assets/img/category/catalog-1.png" alt="Catalog image">
+                        </div>
+                        <div class="catalog__image">
+                            <div class="catalog__heading">
+                                <div class="catalog__title heading-4">Adidas Y-3</div>
+                                <p class='catalog__amount'>54 товари</p>
+                            </div>
+                            <img src="./src/assets/img/category/catalog-2.png" alt="Catalog image">
+                        </div>
+                        <div class="catalog__image column">
+                            <img src="./src/assets/img/category/catalog-3.png" alt="Catalog image">
+                            <img src="./src/assets/img/category/catalog-4.png" alt="Catalog image">
+                        </div>
+                    </div>
+                    <section class='catalog__content'>
+                        <div class="catalog__options">
+                            <button class="catalog__filter-btn">
+                                <img src="./src/assets/svg/options.svg" alt="Options icon">
+                                <span>Фільтри</span>
+                            </button>
+                            <div class="catalog__filter">
+                                <div class="select">
+                                    <button class="select__button" onclick="toggleDropdown()">
+                                        <span>Розмір</span> <img src="./src/assets/svg/arrow-black.svg" alt="Arrow">
+                                    </button>
+                                    <div class="select__dropdown" id="dropdown">
+                                        <div class="select__option">
+                                            <input type="checkbox" class="select__checkbox" name="36" id='35'>
+                                            <label for="36">36</label>
+                                        </div>
+                                        <label class="select__option disabled">
+                                            <input type="checkbox" value="37"> 37
+                                        </label>
+                                        <label class="select__option">
+                                            <input type="checkbox" value="38"> 38
+                                        </label>
+                                        <label class="select__option">
+                                            <input type="checkbox" value="39"> 39
+                                        </label>
+                                        <label class="select__option">
+                                            <input type="checkbox" value="40"> 40
+                                        </label>
+                                        <label class="select__option">
+                                            <input type="checkbox" value="41"> 41
+                                        </label>
+                                        <label class="select__option">
+                                            <input type="checkbox" value="42"> 42
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class='select'>
+                                    <button class="select__button" onclick="toggleDropdown()">
+                                        <span>Колір</span> <img src="./src/assets/svg/arrow-black.svg" alt="Arrow">
+                                    </button>
+                                </div>
+                                <div class='select'>
+                                    <button class="select__button" onclick="toggleDropdown()">
+                                        <span>Колекція</span> <img src="./src/assets/svg/arrow-black.svg" alt="Arrow">
+                                    </button>
+                                </div>
+                                <div class='select'>
+                                    <button class="select__button" onclick="toggleDropdown()">
+                                        <span>Ціна</span> <img src="./src/assets/svg/arrow-black.svg" alt="Arrow">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog__sort">
+                                <div class='select'>
+                                    <button class="select__button" onclick="toggleDropdown()">
+                                        <span>Сортувати за</span> <img src="./src/assets/svg/arrow-black.svg" alt="Arrow">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="catalog__grid">
+                            <div class="product-card">
+                                <a class='icon-link product-card__icon' href="#">
+
+                                    <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                                        <use href='./src/assets/svg/sprite.svg#icon-like'></use>
+                                    </svg>
+
+                                </a>
+
+                                <a href='#' class="product-card__image">
+                                    <img src="./src/assets/img/products/product-4.png" alt="Shoe image">
+                                </a>
+                                <div class="product-card__content">
+                                    <div class="product-card__info">
+                                        <h5 class="product-card__title">THERE Skateboards x Nike Dunk Low SB 'Ultra Humanized'</h5>
+                                        <div class="product-card__description">
+                                            <div class="product-card__size">EU 42-44</div>
+                                            <div class="product-card__price">Від 160$</div>
+
+                                        </div>
+
+                                    </div>
+                                    <button class="product-card__button">
+                                        <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
+                                            <use href='./src/assets/svg/sprite.svg#icon-basket'></use>
+                                        </svg>
+                                    </button>
+
+                                </div>
+
+                            </div>
+                            <div class="product-card">
+                                <a class='icon-link product-card__icon' href="#">
+
+                                    <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                                        <use href='./src/assets/svg/sprite.svg#icon-like'></use>
+                                    </svg>
+
+                                </a>
+
+                                <a href='#' class="product-card__image">
+                                    <img src="./src/assets/img/products/product-4.png" alt="Shoe image">
+                                </a>
+                                <div class="product-card__content">
+                                    <div class="product-card__info">
+                                        <h5 class="product-card__title">THERE Skateboards x Nike Dunk Low SB 'Ultra Humanized'</h5>
+                                        <div class="product-card__description">
+                                            <div class="product-card__size">EU 42-44</div>
+                                            <div class="product-card__price">Від 160$</div>
+
+                                        </div>
+
+                                    </div>
+                                    <button class="product-card__button">
+                                        <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
+                                            <use href='./src/assets/svg/sprite.svg#icon-basket'></use>
+                                        </svg>
+                                    </button>
+
+                                </div>
+
+                            </div>
+                            <div class="product-card">
+                                <a class='icon-link product-card__icon' href="#">
+
+                                    <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                                        <use href='./src/assets/svg/sprite.svg#icon-like'></use>
+                                    </svg>
+
+                                </a>
+
+                                <a href='#' class="product-card__image">
+                                    <img src="./src/assets/img/products/product-4.png" alt="Shoe image">
+                                </a>
+                                <div class="product-card__content">
+                                    <div class="product-card__info">
+                                        <h5 class="product-card__title">THERE Skateboards x Nike Dunk Low SB 'Ultra Humanized'</h5>
+                                        <div class="product-card__description">
+                                            <div class="product-card__size">EU 42-44</div>
+                                            <div class="product-card__price">Від 160$</div>
+
+                                        </div>
+
+                                    </div>
+                                    <button class="product-card__button">
+                                        <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
+                                            <use href='./src/assets/svg/sprite.svg#icon-basket'></use>
+                                        </svg>
+                                    </button>
+
+                                </div>
+
+                            </div>
+                            <div class="product-card">
+                                <a class='icon-link product-card__icon' href="#">
+
+                                    <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                                        <use href='./src/assets/svg/sprite.svg#icon-like'></use>
+                                    </svg>
+
+                                </a>
+
+                                <a href='#' class="product-card__image">
+                                    <img src="./src/assets/img/products/product-4.png" alt="Shoe image">
+                                </a>
+                                <div class="product-card__content">
+                                    <div class="product-card__info">
+                                        <h5 class="product-card__title">THERE Skateboards x Nike Dunk Low SB 'Ultra Humanized'</h5>
+                                        <div class="product-card__description">
+                                            <div class="product-card__size">EU 42-44</div>
+                                            <div class="product-card__price">Від 160$</div>
+
+                                        </div>
+
+                                    </div>
+                                    <button class="product-card__button">
+                                        <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
+                                            <use href='./src/assets/svg/sprite.svg#icon-basket'></use>
+                                        </svg>
+                                    </button>
+
+                                </div>
+
+                            </div>
+                            <div class="product-card">
+                                <a class='icon-link product-card__icon' href="#">
+
+                                    <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                                        <use href='./src/assets/svg/sprite.svg#icon-like'></use>
+                                    </svg>
+
+                                </a>
+
+                                <a href='#' class="product-card__image">
+                                    <img src="./src/assets/img/products/product-4.png" alt="Shoe image">
+                                </a>
+                                <div class="product-card__content">
+                                    <div class="product-card__info">
+                                        <h5 class="product-card__title">THERE Skateboards x Nike Dunk Low SB 'Ultra Humanized'</h5>
+                                        <div class="product-card__description">
+                                            <div class="product-card__size">EU 42-44</div>
+                                            <div class="product-card__price">Від 160$</div>
+
+                                        </div>
+
+                                    </div>
+                                    <button class="product-card__button">
+                                        <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
+                                            <use href='./src/assets/svg/sprite.svg#icon-basket'></use>
+                                        </svg>
+                                    </button>
+
+                                </div>
+
+                            </div>
+                            <div class="product-card">
+                                <a class='icon-link product-card__icon' href="#">
+
+                                    <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                                        <use href='./src/assets/svg/sprite.svg#icon-like'></use>
+                                    </svg>
+
+                                </a>
+
+                                <a href='#' class="product-card__image">
+                                    <img src="./src/assets/img/products/product-4.png" alt="Shoe image">
+                                </a>
+                                <div class="product-card__content">
+                                    <div class="product-card__info">
+                                        <h5 class="product-card__title">THERE Skateboards x Nike Dunk Low SB 'Ultra Humanized'</h5>
+                                        <div class="product-card__description">
+                                            <div class="product-card__size">EU 42-44</div>
+                                            <div class="product-card__price">Від 160$</div>
+
+                                        </div>
+
+                                    </div>
+                                    <button class="product-card__button">
+                                        <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
+                                            <use href='./src/assets/svg/sprite.svg#icon-basket'></use>
+                                        </svg>
+                                    </button>
+
+                                </div>
+
+                            </div>
+                            <div class="product-card">
+                                <a class='icon-link product-card__icon' href="#">
+
+                                    <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                                        <use href='./src/assets/svg/sprite.svg#icon-like'></use>
+                                    </svg>
+
+                                </a>
+
+                                <a href='#' class="product-card__image">
+                                    <img src="./src/assets/img/products/product-4.png" alt="Shoe image">
+                                </a>
+                                <div class="product-card__content">
+                                    <div class="product-card__info">
+                                        <h5 class="product-card__title">THERE Skateboards x Nike Dunk Low SB 'Ultra Humanized'</h5>
+                                        <div class="product-card__description">
+                                            <div class="product-card__size">EU 42-44</div>
+                                            <div class="product-card__price">Від 160$</div>
+
+                                        </div>
+
+                                    </div>
+                                    <button class="product-card__button">
+                                        <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
+                                            <use href='./src/assets/svg/sprite.svg#icon-basket'></use>
+                                        </svg>
+                                    </button>
+
+                                </div>
+
+                            </div>
+                        </section>
+                        <ul class="catalog__pagination pagination">
+                            <li class="pagination__item active">
+                                <a href="#">1</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#">2</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#">3</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#">4</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#">5</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#">6</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#">7</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#">8</a>
+                            </li>
+                            <li class="pagination__item dots">
+                                <a href="#">...</a>
+                            </li>
+
+                            <li class="pagination__item">
+                                <a href="#">99</a>
+                            </li>
+
+                        </ul>
+                    </section>
+                </section>
+            </div>
+        </main>
+        <footer class="footer" id='footer'></footer>
+    </div>
+    <script type="module">
+        async function loadHeader() {
+            const response = await fetch('./src/layout/header/header.html');
+            const html = await response.text();
+            document.getElementById('header').innerHTML = html;
+        }
+        loadHeader();
+    </script>
+    <script type="module">
+        async function loadFooter() {
+            const response = await fetch('./src/layout/footer/footer.html');
+            const html = await response.text();
+            document.getElementById('footer').innerHTML = html;
+        }
+        loadFooter();
+    </script>
+</body>
+
+</html>

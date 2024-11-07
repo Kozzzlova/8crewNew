@@ -1,0 +1,31 @@
+.breadcrupms {
+   // .breadcrupms__list
+
+   &__list {
+      display: flex;
+      align-items: center;
+
+      flex-wrap: wrap;
+
+      li + li::before {
+         display: inline-block;
+         content: url('./src/assets/svg/arrow-crump.svg');
+         margin-right: 9px;
+         transform: translateY(15%);
+      }
+   }
+
+   // .breadcrupms__item
+
+   &__item {
+      color: var(--black-2);
+      margin-right: 9px;
+
+      &:last-child {
+         color: var(--black);
+         a {
+            cursor: auto;
+         }
+      }
+   }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script type='module' src='/main.js'></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header" id='header'>
+        </div>
+        <main class="main">
+            <div class="container">
+                <section class='about common-section'>
+                    <div class="about__image">
+                        <img src="./src/assets/img/about/about.png" alt="About image">
+                        <h4 class='about__title heading-4'>Про нас</h4>
+                        <div class="about__logo">
+                            <a href='#' class="logo">
+                                <img src="./src/assets/img/logo/logo.svg" alt="Logo">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="about__text">
+                        <p class="about__paragraph">Ми — онлайн-магазин, що пропонує широкий асортимент якісних, рідкісних та     стильних товарів, яких ви не
+                            знайдете в звичайних магазинах України.</p>
+                        <p class="about__paragraph">Наша перевага — постійний моніторинг останніх релізів кросівок від відомих брендів. Завдяки цьому, ви завжди
+                            можете придбати взуття з найсвіжіших колекцій та
+                            вирізнятися з-поміж інших.</p>
+                        <p class="about__paragraph">Ми продаємо виключно оригінальну продукцію та пропонуємо ексклюзивні моделі, доступні тільки у нас. Кожен
+                            клієнт може розраховувати на індивідуальний підхід і
+                            високий рівень обслуговування.</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer id="footer" class='footer'>
+        </footer>
+    </div>
+
+
+
+    <script type="module">
+        async function loadHeader() {
+            const response = await fetch('./src/layout/header/header.html');
+            const html = await response.text();
+            document.getElementById('header').innerHTML = html;
+        }
+        loadHeader();
+    </script>
+    <script type="module">
+        async function loadFooter() {
+            const response = await fetch('./src/layout/footer/footer.html');
+            const html = await response.text();
+            document.getElementById('footer').innerHTML = html;
+        }
+        loadFooter();
+    </script>
+
+</body>
+
+</html>

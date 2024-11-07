@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite</title>
+    <script type='module' src='/main.js'></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header" id='header'></header>
+        <main class="main">
+            <div class="container">
+                <section class="main-section">
+                    <h3 class="heading-3">Обране</h3>
+                    <div class="grid-block favorite">
+                        <div class="product-card">
+                            <a class='icon-link product-card__icon' href="#">
+
+                                <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                                    <use href='./src/assets/svg/sprite.svg#icon-like'></use>
+                                </svg>
+
+                            </a>
+
+                            <a href='#' class="product-card__image">
+                                <img src="./src/assets/img/products/product-1.png" alt="Shoe image">
+                            </a>
+                            <div class="product-card__content">
+                                <div class="product-card__info">
+                                    <h5 class="product-card__title">THERE Skateboards x Nike Dunk Low SB 'Ultra Humanized'</h5>
+                                    <div class="product-card__description">
+                                        <div class="product-card__size">EU 42-44</div>
+                                        <div class="product-card__price">Від 160$</div>
+
+                                    </div>
+
+                                </div>
+                                <button class="product-card__button">
+                                    <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
+                                        <use href='./src/assets/svg/sprite.svg#icon-basket'></use>
+                                    </svg>
+                                </button>
+
+                            </div>
+
+                        </div>
+                        <div class="product-card">
+                            <a class='icon-link product-card__icon' href="#">
+
+                                <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                                    <use href='./src/assets/svg/sprite.svg#icon-like'></use>
+                                </svg>
+
+                            </a>
+
+                            <a href='#' class="product-card__image">
+                                <img src="./src/assets/img/products/product-3.png" alt="Shoe image">
+                            </a>
+                            <div class="product-card__content">
+                                <div class="product-card__info">
+                                    <h5 class="product-card__title">Verdy x Nike SB Dunk Low “Visty”
+
+                                    </h5>
+                                    <div class="product-card__description">
+                                        <div class="product-card__size">EU 42-44</div>
+                                        <div class="product-card__price">Від 160$</div>
+
+                                    </div>
+
+                                </div>
+                                <button class="product-card__button">
+                                    <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
+                                        <use href='./src/assets/svg/sprite.svg#icon-basket'></use>
+                                    </svg>
+                                </button>
+
+                            </div>
+
+                        </div>
+                        <div class="product-card">
+                            <a class='icon-link product-card__icon' href="#">
+
+                                <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                                    <use href='./src/assets/svg/sprite.svg#icon-like'></use>
+                                </svg>
+
+                            </a>
+
+                            <a href='#' class="product-card__image">
+                                <img src="./src/assets/img/products/product-2.png" alt="Shoe image">
+                            </a>
+                            <div class="product-card__content">
+                                <div class="product-card__info">
+                                    <h5 class="product-card__title">J Balvin x Air Jordan 3 Retro «Rio»
+                                    </h5>
+                                    <div class="product-card__description">
+                                        <div class="product-card__size">EU 42-44</div>
+                                        <div class="product-card__price">Від 160$</div>
+
+                                    </div>
+
+                                </div>
+                                <button class="product-card__button">
+                                    <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
+                                        <use href='./src/assets/svg/sprite.svg#icon-basket'></use>
+                                    </svg>
+                                </button>
+
+                            </div>
+
+                        </div>
+                        <div class="product-card">
+                            <a class='icon-link product-card__icon' href="#">
+
+                                <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                                    <use href='./src/assets/svg/sprite.svg#icon-like'></use>
+                                </svg>
+
+                            </a>
+
+                            <a href='#' class="product-card__image">
+                                <img src="./src/assets/img/products/product-1.png" alt="Shoe image">
+                            </a>
+                            <div class="product-card__content">
+                                <div class="product-card__info">
+                                    <h5 class="product-card__title">THERE Skateboards x Nike Dunk Low SB 'Ultra Humanized'</h5>
+                                    <div class="product-card__description">
+                                        <div class="product-card__size">EU 42-44</div>
+                                        <div class="product-card__price">Від 160$</div>
+
+                                    </div>
+
+                                </div>
+                                <button class="product-card__button">
+                                    <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
+                                        <use href='./src/assets/svg/sprite.svg#icon-basket'></use>
+                                    </svg>
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer" id='footer'></footer>
+    </div>
+
+    <script type="module">
+        async function loadHeader() {
+            const response = await fetch('./src/layout/header/header.html');
+            const html = await response.text();
+            document.getElementById('header').innerHTML = html;
+        }
+        loadHeader();
+    </script>
+    <script type="module">
+        async function loadFooter() {
+            const response = await fetch('./src/layout/footer/footer.html');
+            const html = await response.text();
+            document.getElementById('footer').innerHTML = html;
+        }
+        loadFooter();
+    </script>
+</body>
+
+</html>

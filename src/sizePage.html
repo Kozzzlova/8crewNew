@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to choose right size</title>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="header" id='header'>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="common-section size-section">
+                    <div class="size-section__title heading-4">Як обрати правильний розмір?</div>
+                    <div class="size-section__content">
+                        <div class="size-section__text">
+                            <div class="size-section__paragraphs">
+                                <p>Візьміть устілку найзручнішою Вашого взуття та виміряйте відстань від краю носка до краю п'яти, розташувавши лінійку по
+                                    центру
+                                </p>
+                                <p>Устілка вимірюється до вигину на п'яті (такий вигин присутній на деяких спортивних устілках).</p>
+                            </div>
+                            <button type='button' class="size-section__button button">Розмірна сітка</button>
+
+
+                        </div>
+                        <div class="size-section__image">
+                            <img src="./src/assets/img/size/size.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" id='footer'>
+        </div>
+    </div>
+
+    <script type="module">
+        async function loadHeader() {
+            const response = await fetch('./src/layout/header/header.html');
+            const html = await response.text();
+            document.getElementById('header').innerHTML = html;
+        }
+        loadHeader();
+    </script>
+    <script type="module">
+        async function loadFooter() {
+            const response = await fetch('./src/layout/footer/footer.html');
+            const html = await response.text();
+            document.getElementById('footer').innerHTML = html;
+        }
+        loadFooter();
+    </script>
+</body>
+
+</html>
