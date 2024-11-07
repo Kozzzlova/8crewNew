@@ -1,4 +1,4 @@
-@import './global/style.scss';
-@import './layouts/style.scss';
-@import './components/style.scss';
-@import './pages/style.scss';
+@use 'global/style.scss';
+@use 'layouts/style.scss' as style2;
+@use 'components/style.scss' as style3;
+@use 'pages/style.scss' as style4;
