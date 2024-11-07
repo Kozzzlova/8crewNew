@@ -1,0 +1,19 @@
+{
+   "name": "vanilla-app-template",
+   "private": true,
+   "version": "1.0.0",
+   "type": "module",
+   "scripts": {
+      "dev": "vite",
+      "build": "vite build --base=/vite-vanilla-starter/",
+      "preview": "vite preview"
+   },
+   "devDependencies": {
+      "fast-glob": "^3.3.2",
+      "glob": "^11.0.0",
+      "sass": "^1.80.6",
+      "vite": "^5.4.6",
+      "vite-plugin-html-inject": "^1.1.2",
+      "vite-plugin-svg-icons": "^2.0.1"
+   }
+}
