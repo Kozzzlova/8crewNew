@@ -5,22 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <script type='module' src='/main.js'></script>
+    <script type="module" src="./script/index.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="header" id='header'>
-        </div>
+        <load src="./components/header.html" />
         <main class="main">
             <div class="container">
                 <section class='about common-section'>
                     <div class="about__image">
-                        <img src="./src/assets/img/about/about.png" alt="About image">
+                        <img src="img/about/about.png" alt="About image">
                         <h4 class='about__title heading-4'>Про нас</h4>
                         <div class="about__logo">
                             <a href='#' class="logo">
-                                <img src="./src/assets/img/logo/logo.svg" alt="Logo">
+                                <img src="img/logo/logo.svg" alt="Logo">
                             </a>
                         </div>
 
@@ -38,28 +37,11 @@
                 </section>
             </div>
         </main>
-        <footer id="footer" class='footer'>
-        </footer>
+        <load src="./components/footer.html" />
     </div>
 
 
 
-    <script type="module">
-        async function loadHeader() {
-            const response = await fetch('./src/layout/header/header.html');
-            const html = await response.text();
-            document.getElementById('header').innerHTML = html;
-        }
-        loadHeader();
-    </script>
-    <script type="module">
-        async function loadFooter() {
-            const response = await fetch('./src/layout/footer/footer.html');
-            const html = await response.text();
-            document.getElementById('footer').innerHTML = html;
-        }
-        loadFooter();
-    </script>
 
 </body>
 

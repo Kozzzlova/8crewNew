@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favorite</title>
-    <script type='module' src='/main.js'></script>
+    <script type="module" src="./script/index.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header" id='header'></header>
+        <load src="./components/header.html" />
         <main class="main">
             <div class="container">
                 <section class="main-section">
@@ -147,25 +147,11 @@
                 </section>
             </div>
         </main>
-        <footer class="footer" id='footer'></footer>
+        <load src="./components/footer.html" />
+
     </div>
 
-    <script type="module">
-        async function loadHeader() {
-            const response = await fetch('./src/layout/header/header.html');
-            const html = await response.text();
-            document.getElementById('header').innerHTML = html;
-        }
-        loadHeader();
-    </script>
-    <script type="module">
-        async function loadFooter() {
-            const response = await fetch('./src/layout/footer/footer.html');
-            const html = await response.text();
-            document.getElementById('footer').innerHTML = html;
-        }
-        loadFooter();
-    </script>
+
 </body>
 
 </html>
