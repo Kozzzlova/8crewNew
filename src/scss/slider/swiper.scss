@@ -1,0 +1,65 @@
+.swiper {
+   position: relative;
+}
+
+.swiper-wrapper {
+   display: flex;
+   gap: 20px;
+   max-width: 571px;
+   width: 100%;
+}
+
+.swiper-slide {
+   flex: 0 0 177px;
+   cursor: pointer;
+   position: relative;
+
+   &.active {
+      &::after {
+         content: '';
+         display: block;
+         background-color: var(--green-accent);
+         position: absolute;
+         bottom: -8px;
+         left: 0;
+         width: 100%;
+         height: 2px;
+      }
+   }
+
+   img {
+      border-radius: 3px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   padding: 8px;
+   border-radius: 2px;
+   background-color: var(--biege-2);
+
+   svg {
+      width: 24px;
+      height: 24px;
+   }
+}
+
+.swiper-button-prev {
+   left: 0;
+   transform: translateY(-50%) rotate(180deg) translateX(50%);
+}
+
+.swiper-button-next {
+   right: 0;
+   transform: translateY(-50%) translateX(50%);
+}
