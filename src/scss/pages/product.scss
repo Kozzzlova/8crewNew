@@ -1,0 +1,261 @@
+.product {
+   padding: 24px 0 48px 0; // .product__images
+   display: grid;
+   gap: 20px;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: 1fr;
+   &__images {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 470px);
+   }
+
+   // .product__image
+
+   &__image {
+      width: 100%;
+      height: 100%;
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   // .product__content
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 48px;
+   }
+
+   &__about {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 32px;
+   }
+
+   // .product__header
+
+   &__header {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 8px;
+   }
+
+   // .product__heading
+
+   &__heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+   }
+
+   // .product__title
+
+   &__title {
+   }
+
+   // .product__like
+
+   &__like {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      svg {
+         width: 24px;
+         height: 24px;
+      }
+   }
+
+   // .product__info
+
+   &__info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+   }
+
+   // .product__price
+
+   &__price {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--green-accent);
+   }
+
+   // .product__id
+
+   &__id {
+      color: var(--black-2);
+   }
+
+   // .product__slider
+
+   &__slider {
+   }
+
+   // .product__button
+
+   &__button {
+      max-width: 373px;
+      width: 100%;
+      padding: 16px 105px;
+      background-color: var(--green-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 3px;
+      transition: all 0.2s ease 0s;
+      svg {
+         width: 24px;
+         height: 24px;
+      }
+
+      &:hover {
+         background-color: var(--green-dark);
+      }
+      &:disabled {
+         background-color: var(--gray);
+      }
+   }
+
+   // .product__description
+
+   &__description {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 16px;
+      max-width: 373px;
+      width: 100%;
+   }
+
+   // .product__text
+
+   &__text {
+      font-size: 20px;
+   }
+
+   &__paragraph {
+      color: var(--black-2);
+   }
+}
+
+.characteristics {
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   gap: 10px;
+   max-width: 524px;
+   width: 100%;
+   // .characteristics__item
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
+   }
+
+   // .characteristics__heading
+
+   &__heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   // .characteristics__title
+
+   &__title {
+      color: var(--black-2);
+      font-size: 12px;
+      text-transform: uppercase;
+   }
+
+   // .characteristics__button
+
+   &__button {
+      position: relative;
+      &::after {
+         display: block;
+         content: '';
+         position: absolute;
+         bottom: -4px;
+         left: 0;
+         width: 100%;
+         height: 1px;
+         background-color: var(--black);
+      }
+   }
+
+   // .characteristics__options
+
+   &__options {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 16px;
+   }
+
+   // .characteristics__element
+
+   &__element {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--biege-2);
+      transition: all 0.2s ease 0s;
+      border-radius: 2px;
+
+      &:hover,
+      &.active {
+         background-color: var(--biege);
+      }
+
+      &.size {
+         font-size: 12px;
+         color: var(--black-2);
+         width: 44px;
+         height: 30px;
+      }
+
+      &.palette {
+         gap: 4px;
+         padding: 8px 16px;
+      }
+   }
+
+   &__color {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+
+      &.white {
+         background-color: var(--white);
+      }
+
+      &.gray {
+         background-color: var(--gray);
+      }
+      &.black {
+         background-color: var(--black);
+      }
+   }
+}

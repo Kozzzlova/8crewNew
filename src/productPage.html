@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <script type="module" src="./script/index.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <load src="./components/header.html" />
+        <main class="main">
+            <div class="container">
+                <nav class="breadcrupms">
+                    <ul class="breadcrupms__list">
+                        <li class="breadcrupms__item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="breadcrupms__item">
+                            <a href="#">Adidas</a>
+                        </li>
+                        <li class="breadcrupms__item">
+                            <a href="#">Adidas Y-3</a>
+                        </li>
+                        <li class="breadcrupms__item">
+                            <a href="#">Adidas Y-3 Gazelle</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <div class="product">
+                    <div class="product__images">
+                        <div class="product__image">
+                            <img src="img/products/product-4.png" alt="">
+                        </div>
+                        <div class="product__image">
+                            <img src="img/products/product-5.png" alt="">
+                        </div>
+                        <div class="product__image">
+                            <img src="img/products/product-6.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="product__content">
+                        <div class="product__about">
+                            <div class="product__header">
+                                <h3 class="product__heading heading-3">
+                                    <div class="product__title">Adidas Y-3 Gazelle</div>
+                                    <button class='product__like'>
+                                        <svg>
+                                            <use xlink:href="#like"></use>
+                                        </svg>
+                                    </button>
+
+
+                                </h3>
+                                <div class="product__info">
+                                    <div class="product__price">220$</div>
+                                    <div class="product__id">Id2303955</div>
+                                </div>
+
+                            </div>
+                            <div class="product__slider">
+                                <!-- Slider main container -->
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide"><img src="img/slider/slider-1.png" alt=""></div>
+                                        <div class="swiper-slide">Slide 2</div>
+                                        <div class="swiper-slide">Slide 3</div>
+                                        ...
+                                    </div>
+
+
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+
+
+                                </div>
+                            </div>
+
+
+                            <div class="characteristics">
+                                <div class="characteristics__item">
+                                    <div class="characteristics__heading">
+                                        <div class="characteristics__title">Розмір</div>
+                                        <button type='button' class="characteristics__button">Розмірна сітка</button>
+
+
+                                    </div>
+                                    <div class="characteristics__options">
+
+                                        <button type='button' class="characteristics__element size">36</button>
+                                        <button type='button' class="characteristics__element size">37</button>
+                                        <button type='button' class="characteristics__element size">38</button>
+                                        <button type='button' class="characteristics__element size active">39</button>
+                                        <button type='button' class="characteristics__element size">40</button>
+                                        <button type='button' class="characteristics__element size">41</button>
+                                        <button type='button' class="characteristics__element size">42</button>
+                                        <button type='button' class="characteristics__element size">43</button>
+                                        <button type='button' class="characteristics__element size">44</button>
+
+                                    </div>
+
+                                </div>
+                                <div class="characteristics__item">
+                                    <div class="characteristics__heading">
+                                        <div class="characteristics__title">Колір</div>
+
+                                    </div>
+                                    <div class="characteristics__options">
+                                        <div class="characteristics__element palette">
+                                            <div class="characteristics__color gray"></div>
+                                            <span>Grey</span>
+                                        </div>
+                                        <div class="characteristics__element palette">
+                                            <div class="characteristics__color black"></div>
+                                            <span>Black</span>
+                                        </div>
+                                        <div class="characteristics__element palette active">
+                                            <div class="characteristics__color white"></div>
+                                            <span>White</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <button type='button' class="product__button">
+                                <svg>
+                                    <use xlink:href="#basket"></use>
+                                </svg>
+                                <span>Додати до кошика</span>
+                            </button>
+                        </div>
+                        <div class="product__description">
+                            <h5 class="product__text">Опис</h5>
+                            <p class="product__paragraph">Loved for decades, the adidas Gazelle shoes stay classic. Here they're reimagined through the
+                                viewpoint of
+                                Y-3, bringing a rich, uniform look to the soft suede
+                                that extends from the upper all the way to the tooling. The inside is lined with leather and suede, and Yohji Yamamoto's
+                                signature delivers the final signoff.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <load src="./components/footer.html" />
+    </div>
+</body>
+
+</html>
