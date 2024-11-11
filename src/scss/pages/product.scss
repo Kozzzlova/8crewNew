@@ -82,7 +82,7 @@
    // .product__title
 
    &__title {
-      @media (max-width: 767px) {
+      @media (max-width: 992px) {
          font-size: 32px;
       }
       @media (max-width: 500px) {
@@ -201,6 +201,7 @@
    width: 100%;
    @media (max-width: 767px) {
       gap: 32px;
+      max-width: 100%;
    }
 
    // .characteristics__item

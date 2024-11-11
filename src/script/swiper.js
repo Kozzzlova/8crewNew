@@ -26,14 +26,8 @@ const swiper = new Swiper('.swiper', {
    // Optional parameters
    direction: 'horizontal',
    loop: true,
-   slidesPerView: 3,
-   spaceBetween: 20,
    freeMode: true,
-
-   // If we need pagination
-   pagination: {
-      el: '.swiper-pagination',
-   },
+   slidesPerView: 'auto',
 
    // Navigation arrows
    navigation: {
@@ -41,8 +35,15 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
    },
 
-   // And if we need scrollbar
-   scrollbar: {
-      el: '.swiper-scrollbar',
+   breakpoints: {
+      992: {
+         spaceBetween: 20,
+      },
+      767: {
+         spaceBetween: 30,
+      },
+      300: {
+         spaceBetween: 20,
+      },
    },
 });

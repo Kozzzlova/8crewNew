@@ -11,8 +11,11 @@
    flex: 0 0 177px;
    cursor: pointer;
    position: relative;
-
-   &.active {
+   height: 108px;
+   margin-bottom: 8px;
+   @media (max-width: 767px) {
+      height: 74px;
+      flex: 0 0 121px;
    }
 
    img {
@@ -41,7 +44,6 @@
 .swiper-button-next {
    position: absolute;
    top: 50%;
-
    display: flex;
    align-items: center;
    justify-content: center;
@@ -52,6 +54,10 @@
    width: 40px;
    height: 40px;
    color: var(--black);
+
+   @media (max-width: 767px) {
+      display: none;
+   }
 
    &::after {
       display: none;
