@@ -1,28 +1,11 @@
 //import './swiper-bundle.min';
 //import { Swiper } from './swiper-bundle.min';
-//import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11.1.14/+esm';
-//import '../scss/slider/swiper-bundle.min.css';
 
 import './swiper-bundle';
-//import { Swiper } from './swiper-bundle';
+// //import { Swiper } from './swiper-bundle';
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
-// document.addEventListener('DOMContentLoaded', () => {
-//    const swiper = new Swiper('.swiper', {
-//       modules: [Navigation],
-//       navigation: {
-//          nextEl: '.swiper-button-next',
-//          prevEl: '.swiper-button-prev',
-//       },
-
-//       direction: 'horizontal',
-//       loop: true,
-//       autoplay: {
-//          delay: 3000,
-//       },
-//    });
-// });
-
-const swiper = new Swiper('.swiper', {
+// import Swiper from 'swiper';
+const swiperProductSmall = new Swiper('.product-swiper-small', {
    // Optional parameters
    direction: 'horizontal',
    loop: true,
@@ -45,5 +28,20 @@ const swiper = new Swiper('.swiper', {
       300: {
          spaceBetween: 20,
       },
+   },
+});
+
+const swiperProduct = new Swiper('.product-swiper', {
+   // Optional parameters
+   direction: 'horizontal',
+   loop: true,
+   freeMode: true,
+   slidesPerView: 'auto',
+   spaceBetween: 20,
+
+   // Navigation arrows
+   navigation: {
+      nextEl: '.product-swiper-button-next',
+      prevEl: '.product-swiper-button-prev',
    },
 });
