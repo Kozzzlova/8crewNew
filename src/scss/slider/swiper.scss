@@ -4,9 +4,7 @@
 
 .swiper-wrapper {
    display: flex;
-   gap: 20px;
-   max-width: 571px;
-   width: 100%;
+   //gap: 20px;
 }
 
 .swiper-slide {
@@ -15,16 +13,6 @@
    position: relative;
 
    &.active {
-      &::after {
-         content: '';
-         display: block;
-         background-color: var(--green-accent);
-         position: absolute;
-         bottom: -8px;
-         left: 0;
-         width: 100%;
-         height: 2px;
-      }
    }
 
    img {
@@ -35,11 +23,25 @@
    }
 }
 
+.swiper-slide-active {
+   position: relative;
+   &::after {
+      content: '';
+      display: block;
+      background-color: var(--green-accent);
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+   }
+}
+
 .swiper-button-prev,
 .swiper-button-next {
    position: absolute;
    top: 50%;
-   transform: translateY(-50%);
+
    display: flex;
    align-items: center;
    justify-content: center;
@@ -47,6 +49,13 @@
    padding: 8px;
    border-radius: 2px;
    background-color: var(--biege-2);
+   width: 40px;
+   height: 40px;
+   color: var(--black);
+
+   &::after {
+      display: none;
+   }
 
    svg {
       width: 24px;
@@ -56,10 +65,10 @@
 
 .swiper-button-prev {
    left: 0;
-   transform: translateY(-50%) rotate(180deg) translateX(50%);
+   transform: rotate(180deg) translateX(50%);
 }
 
 .swiper-button-next {
    right: 0;
-   transform: translateY(-50%) translateX(50%);
+   transform: translateX(50%);
 }
