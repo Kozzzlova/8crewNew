@@ -31,7 +31,7 @@ const swiperProductSmall = new Swiper('.product-swiper-small', {
    },
 });
 
-const swiperProduct = new Swiper('.product-swiper', {
+const swiperBanner = new Swiper('.product-swiper', {
    // Optional parameters
    direction: 'horizontal',
    loop: true,
@@ -43,5 +43,20 @@ const swiperProduct = new Swiper('.product-swiper', {
    navigation: {
       nextEl: '.product-swiper-button-next',
       prevEl: '.product-swiper-button-prev',
+   },
+});
+const swiperProduct = new Swiper('.main-swiper', {
+   // Optional parameters
+   direction: 'horizontal',
+   loop: true,
+
+   autoplay: {
+      delay: 2000,
+   },
+
+   pagination: {
+      el: '.main-swiper-pagination',
+      dynamicBullets: true,
+      clickable: true,
    },
 });

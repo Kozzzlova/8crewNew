@@ -24,8 +24,11 @@
          // gap: 28px;
          display: none;
       }
-
-      &_mobile {
+   }
+   &__images-mobile {
+      display: none;
+      @media (max-width: 767px) {
+         display: flex;
       }
    }
 
