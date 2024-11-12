@@ -1,0 +1,104 @@
+.blog-card {
+   display: flex;
+   align-items: stretch;
+   flex-direction: column;
+   gap: 8px;
+
+   // .blog-card__image
+   &__image {
+      position: relative;
+      border-radius: 5px;
+      width: 100%;
+      padding-bottom: 83%;
+      overflow: hidden;
+
+      &:hover {
+         img {
+            transform: scale(1.1);
+         }
+      }
+
+      img {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         transition: all 0.3s ease 0s;
+      }
+   }
+
+   // .blog-card__data
+
+   &__data {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      color: var(--black-2);
+      border-radius: 3px;
+      background-color: var(--white);
+   }
+
+   // .blog-card__title
+
+   &__title {
+      border-radius: 3px;
+      background-color: var(--white);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 8px;
+      color: var(--black);
+      font-weight: 600;
+      font-size: 16px;
+      width: 100%;
+      max-width: 290px;
+   }
+
+   // .blog-card__content
+
+   &__content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 20px;
+   }
+
+   // .blog-card__text
+
+   &__text {
+      padding-left: 2px;
+      color: var(--black-2);
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 52px;
+   }
+
+   // .blog-card__link
+
+   &__arrow {
+      flex-shrink: 0;
+      width: 56px;
+      height: 56px;
+      border: 4px solid var(--white);
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      background-color: var(--green-accent);
+      transition: all 0.2s ease 0s;
+
+      &:hover {
+         background-color: var(--green-dark);
+      }
+   }
+}

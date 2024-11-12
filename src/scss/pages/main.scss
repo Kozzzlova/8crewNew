@@ -84,6 +84,10 @@
    // .basic-block__blog
 
    &__blog {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      gap: 20px;
    }
 }
 
@@ -128,16 +132,20 @@
    color: var(--white);
    background-color: var(--green-accent);
    box-sizing: border-box;
+   transition: all 0.2s ease 0s;
+   &:hover {
+      background-color: var(--green-dark);
+   }
 }
 
 .main-swiper {
 }
 
 .main-swiper-wrapper {
+   height: 580px;
 }
 
 .main-swiper-slide {
-   height: auto;
    position: relative;
    display: block;
 
@@ -167,6 +175,7 @@
       border-radius: 2px;
       width: 24px;
       height: 24px;
+      cursor: pointer;
    }
    .swiper-pagination-bullet-active {
       background-color: var(--green-accent);

@@ -7,7 +7,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs
 // import Swiper from 'swiper';
 const swiperProductSmall = new Swiper('.product-swiper-small', {
    // Optional parameters
-   direction: 'horizontal',
+
    loop: true,
    freeMode: true,
    slidesPerView: 'auto',
@@ -33,7 +33,7 @@ const swiperProductSmall = new Swiper('.product-swiper-small', {
 
 const swiperBanner = new Swiper('.product-swiper', {
    // Optional parameters
-   direction: 'horizontal',
+
    loop: true,
    freeMode: true,
    slidesPerView: 'auto',
@@ -47,12 +47,12 @@ const swiperBanner = new Swiper('.product-swiper', {
 });
 const swiperProduct = new Swiper('.main-swiper', {
    // Optional parameters
-   direction: 'horizontal',
+
    loop: true,
 
-   autoplay: {
-      delay: 2000,
-   },
+   //    autoplay: {
+   //       delay: 2000,
+   //    },
 
    pagination: {
       el: '.main-swiper-pagination',
