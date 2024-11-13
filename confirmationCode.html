@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delivery</title>
+    <title>Log in</title>
   <script type="module" crossorigin src="/8crewNew/assets/index-CaxrHZI0.js"></script>
   <link rel="stylesheet" crossorigin href="/8crewNew/assets/index-DCF058HD.css">
 </head>
@@ -108,66 +108,50 @@
 </header>
         <main class="main">
             <div class="container">
-                <div class="common-section delivery-section ">
-                    <div class="delivery-section__image">
-                        <h4 class="delivery-section__title heading-4">Доставка</h4>
-                        <div class="delivery-section__text">Відправлення здійснюється протягом 1-2 робочих днів з моменту підтвердження оплати.</div>
-                        <img src="img/delivery/delivery.png" alt="Delivery image">
-                    </div>
-                    <div class="delivery-section__content">
-                        <p class="delivery-section__paragraph">При замовленні від 10.000 грн. або при повній оплаті товару ми здійснюємо безкоштовну доставку!
-                        </p>
-                        <div class="delivery-section__accordion">
-                            <div class='accordion'>
-                                <div class="accordion__head">
-                                    <img src="icon/truck.svg" alt="Icon" class="accordion__icon">
-                                    <h5 class="accordion__title">Товар під замовлення з США та Європи
-                                        <svg class='accordion__arrow'>
-                                            <use xlink:href="#arrow-tab"></use>
-                                        </svg>
-                                    </h5>
 
-                                </div>
-                                <div class="accordion__body">
-                                    <p>Доставка товару з Європи або США здійснюється у термін від 10 до 25 робочих днів, залежно від місцезнаходження товару.
-                                        Виняткові ситуації можуть виникнути
-                                        внаслідок обставин, пов'язаних із викупом товару за кордоном або доставкою іноземними транспортними компаніями. 
-                                        У разі виникнення таких обставин, наш менеджер заздалегідь повідомить вас!</p>
-                                    <p>*Звертаємо вашу увагу, що товар, який замовляється «під замовлення», означає надання нами послуги з доставки
-                                        індивідуального
-                                        товару з-за кордону спеціально для
-                                        Вас.</p>
-                                    <p>Після отримання вашого замовлення доставка виконується службою «Нова Пошта» до відділення або поштомату. Додатково
-                                        доступна
-                                        кур'єрська доставка від «Нової
-                                        Пошти».</p>
-                                </div>
+            </div>
 
-                            </div>
-                            <div class='accordion hidden'>
-                                <div class="accordion__head">
-                                    <img src="icon/check.svg" alt="Icon" class="accordion__icon">
-                                    <h5 class="accordion__title">Товар у наявності
-                                        <svg class='accordion__arrow'>
-                                            <use xlink:href="#arrow-tab"></use>
-                                        </svg>
-                                    </h5>
-                                </div>
-                                <div class="accordion__body">
-                                    <ol class='accordion__list'>
-                                        <li>Доставка по Україні «Нова пошта» у відділення або поштомат. </li>
-                                        <li>Курʼєрська доставка «Нова пошта» до Ваших дверей.</li>
-                                    </ol>
-                                </div>
+        </main>
+        <div class="popup open">
 
-                            </div>
-                        </div>
-
-                    </div>
+            <div class="popup__body">
+                <button type='button' class="popup__close">
+                    <svg class="icon">
+                        <use href="#close-circle"></use>
+                    </svg>
+                </button>
+                <div class="popup__title">
+                    <div class="heading-4">Введіть код</div>
+                    <div class="popup__subtitle">Ми вислали код на вашу електронну адресу, введіть його нижче щоб продовжити</div>
 
                 </div>
+                <form class="login-form">
+                    <div class="login-form__fields">
+                        <div class="login-form__field">
+                            <div class="login-form__code">
+                                <input type="number" min="0" max="9" maxlength="1" oninput="this.value = this.value.slice(0, 1)" class=" login-form__cell"
+                                    placeholder='1'>
+                                <input type="number" min="0" max="9" maxlength="1" oninput="this.value = this.value.slice(0, 1)" class=" login-form__cell"
+                                    placeholder='2'>
+                                <input type="number" min="0" max="9" maxlength="1" oninput="this.value = this.value.slice(0, 1)" class=" login-form__cell"
+                                    placeholder='3'>
+                                <input type="number" min="0" max="9" maxlength="1" oninput="this.value = this.value.slice(0, 1)" class=" login-form__cell"
+                                    placeholder='4'>
+                                <input type="number" min="0" max="9" maxlength="1" oninput="this.value = this.value.slice(0, 1)" class=" login-form__cell"
+                                    placeholder='5'>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <button type='button' class="login-form__button">Продовжити</button>
+
+                </form>
+
             </div>
-        </main>
+        </div>
         <footer class="footer">
    <div class="container">
       <div class="footer__container">
@@ -234,9 +218,7 @@
    </a>
 
 </footer>
-
     </div>
-
 </body>
 
 </html>
