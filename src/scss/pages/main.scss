@@ -74,8 +74,26 @@
    // .basic-block__slider
 
    &__slider {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 24px;
+      position: relative;
    }
-
+   &__link {
+      align-self: center;
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid var(--black-2);
+      border-radius: 4px;
+      font-size: 15px;
+      text-transform: capitalize;
+      font-weight: 600;
+      transition: all 0.2s ease 0s;
+      &:hover {
+         border-color: var(--green-accent);
+      }
+   }
    // .basic-block__collection
 
    &__collection {

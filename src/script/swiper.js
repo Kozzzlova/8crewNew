@@ -5,6 +5,20 @@ import './swiper-bundle';
 // //import { Swiper } from './swiper-bundle';
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 // import Swiper from 'swiper';
+
+const basicSwiper = new Swiper('.basic-swiper', {
+   // Optional parameters
+
+   loop: true,
+   freeMode: true,
+   slidesPerView: 1,
+
+   navigation: {
+      nextEl: '.basic-swiper-btn-next',
+      prevEl: '.basic-swiper-btn-prev',
+   },
+});
+
 const swiperProductSmall = new Swiper('.product-swiper-small', {
    // Optional parameters
 

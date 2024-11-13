@@ -1,0 +1,39 @@
+.basic-swiper {
+   overflow: visible;
+}
+
+.basic-swiper-wrapepr {
+}
+
+.basic-swiper-slide {
+   flex: 0 0 373px;
+   margin-right: 20px;
+}
+.basic-swiper-btn-prev,
+.basic-swiper-btn-next {
+   position: absolute;
+   top: 140px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--gray);
+   width: 40px;
+   height: 40px;
+   border-radius: 2px;
+   z-index: 3;
+   background-color: var(--biege-2);
+   transition: all 0.2s ease 0s;
+   &:hover {
+      background-color: var(--biege);
+   }
+}
+
+.basic-swiper-btn-prev {
+   left: 0;
+   transform: rotate(180deg) translateX(50%);
+}
+
+.basic-swiper-btn-next {
+   right: 0;
+   transform: translateX(50%);
+}
