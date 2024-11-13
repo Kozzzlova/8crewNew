@@ -40,6 +40,9 @@
       top: 20px;
       right: 20px;
       transition: all 0.2s ease 0s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       &:hover {
          color: var(--black);

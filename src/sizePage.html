@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="./script/index.js"></script>
+    <script type="module" src="./script/sizeModal.js"></script>
 
 </head>
 
@@ -36,7 +37,7 @@
                 </div>
             </div>
         </main>
-        <div class="modal open">
+        <div class="modal">
             <div class="modal__body size-modal">
                 <button type='button' class="modal__close">
                     <svg class="icon">
@@ -103,6 +104,33 @@
                 </div>
             </div>
 
+        </div>
+        <div class="popup ">
+
+            <div class="popup__body">
+                <button type='button' class="popup__close">
+                    <svg class="icon">
+                        <use href="#close-circle"></use>
+                    </svg>
+                </button>
+                <div class="popup__title heading-4">Увійти в сервіс</div>
+                <form class="login-form">
+                    <div class="login-form__fields">
+                        <div class="login-form__field">
+                            <div class="login-form__label">Email</div>
+                            <input type="email" class="login-form__input" placeholder='Ваша адреса пошти'>
+                        </div>
+                        <div class="login-form__field">
+                            <div class="login-form__label">пароль</div>
+                            <input type="password" class="login-form__input" placeholder='Введіть пароль'>
+                            <a href="#" class="login-form__password-forgot">Забули пароль?</a>
+                        </div>
+                    </div>
+                    <button type='button' class="login-form__button">Увійти</button>
+
+                </form>
+
+            </div>
         </div>
         <load src="./components/footer.html" />
 
