@@ -1,0 +1,2 @@
+import"./assets/index-DY0PlOGu.js";import"https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";const t=document.querySelector(".size-section__button"),e=document.querySelector(".modal"),c=document.querySelector(".modal__body"),n=document.querySelector(".modal__close");t.addEventListener("click",()=>{e.classList.add("open")});n.addEventListener("click",()=>{e.classList.remove("open")});e.addEventListener("click",o=>{e.classList.contains("open")&&!c.contains(o.target)&&!t.contains(o.target)&&e.classList.remove("open")});
+//# sourceMappingURL=sizePage.js.map
