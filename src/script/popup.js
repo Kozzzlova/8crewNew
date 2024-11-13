@@ -5,10 +5,12 @@ const closeLogin = document.querySelector('.popup__close');
 btnLogin.addEventListener('click', (e) => {
    e.preventDefault();
    popup.classList.add('open');
+   document.documentElement.style.overflow = 'hidden';
 });
 
 closeLogin.addEventListener('click', () => {
    popup.classList.remove('open');
+   document.documentElement.style.overflow = '';
 });
 
 popup.addEventListener('click', (event) => {
