@@ -10,10 +10,22 @@
 
 <body>
     <div class="wrapper">
+        <div class="header-label">
+            <div class="container">
+                <div class="header-label__container">
+                    <span class='header-label__text'>безкоштовна доставка від 10000 грн</span>
+                    <div class='header-label__language'>
+                        <button class='header-label__button' type='button'>EN</button>
+                        <button class='header-label__button' type='button' class='active'>UA</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         <load src="./components/header.html" />
         <main class="main">
             <div class="container">
-                <div class="common-section delivery-section ">
+                <div data-aos="fade-down" class="common-section delivery-section ">
                     <div class="delivery-section__image">
                         <h4 class="delivery-section__title heading-4">Доставка</h4>
                         <div class="delivery-section__text">Відправлення здійснюється протягом 1-2 робочих днів з моменту підтвердження оплати.</div>
@@ -34,15 +46,18 @@
 
                                 </div>
                                 <div class="accordion__body">
-                                    <p>Доставка товару з Європи або США здійснюється у термін від 10 до 25 робочих днів, залежно від місцезнаходження товару.
+                                    <p class='accordion__paragraph'>Доставка товару з Європи або США здійснюється у термін від 10 до 25 робочих днів, залежно
+                                        від місцезнаходження товару.
                                         Виняткові ситуації можуть виникнути
                                         внаслідок обставин, пов'язаних із викупом товару за кордоном або доставкою іноземними транспортними компаніями. 
                                         У разі виникнення таких обставин, наш менеджер заздалегідь повідомить вас!</p>
-                                    <p>*Звертаємо вашу увагу, що товар, який замовляється «під замовлення», означає надання нами послуги з доставки
+                                    <p class='accordion__paragraph'>*Звертаємо вашу увагу, що товар, який замовляється «під замовлення», означає надання нами
+                                        послуги з доставки
                                         індивідуального
                                         товару з-за кордону спеціально для
                                         Вас.</p>
-                                    <p>Після отримання вашого замовлення доставка виконується службою «Нова Пошта» до відділення або поштомату. Додатково
+                                    <p class='accordion__paragraph'>Після отримання вашого замовлення доставка виконується службою «Нова Пошта» до відділення
+                                        або поштомату. Додатково
                                         доступна
                                         кур'єрська доставка від «Нової
                                         Пошти».</p>

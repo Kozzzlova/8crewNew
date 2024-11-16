@@ -17,6 +17,7 @@
       "vite-plugin-svg-icons": "^2.0.1"
    },
    "dependencies": {
+      "aos": "^2.3.4",
       "swiper": "^11.1.14"
    }
 }

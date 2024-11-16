@@ -1,59 +1,10 @@
 .header {
-   // display: none;
+   position: sticky;
+   top: 0;
+   left: 0;
+   background-color: var(--white);
+   z-index: 10;
    // .header__label
-
-   &__label {
-      width: 100%;
-      max-width: 100%;
-      background-color: var(--black);
-      color: var(--white);
-      text-transform: uppercase;
-      font-size: 12px;
-      padding: 4px 0 6px 0;
-   }
-   &__container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      @media (max-width: 767px) {
-         justify-content: space-between;
-         gap: 12px;
-      }
-   }
-   // .header__text
-
-   &__text {
-   }
-
-   // .header__language
-
-   &__language {
-      position: absolute;
-      right: 0;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      gap: 9px;
-      @media (max-width: 767px) {
-         position: relative;
-         right: auto;
-      }
-
-      button {
-         color: var(--gray);
-         font-size: 14px;
-         transition: all 0.2s ease 0s;
-
-         &:hover {
-            color: var(--gray-hover);
-         }
-
-         &.active {
-            color: var(--white);
-         }
-      }
-   }
 
    // .header__main
 
@@ -199,4 +150,58 @@
 .icon {
    width: 24px;
    height: 24px;
+}
+
+.header-label {
+   width: 100%;
+   max-width: 100%;
+   background-color: var(--black);
+   color: var(--white);
+   text-transform: uppercase;
+   font-size: 12px;
+   padding: 4px 0 6px 0;
+
+   &__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      @media (max-width: 767px) {
+         justify-content: space-between;
+         gap: 12px;
+      }
+   }
+   // .header__text
+
+   &__text {
+   }
+
+   // .header__language
+
+   &__language {
+      position: absolute;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 9px;
+      @media (max-width: 767px) {
+         position: relative;
+         right: auto;
+      }
+   }
+
+   &__button {
+      color: var(--gray);
+      font-size: 14px;
+      transition: all 0.2s ease 0s;
+
+      &:hover {
+         color: var(--gray-hover);
+      }
+
+      &.active {
+         color: var(--white);
+      }
+   }
 }

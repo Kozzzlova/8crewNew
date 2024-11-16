@@ -4,7 +4,3 @@ tab.forEach((t) =>
       t.classList.toggle('hidden');
    })
 );
-// tab.addEventListener('click', () => {
-//    tab.classList.toggle('hidden');
-//    console.log('fdfds');
-// });
