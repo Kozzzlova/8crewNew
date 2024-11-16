@@ -15,7 +15,8 @@
                             <a href="./index.html">Головна</a>
                         </li>
                         <li class='header__nav-item'>
-                            <a href="./categoryPage.html">Товари</a>
+                            <a class='dropdown-handler' href="#">Товари</a>
+
                         </li>
                         <li class='header__nav-item'>
                             <a href="#">Розпродаж</a>
@@ -67,7 +68,7 @@
                         <a href="#">Головна</a>
                     </li>
                     <li class='header__nav-item'>
-                        <a href="#">Товари</a>
+                        <a class='dropdown-mobile-handler' href="#">Товари</a>
                     </li>
                     <li class='header__nav-item'>
                         <a href="#">Розпродаж</a>
@@ -79,5 +80,143 @@
             </nav>
         </div>
 
+    </div>
+    <div class="dropdown">
+        <button type='button' class="dropdown__close">
+            <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                <use href='#close-circle'></use>
+            </svg>
+        </button>
+
+        <div class="dropdown__lists">
+            <div class="dropdown__block">
+                <div class="dropdown__title">Sneakers</div>
+                <ul class="dropdown__list">
+                    <li class="dropdown__item">
+                        <a href="#" class='dropdown__link'>Новинки</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="#" class='dropdown__link'>Розпродаж</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="#" class='dropdown__link'>Усі товари</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="#" class='dropdown__link'>Забрати зараз</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="dropdown__block">
+                <div class="dropdown__title">Brands</div>
+                <ul class="dropdown__list">
+                    <li class="dropdown__item">
+                        <a href="#" class='dropdown__link'>Adidas</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="#" class='dropdown__link'>Nike</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="#" class='dropdown__link'>New Balance</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="#" class='dropdown__link'>Autry</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="#" class='dropdown__link'>Asics</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="#" class='dropdown__link'>Jordan</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="#" class='dropdown__link'>Reebok</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="#" class='dropdown__link'>Veja</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="#" class='dropdown__link'>Crocs</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="dropdown__bestsellers">
+            <div class="dropdown__title">Bestsellers</div>
+            <div class="dropdown__products">
+                <div class="dropdown__grid">
+                    <div class="product-card">
+                        <a class='icon-link product-card__icon' href="#">
+
+                            <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                                <use href='#like'></use>
+                            </svg>
+
+                        </a>
+
+                        <a href='#' class="product-card__image">
+                            <img src="img/products/product-4.png" alt="Shoe image">
+                        </a>
+                        <div class="product-card__content">
+                            <div class="product-card__info">
+                                <h5 class="product-card__title">THERE Skateboards x Nike Dunk Low SB 'Ultra Humanized'</h5>
+                                <div class="product-card__description">
+                                    <div class="product-card__size">EU 42-44</div>
+                                    <div class="product-card__price">Від 160$</div>
+
+                                </div>
+
+                            </div>
+                            <button class="product-card__button">
+                                <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
+
+                                    <use xlink:href="#basket-white"></use>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                    </div>
+                    <div class="product-card">
+                        <a class='icon-link product-card__icon' href="#">
+
+                            <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                                <use href='#like'></use>
+                            </svg>
+
+                        </a>
+
+                        <a href='#' class="product-card__image">
+                            <img src="img/products/product-4.png" alt="Shoe image">
+                        </a>
+                        <div class="product-card__content">
+                            <div class="product-card__info">
+                                <h5 class="product-card__title">THERE Skateboards x Nike Dunk Low SB 'Ultra Humanized'</h5>
+                                <div class="product-card__description">
+                                    <div class="product-card__size">EU 42-44</div>
+                                    <div class="product-card__price">Від 160$</div>
+
+                                </div>
+
+                            </div>
+                            <button class="product-card__button">
+                                <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
+
+                                    <use xlink:href="#basket-white"></use>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <button type='button' class="dropdown__button">Показати більше</button>
+
+            </div>
+
+        </div>
     </div>
 </header>
