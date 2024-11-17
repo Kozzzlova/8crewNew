@@ -48,7 +48,7 @@ const swiperProductSmall = new Swiper('.product-swiper-small', {
 const swiperBanner = new Swiper('.product-swiper', {
    // Optional parameters
 
-   loop: true,
+   // loop: true,
    freeMode: true,
    slidesPerView: 'auto',
    spaceBetween: 20,
@@ -73,4 +73,23 @@ const swiperProduct = new Swiper('.main-swiper', {
       dynamicBullets: true,
       clickable: true,
    },
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+   const swiperContainer = document.querySelector(
+      '.product-swiper-wrapper-small'
+   );
+
+   swiperContainer.addEventListener('click', (event) => {
+      const clickedSlide = event.target.closest('.product-swiper-slide-small');
+
+      if (clickedSlide) {
+         swiperContainer
+            .querySelectorAll('.product-swiper-slide-small')
+            .forEach((slide) => {
+               slide.classList.remove('active');
+            });
+         clickedSlide.classList.add('active');
+      }
+   });
 });

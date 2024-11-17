@@ -6,6 +6,7 @@ import './searchMobile';
 import './searchDropdown';
 import './breadcrumps';
 import './accordion';
+import './sizeModal';
 import './popup';
 import './likeButtonsHandler';
 import './characteristicsOptionsHandler';

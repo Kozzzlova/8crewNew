@@ -1,6 +1,8 @@
-const tab = document.querySelectorAll('.accordion');
-tab.forEach((t) =>
-   t.addEventListener('click', () => {
-      t.classList.toggle('hidden');
-   })
-);
+const tabs = document.querySelectorAll('.accordion');
+if (tabs.length > 0) {
+   tabs.forEach((t) =>
+      t.addEventListener('click', () => {
+         t.classList.toggle('hidden');
+      })
+   );
+}
