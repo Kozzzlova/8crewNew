@@ -7,8 +7,8 @@
     <title>Product Page</title>
 
   <script type="module" crossorigin src="/8crewNew/assets/vendor-BEQq00Ln.js"></script>
-  <script type="module" crossorigin src="/8crewNew/assets/index-CJlUeGnK.js"></script>
-  <link rel="stylesheet" crossorigin href="/8crewNew/assets/index-BHpQjBex.css">
+  <script type="module" crossorigin src="/8crewNew/assets/index-Cid8Z1B5.js"></script>
+  <link rel="stylesheet" crossorigin href="/8crewNew/assets/index-CRz4Ggnk.css">
   <link rel="stylesheet" crossorigin href="/8crewNew/assets/vendor-DvB2Xm2x.css">
 </head>
 
@@ -250,18 +250,18 @@
 </header>
         <main class="main">
             <div class="container">
-                <nav class="breadcrupms">
-                    <ul class="breadcrupms__list">
-                        <li class="breadcrupms__item">
+                <nav class="breadcrumps">
+                    <ul class="breadcrumps__list">
+                        <li class="breadcrumps__item">
                             <a href="#">Home</a>
                         </li>
-                        <li class="breadcrupms__item">
+                        <li class="breadcrumps__item">
                             <a href="#">Adidas</a>
                         </li>
-                        <li class="breadcrupms__item">
+                        <li class="breadcrumps__item">
                             <a href="#">Adidas Y-3</a>
                         </li>
-                        <li class="breadcrupms__item">
+                        <li class="breadcrumps__item">
                             <a href="#">Adidas Y-3 Gazelle</a>
                         </li>
 
@@ -364,7 +364,7 @@
                                 <div class="characteristics__item">
                                     <div class="characteristics__heading">
                                         <div class="characteristics__title">Розмір</div>
-                                        <button type='button' class="characteristics__button">Розмірна сітка</button>
+                                        <button type='button' class="characteristics__button size-button">Розмірна сітка</button>
 
 
                                     </div>
@@ -537,6 +537,101 @@
                 </section>
             </div>
         </main>
+        <div class="modal">
+            <div class="modal__body size-modal">
+                <button type='button' class="modal__close">
+                    <svg class="icon">
+                        <use href="#close-circle"></use>
+                    </svg>
+                </button>
+                <div class="size-modal__title">Чоловічі та жіночі розміри взуття</div>
+                <a href='#' class="size-modal__link">Як дізнатися свій розмір?</a>
+                <div class="size-modal__table size-table">
+                    <div class="size-table__row">
+                        <div class="size-table__cell bold">Розмірна сітка</div>
+                        <div class="size-table__cell bold">3 UK</div>
+                        <div class="size-table__cell bold">3 UK</div>
+                        <div class="size-table__cell bold">3 UK</div>
+                        <div class="size-table__cell bold">3 UK</div>
+                        <div class="size-table__cell bold">3 UK</div>
+                        <div class="size-table__cell bold">3 UK</div>
+                    </div>
+                    <div class="size-table__row">
+                        <div class="size-table__cell bold">US Men</div>
+                        <div class="size-table__cell">3.5</div>
+                        <div class="size-table__cell">3.5</div>
+                        <div class="size-table__cell">3.5</div>
+                        <div class="size-table__cell">3.5</div>
+                        <div class="size-table__cell">3.5</div>
+                        <div class="size-table__cell">3.5</div>
+                    </div>
+                    <div class="size-table__row">
+                        <div class="size-table__cell bold">US Women</div>
+                        <div class="size-table__cell">5</div>
+                        <div class="size-table__cell">5</div>
+                        <div class="size-table__cell">5</div>
+                        <div class="size-table__cell">5</div>
+                        <div class="size-table__cell">5</div>
+                        <div class="size-table__cell">5</div>
+                    </div>
+                    <div class="size-table__row">
+                        <div class="size-table__cell bold">EU</div>
+                        <div class="size-table__cell">35.5</div>
+                        <div class="size-table__cell">35.5</div>
+                        <div class="size-table__cell">35.5</div>
+                        <div class="size-table__cell">35.5</div>
+                        <div class="size-table__cell">35.5</div>
+                        <div class="size-table__cell">35.5</div>
+                    </div>
+                    <div class="size-table__row">
+                        <div class="size-table__cell bold">Foot length cm</div>
+                        <div class="size-table__cell">21.6</div>
+                        <div class="size-table__cell">21.6</div>
+                        <div class="size-table__cell">21.6</div>
+                        <div class="size-table__cell">21.6</div>
+                        <div class="size-table__cell">21.6</div>
+                        <div class="size-table__cell">21.6</div>
+                    </div>
+
+
+                </div>
+                <div class="size-modal__text">
+                    <div class="size-modal__title">Обираєш між двома розмірами?</div>
+                    <div class="size-modal__paragraphs">
+                        <p>Для більш щільної посадки вибери модель на розмір менше</p>
+                        <p>Для більш вільної посадки вибери модель на розмір більше</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="popup ">
+
+            <div class="popup__body">
+                <button type='button' class="popup__close">
+                    <svg class="icon">
+                        <use href="#close-circle"></use>
+                    </svg>
+                </button>
+                <div class="popup__title heading-4">Увійти в сервіс</div>
+                <form class="login-form">
+                    <div class="login-form__fields">
+                        <div class="login-form__field">
+                            <div class="login-form__label">Email</div>
+                            <input type="email" class="login-form__input" placeholder='Ваша адреса пошти'>
+                        </div>
+                        <div class="login-form__field">
+                            <div class="login-form__label">пароль</div>
+                            <input type="password" class="login-form__input" placeholder='Введіть пароль'>
+                            <a href="#" class="login-form__password-forgot">Забули пароль?</a>
+                        </div>
+                    </div>
+                    <button type='button' class="login-form__button">Увійти</button>
+
+                </form>
+
+            </div>
+        </div>
         <footer class="footer">
    <div class="container">
       <div class="footer__container">
