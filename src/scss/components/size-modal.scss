@@ -54,8 +54,8 @@
    grid-template-columns: 1fr;
    grid-template-rows: repeat(5, auto);
    overflow-x: scroll;
-   scrollbar-width: thin;
-   scrollbar-color: var(--gray) var(--white);
+   // scrollbar-width: thin;
+   // scrollbar-color: var(--gray) var(--white);
    position: relative;
 
    &__row {
@@ -84,7 +84,7 @@
 }
 
 .size-table::-webkit-scrollbar {
-   height: 8px;
+   height: 4px;
 }
 
 .size-table::-webkit-scrollbar-thumb {
