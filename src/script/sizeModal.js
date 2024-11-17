@@ -19,5 +19,6 @@ modal.addEventListener('click', (event) => {
       !btnSize.contains(event.target)
    ) {
       modal.classList.remove('open');
+      document.documentElement.style.overflow = '';
    }
 });
