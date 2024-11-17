@@ -6,16 +6,13 @@
    background-color: var(--biege-2);
    border-radius: 2px;
    transition: all 0.2s ease 0s;
+   color: var(--black);
+   &.active {
+      background-color: var(--biege);
+      color: var(--green-accent);
+   }
    &:hover {
       background-color: var(--biege);
-
-      svg {
-         stroke: var(--green-accent);
-      }
-   }
-
-   svg {
-      fill: transparent;
-      stroke: var(--black-2);
+      color: var(--green-accent);
    }
 }

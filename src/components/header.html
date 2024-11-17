@@ -1,3 +1,15 @@
+<div class="header-label">
+    <div class="container">
+        <div class="header-label__container">
+            <span class='header-label__text'>безкоштовна доставка від 10000 грн</span>
+            <div class='header-label__language'>
+                <button class='header-label__button' type='button'>EN</button>
+                <button class='header-label__button active' type='button' class='active'>UA</button>
+            </div>
+        </div>
+
+    </div>
+</div>
 <header class="header">
 
     <div class="container">
@@ -49,8 +61,8 @@
 
             <ul class="header__menu">
                 <li class="header__item">
-                    <a class='icon-link' href="#">
-                        <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                    <a class='icon-link active' href="#">
+                        <svg class="icon" width='24' height='24' viewBox="0 0 24 24">
 
                             <use xlink:href="#basket"></use>
                         </svg>
@@ -278,13 +290,15 @@
             <div class="dropdown__products">
                 <div class="dropdown__grid">
                     <div class="product-card">
-                        <a class='icon-link product-card__icon' href="#">
+                        <button type='button' class='icon-link product-card__icon fill' href="#">
 
                             <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
-                                <use href='#like'></use>
+                                <use xlink:href="#like"></use>
                             </svg>
-
-                        </a>
+                            <svg class="icon hidden" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                                <use xlink:href="#like-fill"></use>
+                            </svg>
+                        </button>
 
                         <a href='#' class="product-card__image">
                             <img src="img/products/product-4.png" alt="Shoe image">
@@ -302,7 +316,7 @@
                             <button class="product-card__button">
                                 <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
 
-                                    <use xlink:href="#basket-white"></use>
+                                    <use xlink:href="#basket"></use>
                                 </svg>
                             </button>
 
@@ -310,13 +324,15 @@
 
                     </div>
                     <div class="product-card">
-                        <a class='icon-link product-card__icon' href="#">
+                        <button type='button' class='icon-link product-card__icon fill' href="#">
 
                             <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
-                                <use href='#like'></use>
+                                <use xlink:href="#like"></use>
                             </svg>
-
-                        </a>
+                            <svg class="icon hidden" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                                <use xlink:href="#like-fill"></use>
+                            </svg>
+                        </button>
 
                         <a href='#' class="product-card__image">
                             <img src="img/products/product-4.png" alt="Shoe image">
@@ -334,7 +350,7 @@
                             <button class="product-card__button">
                                 <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
 
-                                    <use xlink:href="#basket-white"></use>
+                                    <use xlink:href="#basket"></use>
                                 </svg>
                             </button>
 
@@ -342,7 +358,7 @@
 
                     </div>
                 </div>
-                <button type='button' class="dropdown__button">Показати більше</button>
+                <a href='#' class="dropdown__button">Показати більше</a>
 
             </div>
 

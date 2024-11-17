@@ -41,6 +41,7 @@
          .search-form__input {
             display: block;
             margin-right: 18px;
+            padding-left: 0;
          }
          .search-form__close {
             display: flex;
@@ -177,6 +178,9 @@
 .icon {
    width: 24px;
    height: 24px;
+   &.hidden {
+      display: none;
+   }
 }
 
 .header-label {

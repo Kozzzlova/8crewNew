@@ -7,4 +7,6 @@ import './searchDropdown';
 import './breadcrumps';
 import './accordion';
 import './popup';
+import './likeButtonsHandler';
+import './characteristicsOptionsHandler';
 import './swiper';

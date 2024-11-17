@@ -107,10 +107,6 @@
       width: 40px;
       height: 40px;
       color: var(--black);
-      svg {
-         width: 24px;
-         height: 24px;
-      }
    }
 
    // .product__info
@@ -279,12 +275,6 @@
       background-color: var(--biege-2);
       transition: all 0.2s ease 0s;
       border-radius: 2px;
-
-      &:hover,
-      &.active {
-         background-color: var(--biege);
-      }
-
       &.size {
          font-size: 12px;
          color: var(--black-2);
@@ -295,6 +285,13 @@
       &.palette {
          gap: 4px;
          padding: 8px 16px;
+         color: var(--black);
+      }
+
+      &:hover,
+      &.active {
+         background-color: var(--biege);
+         color: var(--green-accent);
       }
    }
 
