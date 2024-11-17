@@ -8,10 +8,12 @@ btnLogin.addEventListener('click', (e) => {
    document.documentElement.style.overflow = 'hidden';
 });
 
-closeLogin.addEventListener('click', () => {
-   popup.classList.remove('open');
-   document.documentElement.style.overflow = '';
-});
+if (closeLogin) {
+   closeLogin.addEventListener('click', () => {
+      popup.classList.remove('open');
+      document.documentElement.style.overflow = '';
+   });
+}
 
 popup.addEventListener('click', (event) => {
    if (

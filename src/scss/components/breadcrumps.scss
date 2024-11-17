@@ -1,25 +1,25 @@
-.breadcrupms {
+.breadcrumps {
    // .breadcrupms__list
 
    &__list {
       display: flex;
       align-items: center;
-
       flex-wrap: wrap;
 
-      li + li::before {
-         display: inline-block;
-         content: url('icon/arrow-crump.svg');
-         margin-right: 9px;
-         transform: translateY(15%);
-      }
+      // li + li::before {
+      //    display: inline-block;
+      //    content: '>';
+      //    margin-right: 9px;
+
+      //    color: var(--black-2);
+      // }
    }
 
    // .breadcrupms__item
 
    &__item {
       color: var(--black-2);
-      margin-right: 9px;
+      // margin-right: 9px;
 
       &:last-child {
          color: var(--black);
@@ -27,5 +27,15 @@
             cursor: auto;
          }
       }
+   }
+
+   &__icon {
+      width: 10px;
+      height: 16px;
+      color: var(--black-2);
+      margin: 0 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
    }
 }

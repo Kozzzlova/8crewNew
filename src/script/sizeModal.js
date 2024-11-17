@@ -1,4 +1,4 @@
-const btnSize = document.querySelector('.size-section__button');
+const btnSize = document.querySelector('.size-button');
 const modal = document.querySelector('.modal');
 const modalBody = document.querySelector('.modal__body');
 const close = document.querySelector('.modal__close');
