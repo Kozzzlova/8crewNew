@@ -22,5 +22,6 @@ popup.addEventListener('click', (event) => {
       !btnLogin.contains(event.target)
    ) {
       popup.classList.remove('open');
+      document.documentElement.style.overflow = '';
    }
 });
