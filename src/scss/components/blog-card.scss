@@ -74,12 +74,15 @@
    &__text {
       padding-left: 2px;
       color: var(--black-2);
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 3;
       overflow: hidden;
       text-overflow: ellipsis;
-      height: 52px;
+      display: -moz-box;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      line-clamp: 3;
+      box-orient: vertical;
    }
 
    // .blog-card__link

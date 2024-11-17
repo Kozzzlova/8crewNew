@@ -55,9 +55,8 @@
    grid-template-rows: repeat(5, auto);
    overflow-x: scroll;
    overflow-x: auto; /* Используем auto для активации прокрутки */
-   -webkit-overflow-scrolling: touch;
-   // scrollbar-width: thin;
-   // scrollbar-color: var(--gray) var(--white);
+   scrollbar-width: thin;
+   scrollbar-color: var(--gray) var(--white);
    position: relative;
 
    &__row {
