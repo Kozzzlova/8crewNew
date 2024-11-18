@@ -125,22 +125,7 @@
    &__link {
       align-self: center;
       display: inline-block;
-      padding: 8px 16px;
-      border: 1px solid var(--black-2);
-      border-radius: 4px;
-      font-size: 15px;
-      text-transform: capitalize;
-      font-weight: 600;
-      transition: all 0.2s ease 0s;
-      &:hover {
-         border-color: var(--green-accent);
-      }
    }
-   // .basic-block__collection
-
-   &__collection {
-   }
-
    // .basic-block__blog
 
    &__blog {
@@ -183,6 +168,8 @@
       color: var(--black-2);
    }
 }
+
+// ----------------------------  Main Swiper  --------------------------------------------//
 
 .main-arrow {
    position: absolute;
@@ -240,6 +227,4 @@
       width: 32px;
       height: 32px;
    }
-}
-.main-swiper-pagination-bullet {
 }

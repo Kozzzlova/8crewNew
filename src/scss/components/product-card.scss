@@ -41,7 +41,7 @@
    &__content {
       display: flex;
       justify-content: space-between;
-      gap: 27px;
+      gap: 28px;
       @media (max-width: 992px) {
          gap: 16px;
       }
@@ -52,7 +52,8 @@
    &__info {
       display: flex;
       flex-direction: column;
-      gap: 7px;
+      gap: 8px;
+      width: 100%;
    }
 
    // .product-card__title
@@ -69,7 +70,7 @@
       align-items: flex-end;
       justify-content: space-between;
       gap: 12px;
-      padding-right: 22px;
+
       @media (max-width: 992px) {
          padding-right: 0;
       }

@@ -1,13 +1,13 @@
 import '../scss/index.scss';
 import 'virtual:svg-icons-register';
 import './AOS';
-import './productDropdown';
+import './headerDropdown';
 import './searchMobile';
 import './searchDropdown';
 import './breadcrumps';
 import './accordion';
 import './sizeModal';
-import './popup';
+import './loginPopup';
 import './likeButtonsHandler';
 import './characteristicsOptionsHandler';
 import './swiper';

@@ -5,21 +5,12 @@
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-
-      // li + li::before {
-      //    display: inline-block;
-      //    content: '>';
-      //    margin-right: 9px;
-
-      //    color: var(--black-2);
-      // }
    }
 
    // .breadcrupms__item
 
    &__item {
       color: var(--black-2);
-      // margin-right: 9px;
 
       &:last-child {
          color: var(--black);

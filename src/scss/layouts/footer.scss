@@ -19,11 +19,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
-      // display: flex;
-      // gap: 300px;
-      // @media (max-width: 992px) {
-      //    gap: 150px;
-      // }
+
       @media (max-width: 767px) {
          display: flex;
          flex-direction: column;
@@ -77,20 +73,21 @@
    // .footer__icon
 
    &__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
    }
 
    // .footer__item
 
    &__item {
-      // max-width: 200px;
-      // min-width: 200px;
    }
 
    // .footer__link
 
    &__link {
       color: var(--white);
-
       position: relative;
 
       &::after {
@@ -111,6 +108,4 @@
          }
       }
    }
-}
-.logo {
 }

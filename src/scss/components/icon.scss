@@ -16,3 +16,10 @@
       color: var(--green-accent);
    }
 }
+.icon {
+   width: 24px;
+   height: 24px;
+   &.hidden {
+      display: none;
+   }
+}

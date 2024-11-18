@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
    const iconButtons = document.querySelectorAll('.product-card__icon');
    if (iconButtons.length > 0) {
       iconButtons.forEach((iconButton) => {
-         iconButton.addEventListener('click', () => {
+         iconButton.addEventListener('click', (event) => {
+            event.preventDefault();
             iconButton.classList.toggle('fill');
             const svgs = iconButton.querySelectorAll('svg');
             svgs.forEach((svg) => {

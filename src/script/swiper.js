@@ -1,10 +1,5 @@
-//import './swiper-bundle.min';
-//import { Swiper } from './swiper-bundle.min';
-
 import './swiper-bundle';
-// //import { Swiper } from './swiper-bundle';
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
-// import Swiper from 'swiper';
 
 const collectionSwiper = new Swiper('.collection-swiper', {
    slidesPerView: 'auto',
@@ -19,7 +14,6 @@ const collectionSwiper = new Swiper('.collection-swiper', {
          slidesPerGroup: 3,
          pagination: {
             renderBullet: function (index, className) {
-               // Ограничиваем количество буллетов
                if (index < Math.ceil(this.slides.length / 3)) {
                   return `<span class="${className}"></span>`;
                }
@@ -39,12 +33,12 @@ const seasonSwiper = new Swiper('.season-swiper', {
       prevEl: '.season-swiper-btn-prev',
    },
    scrollbar: {
-      el: '.season-swiper-scrollbar', // Элемент скроллбара
-      draggable: true, // Разрешить перетаскивание скроллбара
-      snapOnRelease: false, // Отключить привязку к слайдам после перетаскивания
+      el: '.season-swiper-scrollbar',
+      draggable: true,
+      snapOnRelease: false,
    },
    mousewheel: {
-      releaseOnEdges: true, // Позволяет прокручивать на границах
+      releaseOnEdges: true,
    },
    breakpoints: {
       767: {
@@ -52,6 +46,7 @@ const seasonSwiper = new Swiper('.season-swiper', {
       },
    },
 });
+
 const arrivalsSwiper = new Swiper('.arrivals-swiper', {
    slidesPerView: 'auto',
 
@@ -60,12 +55,12 @@ const arrivalsSwiper = new Swiper('.arrivals-swiper', {
       prevEl: '.arrivals-swiper-btn-prev',
    },
    scrollbar: {
-      el: '.arrivals-swiper-scrollbar', // Элемент скроллбара
-      draggable: true, // Разрешить перетаскивание скроллбара
-      snapOnRelease: false, // Отключить привязку к слайдам после перетаскивания
+      el: '.arrivals-swiper-scrollbar',
+      draggable: true,
+      snapOnRelease: false,
    },
    mousewheel: {
-      releaseOnEdges: true, // Позволяет прокручивать на границах
+      releaseOnEdges: true,
    },
    breakpoints: {
       767: {
@@ -97,9 +92,7 @@ const swiperProductSmall = new Swiper('.product-swiper-small', {
    },
 });
 
-const swiperBanner = new Swiper('.product-swiper', {
-   // loop: true,
-   //freeMode: true,
+const swiperProduct = new Swiper('.product-swiper', {
    slidesPerView: 'auto',
    spaceBetween: 20,
 
@@ -108,12 +101,12 @@ const swiperBanner = new Swiper('.product-swiper', {
       prevEl: '.product-swiper-button-prev',
    },
 });
-const swiperProduct = new Swiper('.main-swiper', {
+const swiperBanner = new Swiper('.main-swiper', {
    loop: true,
 
-   //    autoplay: {
-   //       delay: 2000,
-   //    },
+   autoplay: {
+      delay: 2000,
+   },
 
    pagination: {
       el: '.main-swiper-pagination',

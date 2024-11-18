@@ -34,3 +34,21 @@
       background-color: var(--green-dark);
    }
 }
+
+.bordered-button {
+   text-transform: capitalize;
+   padding: 8px 16px;
+   font-weight: 600;
+   font-size: 15px;
+   color: var(--black);
+   border-radius: 4px;
+   border: 1px solid var(--black-2);
+   width: max-content;
+   align-self: center;
+   transition: all 0.2s ease 0s;
+
+   &:hover {
+      color: var(--green-accent);
+      border-color: var(--green-accent);
+   }
+}
