@@ -45,8 +45,8 @@
       cursor: pointer;
       display: block;
       @media (max-width: 500px) {
-         width: 16px;
-         height: 16px;
+         width: 20px;
+         height: 20px;
       }
    }
    .swiper-pagination-bullet-active {
@@ -54,8 +54,8 @@
       width: 32px;
       height: 32px;
       @media (max-width: 500px) {
-         width: 20px;
-         height: 20px;
+         width: 24px;
+         height: 24px;
       }
    }
 }
