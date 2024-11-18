@@ -6,27 +6,58 @@ import './swiper-bundle';
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 // import Swiper from 'swiper';
 
-const basicSwiper = new Swiper('.basic-swiper', {
-   // Optional parameters
+const collectionSwiper = new Swiper('.collection-swiper', {});
 
-   loop: true,
+const seasonSwiper = new Swiper('.season-swiper', {
    freeMode: true,
-   slidesPerView: 1,
+   slidesPerView: 'auto',
 
    navigation: {
-      nextEl: '.basic-swiper-btn-next',
-      prevEl: '.basic-swiper-btn-prev',
+      nextEl: '.season-swiper-btn-next',
+      prevEl: '.season-swiper-btn-prev',
+   },
+   scrollbar: {
+      el: '.season-swiper-scrollbar', // Элемент скроллбара
+      draggable: true, // Разрешить перетаскивание скроллбара
+      snapOnRelease: false, // Отключить привязку к слайдам после перетаскивания
+   },
+   mousewheel: {
+      releaseOnEdges: true, // Позволяет прокручивать на границах
+   },
+   breakpoints: {
+      767: {
+         loop: true,
+      },
+   },
+});
+const arrivalsSwiper = new Swiper('.arrivals-swiper', {
+   freeMode: true,
+   slidesPerView: 'auto',
+
+   navigation: {
+      nextEl: '.arrivals-swiper-btn-next',
+      prevEl: '.arrivals-swiper-btn-prev',
+   },
+   scrollbar: {
+      el: '.arrivals-swiper-scrollbar', // Элемент скроллбара
+      draggable: true, // Разрешить перетаскивание скроллбара
+      snapOnRelease: false, // Отключить привязку к слайдам после перетаскивания
+   },
+   mousewheel: {
+      releaseOnEdges: true, // Позволяет прокручивать на границах
+   },
+   breakpoints: {
+      767: {
+         loop: true,
+      },
    },
 });
 
 const swiperProductSmall = new Swiper('.product-swiper-small', {
-   // Optional parameters
-
    loop: true,
    freeMode: true,
    slidesPerView: 'auto',
 
-   // Navigation arrows
    navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -46,22 +77,17 @@ const swiperProductSmall = new Swiper('.product-swiper-small', {
 });
 
 const swiperBanner = new Swiper('.product-swiper', {
-   // Optional parameters
-
    // loop: true,
    freeMode: true,
    slidesPerView: 'auto',
    spaceBetween: 20,
 
-   // Navigation arrows
    navigation: {
       nextEl: '.product-swiper-button-next',
       prevEl: '.product-swiper-button-prev',
    },
 });
 const swiperProduct = new Swiper('.main-swiper', {
-   // Optional parameters
-
    loop: true,
 
    //    autoplay: {

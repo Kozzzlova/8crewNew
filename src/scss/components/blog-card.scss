@@ -11,6 +11,9 @@
       width: 100%;
       padding-bottom: 83%;
       overflow: hidden;
+      @media (max-width: 767px) {
+         padding-bottom: 100%;
+      }
 
       &:hover {
          img {
@@ -58,6 +61,21 @@
       font-size: 16px;
       width: 100%;
       max-width: 290px;
+      max-height: 50px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-clamp: 2;
+      box-orient: vertical;
+      @media (max-width: 500px) {
+         max-height: 68px;
+         -webkit-line-clamp: 3;
+         line-clamp: 3;
+      }
    }
 
    // .blog-card__content
@@ -74,34 +92,15 @@
    &__text {
       padding-left: 2px;
       color: var(--black-2);
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -moz-box;
-      -moz-box-orient: vertical;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      line-clamp: 3;
-      box-orient: vertical;
    }
 
    // .blog-card__link
 
    &__arrow {
       flex-shrink: 0;
-      width: 56px;
-      height: 56px;
-      border: 4px solid var(--white);
-      border-radius: 3px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--white);
-      background-color: var(--green-accent);
-      transition: all 0.2s ease 0s;
 
-      &:hover {
-         background-color: var(--green-dark);
+      @media (max-width: 767px) {
+         display: none;
       }
    }
 }

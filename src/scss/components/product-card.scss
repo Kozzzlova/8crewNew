@@ -95,16 +95,7 @@
 
    &__button {
       align-self: flex-end;
-      padding: 4px;
-      border-radius: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--white);
-      background-color: var(--green-accent);
-      &:hover {
-         background-color: var(--green-dark);
-      }
+
       &:disabled {
          background-color: var(--biege-2);
          color: var(--gray);
@@ -113,14 +104,6 @@
 
       @media (max-width: 767px) {
          display: none;
-      }
-
-      .icon {
-         width: 40px;
-         height: 40px;
-         padding: 8px;
-         border-radius: 3px;
-         transition: all 0.2s ease 0s;
       }
    }
 }
