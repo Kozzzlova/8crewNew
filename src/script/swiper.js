@@ -6,11 +6,33 @@ import './swiper-bundle';
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 // import Swiper from 'swiper';
 
-const collectionSwiper = new Swiper('.collection-swiper', {});
+const collectionSwiper = new Swiper('.collection-swiper', {
+   slidesPerView: 'auto',
+
+   pagination: {
+      el: '.collection-swiper-pagination',
+      dynamicBullets: true,
+      clickable: true,
+   },
+   breakpoints: {
+      767: {
+         slidesPerGroup: 3,
+         pagination: {
+            renderBullet: function (index, className) {
+               // Ограничиваем количество буллетов
+               if (index < Math.ceil(this.slides.length / 3)) {
+                  return `<span class="${className}"></span>`;
+               }
+               return '';
+            },
+         },
+      },
+   },
+});
 
 const seasonSwiper = new Swiper('.season-swiper', {
-   freeMode: true,
    slidesPerView: 'auto',
+   loop: true,
 
    navigation: {
       nextEl: '.season-swiper-btn-next',
@@ -31,7 +53,6 @@ const seasonSwiper = new Swiper('.season-swiper', {
    },
 });
 const arrivalsSwiper = new Swiper('.arrivals-swiper', {
-   freeMode: true,
    slidesPerView: 'auto',
 
    navigation: {
@@ -78,7 +99,7 @@ const swiperProductSmall = new Swiper('.product-swiper-small', {
 
 const swiperBanner = new Swiper('.product-swiper', {
    // loop: true,
-   freeMode: true,
+   //freeMode: true,
    slidesPerView: 'auto',
    spaceBetween: 20,
 

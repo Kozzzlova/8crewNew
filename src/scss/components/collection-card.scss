@@ -1,0 +1,69 @@
+.collection-card {
+   position: relative;
+   display: grid;
+   gap: 20px;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+
+   // .collection-card__arrow
+
+   &__arrow {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+   }
+
+   // .collection-card__label
+
+   &__label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      min-width: 45%;
+      background-color: var(--white);
+      border-radius: 3px;
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+   }
+
+   // .collection-card__title
+
+   &__title {
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--green-accent);
+   }
+
+   // .collection-card__amount
+
+   &__amount {
+      color: var(--black-2);
+      font-size: 12px;
+   }
+
+   // .collection-card__small-img
+
+   &__small-img {
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   // .collection-card__big-img
+
+   &__big-img {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+}
