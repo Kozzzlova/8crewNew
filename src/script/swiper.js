@@ -79,17 +79,20 @@ document.addEventListener('DOMContentLoaded', () => {
    const swiperContainer = document.querySelector(
       '.product-swiper-wrapper-small'
    );
+   if (swiperContainer) {
+      swiperContainer.addEventListener('click', (event) => {
+         const clickedSlide = event.target.closest(
+            '.product-swiper-slide-small'
+         );
 
-   swiperContainer.addEventListener('click', (event) => {
-      const clickedSlide = event.target.closest('.product-swiper-slide-small');
-
-      if (clickedSlide) {
-         swiperContainer
-            .querySelectorAll('.product-swiper-slide-small')
-            .forEach((slide) => {
-               slide.classList.remove('active');
-            });
-         clickedSlide.classList.add('active');
-      }
-   });
+         if (clickedSlide) {
+            swiperContainer
+               .querySelectorAll('.product-swiper-slide-small')
+               .forEach((slide) => {
+                  slide.classList.remove('active');
+               });
+            clickedSlide.classList.add('active');
+         }
+      });
+   }
 });

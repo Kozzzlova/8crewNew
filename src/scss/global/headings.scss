@@ -2,6 +2,14 @@
    font-size: 56px;
    line-height: 1.3;
    font-family: var(--font-title);
+   font-size: clamp(28px, 4vw + 14px, 56px);
+   overflow-wrap: break-word;
+   @media (max-width: 992px) {
+      font-size: 36px;
+   }
+   @media (max-width: 500px) {
+      font-size: 28px;
+   }
 }
 
 .heading-3 {
