@@ -7,9 +7,9 @@
     <title>Product Page</title>
 
   <script type="module" crossorigin src="/8crewNew/assets/vendor-BEQq00Ln.js"></script>
-  <script type="module" crossorigin src="/8crewNew/assets/index-DxMkflHo.js"></script>
+  <script type="module" crossorigin src="/8crewNew/assets/index-Cbf2jY6u.js"></script>
+  <link rel="stylesheet" crossorigin href="/8crewNew/assets/index-wYpuPQQt.css">
   <link rel="stylesheet" crossorigin href="/8crewNew/assets/vendor-DvB2Xm2x.css">
-  <link rel="stylesheet" crossorigin href="/8crewNew/assets/index-CfXDCZvf.css">
 </head>
 
 <body>
@@ -493,14 +493,14 @@
                                     <!-- Additional required wrapper -->
                                     <div class="swiper-wrapper product-swiper-wrapper-small">
                                         <!-- Slides -->
-                                        <div class="swiper-slide product-swiper-slide-small active"><img src="img/slider/slider-2.png" alt="Product image">
+                                        <div class="swiper-slide product-swiper-slide-small active"><img src="img/products/slider-2.png" alt="Product image">
                                         </div>
-                                        <div class="swiper-slide product-swiper-slide-small"><img src="img/slider/slider-2.png" alt="Product image"></div>
+                                        <div class="swiper-slide product-swiper-slide-small"><img src="img/products/slider-2.png" alt="Product image"></div>
 
-                                        <div class="swiper-slide product-swiper-slide-small"><img src="img/slider/slider-3.png" alt="Product image"></div>
-                                        <div class="swiper-slide product-swiper-slide-small"><img src="img/slider/slider-1.png" alt="Product image"></div>
-                                        <div class="swiper-slide product-swiper-slide-small"><img src="img/slider/slider-2.png" alt="Product image"></div>
-                                        <div class="swiper-slide product-swiper-slide-small"><img src="img/slider/slider-3.png" alt="Product image"></div>
+                                        <div class="swiper-slide product-swiper-slide-small"><img src="img/products/slider-3.png" alt="Product image"></div>
+                                        <div class="swiper-slide product-swiper-slide-small"><img src="img/products/slider-1.png" alt="Product image"></div>
+                                        <div class="swiper-slide product-swiper-slide-small"><img src="img/products/slider-2.png" alt="Product image"></div>
+                                        <div class="swiper-slide product-swiper-slide-small"><img src="img/products/slider-3.png" alt="Product image"></div>
 
                                     </div>
 
@@ -593,9 +593,9 @@
                 <section data-aos="fade-up" class="recommended">
                     <h3 class="recommended__title heading-3">Вам може сподобатись</h3>
 
-                    <ul class="recommended__grid ">
-                        <li class="product-card">
-                            <button type='button' class='icon-link product-card__icon fill' href="#">
+                    <div class="recommended__grid ">
+                        <a href='#' class="product-card">
+                            <button type='button' class='icon-link product-card__icon fill'>
 
                                 <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
                                     <use xlink:href="#like"></use>
@@ -605,9 +605,9 @@
                                 </svg>
                             </button>
 
-                            <a href='#' class="product-card__image">
+                            <div class="product-card__image">
                                 <img src="img/products/product-2.png" alt="Shoe image">
-                            </a>
+                            </div>
                             <div class="product-card__content">
                                 <div class="product-card__info">
                                     <h5 class="product-card__title">THERE Skateboards x Nike Dunk Low SB 'Ultra Humanized'</h5>
@@ -627,9 +627,9 @@
 
                             </div>
 
-                        </li>
-                        <li class="product-card">
-                            <button type='button' class='icon-link product-card__icon fill' href="#">
+                        </a>
+                        <a href='#' class="product-card">
+                            <button type='button' class='icon-link product-card__icon fill'>
 
                                 <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
                                     <use xlink:href="#like"></use>
@@ -639,9 +639,9 @@
                                 </svg>
                             </button>
 
-                            <a href='#' class="product-card__image">
+                            <div class="product-card__image">
                                 <img src="img/products/product-1.png" alt="Shoe image">
-                            </a>
+                            </div>
                             <div class="product-card__content">
                                 <div class="product-card__info">
                                     <h5 class="product-card__title">THERE Skateboards x Nike Dunk Low SB 'Ultra Humanized'</h5>
@@ -661,9 +661,9 @@
 
                             </div>
 
-                        </li>
-                        <li class="product-card">
-                            <button type='button' class='icon-link product-card__icon fill' href="#">
+                        </a>
+                        <a href='#' class="product-card">
+                            <button type='button' class='icon-link product-card__icon fill'>
 
                                 <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
                                     <use xlink:href="#like"></use>
@@ -673,9 +673,9 @@
                                 </svg>
                             </button>
 
-                            <a href='#' class="product-card__image">
+                            <div class="product-card__image">
                                 <img src="img/products/product-3.png" alt="Shoe image">
-                            </a>
+                            </div>
                             <div class="product-card__content">
                                 <div class="product-card__info">
                                     <h5 class="product-card__title">THERE Skateboards x Nike Dunk Low SB 'Ultra Humanized'</h5>
@@ -695,10 +695,10 @@
 
                             </div>
 
-                        </li>
+                        </a>
 
-                    </ul>
-                    <a type='button' href='#' class="recommended__link">Показати більше</a>
+                    </div>
+                    <a type='button' href='#' class="bordered-button">Показати більше</a>
 
 
 
@@ -785,17 +785,23 @@
             <ul class="footer__contacts">
                <li class="footer__contact">
                   <a class='footer__icon' href="#">
-                     <img src="icon/instagam.svg" alt="Instagram link">
+                     <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                        <use xlink:href="#instagram"></use>
+                     </svg>
                   </a>
                </li>
                <li class="footer__contact">
                   <a class='footer__icon' href="#">
-                     <img src="icon/telegram.svg" alt="Telegram link">
+                     <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                        <use xlink:href="#telegram"></use>
+                     </svg>
                   </a>
                </li>
                <li class="footer__contact">
                   <a class='footer__icon' href="#">
-                     <img src="icon/phone.svg" alt="Phone link">
+                     <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                        <use xlink:href="#phone"></use>
+                     </svg>
                   </a>
                </li>
             </ul>
