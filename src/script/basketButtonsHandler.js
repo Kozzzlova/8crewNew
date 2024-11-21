@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
       basketButtons.forEach((basketButton) => {
          basketButton.addEventListener('click', (event) => {
             event.preventDefault();
-            console.log('Click');
          });
       });
    }
