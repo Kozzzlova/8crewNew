@@ -13,8 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
       if (searchInput.value.trim() !== '') {
          positionDropdown();
          searchFormBody.classList.add('active');
+         if (window.innerWidth < 768) {
+            document.documentElement.style.overflow = 'hidden';
+         }
       } else {
          searchFormBody.classList.remove('active');
+         document.documentElement.style.overflow = '';
       }
    });
 
@@ -25,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ) {
          searchFormBody.classList.remove('active');
          searchInput.value = '';
+         document.documentElement.style.overflow = '';
       }
    });
 });

@@ -38,11 +38,15 @@ const seasonSwiper = new Swiper('.season-swiper', {
       snapOnRelease: false,
    },
    mousewheel: {
+      enabled: true, // По умолчанию включено
       releaseOnEdges: true,
    },
    breakpoints: {
       767: {
          loop: true,
+         mousewheel: {
+            enabled: false, // Отключаем на экранах шире 767px
+         },
       },
    },
 });
@@ -60,11 +64,15 @@ const arrivalsSwiper = new Swiper('.arrivals-swiper', {
       snapOnRelease: false,
    },
    mousewheel: {
+      enabled: true, // По умолчанию включено
       releaseOnEdges: true,
    },
    breakpoints: {
       767: {
          loop: true,
+         mousewheel: {
+            enabled: false, // Отключаем на экранах шире 767px
+         },
       },
    },
 });

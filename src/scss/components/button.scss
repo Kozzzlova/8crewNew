@@ -33,6 +33,9 @@
    &:hover {
       background-color: var(--green-dark);
    }
+   &:focus {
+      color: var(--white);
+   }
 }
 
 .bordered-button {

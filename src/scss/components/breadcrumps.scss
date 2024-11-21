@@ -5,6 +5,9 @@
       display: flex;
       align-items: center;
       flex-wrap: wrap;
+      @media (max-width: 767px) {
+         padding-top: 12px;
+      }
    }
 
    // .breadcrupms__item

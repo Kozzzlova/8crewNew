@@ -54,36 +54,36 @@
                     </div>
                     <section class='catalog__content'>
                         <div class="catalog__options">
-                            <button class="catalog__filter-btn">
+                            <button type='button' class="catalog__filter-btn">
                                 <img src="icon/options.svg" alt="Options icon">
                                 <span>Фільтри</span>
                             </button>
                             <div class="catalog__filter">
                                 <div class="select">
-                                    <button class="select__button" onclick="toggleDropdown()">
-                                        <span>Розмір</span> <img src="icon/arrow-black.svg" alt="Arrow">
+                                    <button type='button' class="select__button">
+                                        <span>Розмір</span> <img src=" icon/arrow-black.svg" alt="Arrow">
                                     </button>
 
                                 </div>
                                 <div class='select'>
-                                    <button class="select__button" onclick="toggleDropdown()">
+                                    <button type='button' class="select__button">
                                         <span>Колір</span> <img src="icon/arrow-black.svg" alt="Arrow">
                                     </button>
                                 </div>
                                 <div class='select'>
-                                    <button class="select__button" onclick="toggleDropdown()">
+                                    <button class="select__button">
                                         <span>Колекція</span> <img src="icon/arrow-black.svg" alt="Arrow">
                                     </button>
                                 </div>
                                 <div class='select'>
-                                    <button class="select__button" onclick="toggleDropdown()">
+                                    <button type='button' class="select__button">
                                         <span>Ціна</span> <img src="icon/arrow-black.svg" alt="Arrow">
                                     </button>
                                 </div>
                             </div>
                             <div class="catalog__sort">
                                 <div class='select'>
-                                    <button class="select__button">
+                                    <button type='button' class="select__button">
                                         <span>Сортувати за</span> <img src="icon/arrow-black.svg" alt="Arrow">
                                     </button>
                                 </div>
@@ -114,7 +114,7 @@
                                         </div>
 
                                     </div>
-                                    <button disabled class="product-card__button button-small">
+                                    <button disabled type='button' class="product-card__button button-small">
                                         <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
                                             <use xlink:href="#basket"></use>
                                         </svg>
@@ -146,7 +146,7 @@
                                         </div>
 
                                     </div>
-                                    <button class="product-card__button button-small">
+                                    <button type='button' class="product-card__button button-small">
                                         <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
                                             <use xlink:href="#basket"></use>
                                         </svg>
@@ -178,7 +178,7 @@
                                         </div>
 
                                     </div>
-                                    <button class="product-card__button button-small">
+                                    <button type='button' class="product-card__button button-small">
                                         <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
                                             <use xlink:href="#basket"></use>
                                         </svg>
@@ -210,7 +210,7 @@
                                         </div>
 
                                     </div>
-                                    <button class="product-card__button button-small">
+                                    <button type='button' class="product-card__button button-small">
                                         <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
                                             <use xlink:href="#basket"></use>
                                         </svg>
@@ -242,7 +242,7 @@
                                         </div>
 
                                     </div>
-                                    <button class="product-card__button button-small">
+                                    <button type='button' class="product-card__button button-small">
                                         <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
                                             <use xlink:href="#basket"></use>
                                         </svg>
@@ -274,7 +274,7 @@
                                         </div>
 
                                     </div>
-                                    <button class="product-card__button button-small">
+                                    <button type='button' class="product-card__button button-small">
                                         <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
                                             <use xlink:href="#basket"></use>
                                         </svg>
@@ -306,7 +306,7 @@
                                         </div>
 
                                     </div>
-                                    <button class="product-card__button button-small">
+                                    <button type='button' class="product-card__button button-small">
                                         <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill='none'>
                                             <use xlink:href="#basket"></use>
                                         </svg>
@@ -317,40 +317,28 @@
 
 
                         </section>
-                        <ul class="catalog__pagination pagination">
-                            <li class="pagination__item active">
-                                <a href="#">1</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="#">2</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="#">3</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="#">4</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="#">5</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="#">6</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="#">7</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="#">8</a>
-                            </li>
-                            <li class="pagination__item dots">
-                                <a href="#">...</a>
-                            </li>
+                        <div class="catalog__pagination pagination">
+                            <a href="#" class="pagination__item active">1</a>
 
-                            <li class="pagination__item">
-                                <a href="#">99</a>
-                            </li>
+                            <a href="#" class="pagination__item">2</a>
 
-                        </ul>
+                            <a href="#" class="pagination__item">3</a>
+
+                            <a href="#" class="pagination__item">4</a>
+
+                            <a href="#" class="pagination__item">5</a>
+
+                            <a href="#" class="pagination__item">6</a>
+
+                            <a href="#" class="pagination__item">7</a>
+
+                            <a href="#" class="pagination__item">8</a>
+
+                            <a href="#" class="pagination__item dots">...</a>
+
+                            <a href="#" class="pagination__item">99</a>
+
+                        </div>
                     </section>
                 </section>
             </div>
