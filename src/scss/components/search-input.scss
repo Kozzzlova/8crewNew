@@ -2,6 +2,10 @@
    position: relative;
    max-width: 320px;
    width: 100%;
+   @media (max-width: 767px) {
+      display: flex;
+      width: 100%;
+   }
 
    &__wrapper {
       position: relative;

@@ -2,10 +2,17 @@ document.addEventListener('DOMContentLoaded', () => {
    const searchInput = document.querySelector('.search-form__input');
    const searchFormBody = document.querySelector('.search-form__body');
 
+   function getScrollbarWidth() {
+      return window.innerWidth - document.documentElement.clientWidth;
+   }
+
    function positionDropdown() {
       if (window.innerWidth > 767) {
+         const scrollbarWidth = getScrollbarWidth();
          const rect = searchInput.getBoundingClientRect();
-         searchFormBody.style.right = `${window.innerWidth - rect.right}px`;
+         searchFormBody.style.right = `${
+            window.innerWidth - rect.right - scrollbarWidth
+         }px`;
       }
    }
 
