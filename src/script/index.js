@@ -9,5 +9,6 @@ import './accordion';
 import './sizeModal';
 import './loginPopup';
 import './likeButtonsHandler';
+import './basketButtonsHandler';
 import './characteristicsOptionsHandler';
 import './swiper';
