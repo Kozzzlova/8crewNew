@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
   <script type="module" crossorigin src="/8crewNew/assets/vendor-BEQq00Ln.js"></script>
-  <script type="module" crossorigin src="/8crewNew/assets/index-BdOi3BVp.js"></script>
-  <link rel="stylesheet" crossorigin href="/8crewNew/assets/index-_7oyv3kP.css">
+  <script type="module" crossorigin src="/8crewNew/assets/index-BL0RxZAC.js"></script>
+  <link rel="stylesheet" crossorigin href="/8crewNew/assets/index-D-DqBsRK.css">
   <link rel="stylesheet" crossorigin href="/8crewNew/assets/vendor-DvB2Xm2x.css">
 </head>
 
@@ -64,30 +64,24 @@
 
             </div>
 
-            <ul class="header__menu">
-                <li class="header__item">
-                    <a class='icon-link active' href="#">
-                        <svg class="icon" width='24' height='24' viewBox="0 0 24 24">
+            <div class="header__menu">
+                <a class='active' href="#">
+                    <svg class="icon" width='24' height='24' viewBox="0 0 24 24">
 
-                            <use xlink:href="#basket"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="header__item ">
-                    <a class='icon-link' href="./favoritePage.html">
-                        <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
-                            <use xlink:href="#like"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="header__item ">
-                    <a class='icon-link header__login' href="#">
-                        <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
-                            <use xlink:href="#person"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+                        <use xlink:href="#basket"></use>
+                    </svg>
+                </a>
+                <a href="./favoritePage.html">
+                    <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                        <use xlink:href="#like"></use>
+                    </svg>
+                </a>
+                <a id='header-login' href="#">
+                    <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                        <use xlink:href="#person"></use>
+                    </svg>
+                </a>
+            </div>
             <nav class="header__nav-mobile">
                 <a href="#">Головна</a>
                 <a class='dropdown-mobile-handler' href="#">Товари</a>
@@ -435,68 +429,59 @@
         <footer class="footer">
    <div class="container">
       <div class="footer__container">
-         <div class="footer__column">
+         <div class="footer__column ">
             <a href='./index.html' class="logo">
                <img src="img/logo/logo.svg" alt="Logo">
             </a>
-            <ul class="footer__contacts">
-               <li class="footer__contact">
-                  <a class='footer__icon' href="#">
-                     <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
-                        <use xlink:href="#instagram"></use>
-                     </svg>
-                  </a>
-               </li>
-               <li class="footer__contact">
-                  <a class='footer__icon' href="#">
-                     <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
-                        <use xlink:href="#telegram"></use>
-                     </svg>
-                  </a>
-               </li>
-               <li class="footer__contact">
-                  <a class='footer__icon' href="#">
-                     <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
-                        <use xlink:href="#phone"></use>
-                     </svg>
-                  </a>
-               </li>
-            </ul>
+            <div class="footer__contacts">
+
+               <a href="#">
+                  <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                     <use xlink:href="#instagram"></use>
+                  </svg>
+               </a>
+               <a href="#">
+                  <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                     <use xlink:href="#telegram"></use>
+                  </svg>
+               </a>
+               <a href="#">
+                  <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                     <use xlink:href="#phone"></use>
+                  </svg>
+               </a>
+
+            </div>
          </div>
-         <ul class="footer__column">
-            <li class="footer__item">
-               <a href='./aboutPage.html' class="footer__link">
-                  Про нас
-               </a>
-            </li>
-            <li class="footer__item">
-               <a href='#' class="footer__link">
-                  Акаунт
-               </a>
-            </li>
-         </ul>
-         <ul class="footer__column">
-            <li class="footer__item">
-               <a href='./deliveryPage.html' class="footer__link">
-                  Оплата та доставка
-               </a>
-            </li>
-            <li class="footer__item">
-               <a href='./cancelPage.html' class="footer__link">
-                  Повернення
-               </a>
-            </li>
-            <li class="footer__item">
-               <a href='./paymentInfoPage.html' class="footer__link">
-                  Оформлення та скасування
-               </a>
-            </li>
-            <li class="footer__item">
-               <a href='./sizePage.html' class="footer__link">
-                  Як обрати правильний розмір?
-               </a>
-            </li>
-         </ul>
+         <div class="footer__list">
+            <a href='./aboutPage.html'>
+               Про нас
+            </a>
+
+            <a href='#'>
+               Акаунт
+            </a>
+
+         </div>
+         <div class="footer__list">
+            <a href='./deliveryPage.html'>
+               Оплата та доставка
+            </a>
+
+            <a href='./cancelPage.html'>
+               Повернення
+            </a>
+
+
+            <a href='./paymentInfoPage.html'>
+               Оформлення та скасування
+            </a>
+
+            <a href='./sizePage.html'>
+               Як обрати правильний розмір?
+            </a>
+
+         </div>
       </div>
    </div>
    <a href='https://donbitt.com/' class="footer__madeby">
