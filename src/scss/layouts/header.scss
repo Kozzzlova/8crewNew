@@ -173,14 +173,25 @@
       align-items: center;
       justify-content: flex-end;
       gap: 8px;
-   }
 
-   // .header__item
-
-   &__item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      a {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 8px;
+         background-color: var(--biege-2);
+         border-radius: 2px;
+         transition: all 0.2s ease 0s;
+         color: var(--black);
+         &.active {
+            background-color: var(--biege);
+            color: var(--green-accent);
+         }
+         &:hover {
+            background-color: var(--biege);
+            color: var(--green-accent);
+         }
+      }
    }
 }
 
@@ -202,10 +213,6 @@
          justify-content: space-between;
          gap: 12px;
       }
-   }
-   // .header__text
-
-   &__text {
    }
 
    // .header__language

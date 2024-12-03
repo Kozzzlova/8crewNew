@@ -1,4 +1,4 @@
-const btnLogin = document.querySelector('.header__login');
+const btnLogin = document.querySelector('#header-login');
 const popup = document.querySelector('.popup');
 const popupBody = document.querySelector('.popup__body');
 const closeLogin = document.querySelector('.popup__close');
