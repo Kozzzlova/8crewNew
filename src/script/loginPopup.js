@@ -5,13 +5,13 @@ const closeLogin = document.querySelector('.popup__close');
 btnLogin.addEventListener('click', (e) => {
    e.preventDefault();
    popup.classList.add('open');
-   document.documentElement.style.overflow = 'hidden';
+   document.body.classList.add('fixed');
 });
 
 if (closeLogin) {
    closeLogin.addEventListener('click', () => {
       popup.classList.remove('open');
-      document.documentElement.style.overflow = '';
+      document.body.classList.remove('fixed');
    });
 }
 
@@ -22,6 +22,6 @@ popup.addEventListener('click', (event) => {
       !btnLogin.contains(event.target)
    ) {
       popup.classList.remove('open');
-      document.documentElement.style.overflow = '';
+      document.body.classList.remove('fixed');
    }
 });

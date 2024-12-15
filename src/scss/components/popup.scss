@@ -1,0 +1,38 @@
+.popup {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   z-index: 9999;
+   background-color: transparent;
+   display: none;
+   align-items: flex-start;
+   justify-content: center;
+   padding: 130px 15px 15px 15px;
+   @media (max-width: 767px) {
+      padding: 0;
+   }
+
+   &.open {
+      display: flex;
+   }
+   &__close {
+      color: var(--black-2);
+      padding: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 32px;
+      right: 32px;
+      position: absolute;
+      transition: all 0.2s ease 0s;
+      &:hover {
+         color: var(--black);
+      }
+      @media (max-width: 767px) {
+         top: 24px;
+         right: 16px;
+      }
+   }
+}

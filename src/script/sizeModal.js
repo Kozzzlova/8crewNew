@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
    if (btnSize && modal && modalBody && close) {
       btnSize.addEventListener('click', () => {
          modal.classList.add('open');
-         document.documentElement.style.overflow = 'hidden';
+         document.body.classList.add('fixed');
       });
 
       close.addEventListener('click', () => {
          modal.classList.remove('open');
-         document.documentElement.style.overflow = '';
+         document.body.classList.remove('fixed');
       });
 
       modal.addEventListener('click', (event) => {
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             !btnSize.contains(event.target)
          ) {
             modal.classList.remove('open');
-            document.documentElement.style.overflow = '';
+            document.body.classList.remove('fixed');
          }
       });
    }

@@ -55,3 +55,25 @@
       border-color: var(--green-accent);
    }
 }
+
+.main-button {
+   max-width: 373px;
+   width: 100%;
+   color: var(--white);
+   background-color: var(--green-accent);
+   font-size: 15px;
+   font-weight: 600;
+   padding: 16px;
+   border-radius: 3px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &:hover {
+      background-color: var(--green-dark);
+   }
+
+   &:disabled {
+      background-color: var(--gray);
+   }
+}
