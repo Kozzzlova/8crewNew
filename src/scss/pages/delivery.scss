@@ -95,7 +95,6 @@
    flex-direction: column;
    align-items: stretch;
    border-radius: 3px;
-
    background-color: var(--biege-2);
    // .tab-wrapper__head
 
@@ -147,6 +146,7 @@
       transition: max-height 0.3s ease, opacity 0.4s ease;
       max-height: 500px;
       opacity: 1;
+      cursor: pointer;
    }
 
    &__paragraph {

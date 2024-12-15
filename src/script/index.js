@@ -8,6 +8,7 @@ import './breadcrumps';
 import './accordion';
 import './sizeModal';
 import './loginPopup';
+import './ordersTabs';
 import './likeButtonsHandler';
 import './basketButtonsHandler';
 import './characteristicsOptionsHandler';

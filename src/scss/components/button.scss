@@ -79,3 +79,21 @@
       background-color: var(--gray);
    }
 }
+
+.delivery-details {
+   display: flex;
+   flex-direction: column;
+   gap: 14px;
+   flex-wrap: wrap;
+
+   &__field {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+   }
+
+   &__title {
+      color: var(--black-2);
+      text-transform: uppercase;
+   }
+}
