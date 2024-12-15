@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in</title>
+    <title>Profile</title>
   <script type="module" crossorigin src="/8crewNew/assets/vendor-BEQq00Ln.js"></script>
   <script type="module" crossorigin src="/8crewNew/assets/index-CLvA6JOR.js"></script>
   <link rel="stylesheet" crossorigin href="/8crewNew/assets/index-FsXEdtsX.css">
@@ -13,7 +13,6 @@
 
 <body>
     <div class="wrapper">
-
         <div class="header-label">
     <div class="container">
         <div class="header-label__container">
@@ -382,36 +381,59 @@
 </header>
         <main class="main">
             <div class="container">
+                <section class="main-section">
+                    <h3 class="heading-3">Добрий день, Андрію</h3>
+                    <form class="data-form">
 
-            </div>
-
-        </main>
-        <div class="popup open">
-
-            <div class="popup__body">
-                <button type='button' class="popup__close">
-                    <svg class="icon">
-                        <use href="#close-circle"></use>
-                    </svg>
-                </button>
-                <div class="popup__title">
-                    <div class="heading-4">Введіть свій Email</div>
-                    <div class="popup-subtitle">Ми вишлемо на вашу пошту код для відновлення</div>
-                </div>
-                <form class="login-form">
-                    <div class="login-form__fields">
-                        <div class="login-form__field">
-                            <div class="login-form__label">Email</div>
-                            <input type="email" class="login-form__input" placeholder='Ваша адреса пошти'>
+                        <fieldset class="data-form__fieldset">
+                            <legend class="data-form__title">Особисті дані</legend>
+                            <div class="data-form__field">
+                                <label class="data-form__label" for="first-name">Імʼя</label>
+                                <input class="data-form__input" placeholder='Олександр' type="text" id="first-name" name="first_name" required>
+                            </div>
+                            <div class="data-form__field">
+                                <label class="data-form__label" for="last-name">Прізвище</label>
+                                <input class="data-form__input" placeholder='Олександр' type="text" id="last-name" name="last_name" required>
+                            </div>
+                            <div class="data-form__field">
+                                <label class="data-form__label" for="email">Email</label>
+                                <input class="data-form__input" placeholder='Cartoonbelly@gmail.com' type="email" id="email" name="email" required>
+                            </div>
+                            <div class="data-form__field">
+                                <label class="data-form__label" for="tel">Номер телефону</label>
+                                <input class="data-form__input" placeholder='099 595 54 55' type="tel" id="tel" name="tel" required>
+                            </div>
+                        </fieldset>
+                        <fieldset class="data-form__fieldset">
+                            <legend class="data-form__title">Адреса доставки</legend>
+                            <div class="data-form__field">
+                                <label class="data-form__label" class="data-form__label" for="city">Місто</label>
+                                <input class="data-form__input" placeholder='Київ' type="text" id="city" name="city" required>
+                                <button class='data-form__icon' type='button'>
+                                    <svg>
+                                        <use href="#search"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="data-form__field">
+                                <label class="data-form__label" for="department">Відділення нової пошти</label>
+                                <input class="data-form__input" placeholder='Голосіївська 3' type="text" id="department" name="department" required>
+                                <button class='data-form__icon' type='button'>
+                                    <svg>
+                                        <use href="#search"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <button type='button' class='button'>Додати адресу +</button>
+                        </fieldset>
+                        <div class="data-form__buttons open">
+                            <button type='reset' class='button'>Скасувати зміни</button>
+                            <button disabled type='submit' class='main-button'>Застосувати зміни</button>
                         </div>
-
-                    </div>
-                    <button type='button' class="login-form__button">Сбросити пароль</button>
-
-                </form>
-
+                    </form>
+                </section>
             </div>
-        </div>
+        </main>
         <footer class="footer">
    <div class="container">
       <div class="footer__container">
