@@ -26,3 +26,14 @@
       display: none;
    }
 }
+
+.tab-arrow {
+   width: 16px;
+   height: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex: 0 0 16px;
+   transform: rotate(180deg);
+   transition: all 0.2s ease 0s;
+}

@@ -9,6 +9,7 @@ import './accordion';
 import './sizeModal';
 import './loginPopup';
 import './ordersTabs';
+import './ordersAccordion';
 import './cancelSelect';
 import './likeButtonsHandler';
 import './basketButtonsHandler';

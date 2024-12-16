@@ -29,6 +29,10 @@ body {
    width: 100%;
    position: relative;
    overflow: hidden;
+
+   &:has(.order-accordion) {
+      overflow: visible;
+   }
 }
 
 .fixed {
