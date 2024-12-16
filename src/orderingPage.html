@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering</title>
+    <script type="module" src="./script/index.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <load src="./components/header.html" />
+        <main class="main">
+            <div class="container">
+                <section class="main-section">
+                    <h1 class="heading-3">Оформлення замовлення</h1>
+                    <div class="ordering">
+                        <div class="ordering__column">
+                            <h2 class="ordering__title">
+                                Особисті дані
+                            </h2>
+                            <form class="ordering__form">
+                                <div class="ordering__field">
+                                    <label for="first-name" class="ordering__label">Імʼя *</label>
+                                    <input required type="text" class='ordering__input' id='first-name' placeholder='Олександр'>
+                                </div>
+                                <div class="ordering__field">
+                                    <label for="last-name" class="ordering__label">Прізвище *</label>
+                                    <input required type="text" class='ordering__input' id='last-name' placeholder='Олександр'>
+                                </div>
+                                <div class="ordering__field">
+                                    <label for="tel" class="ordering__label">Номер телефону *</label>
+                                    <input required type="tel" class='ordering__input' id='tel' placeholder='099 595 54 55'>
+                                </div>
+                                <div class="ordering__field">
+                                    <label for="email" class="ordering__label">Email</label>
+                                    <input type="email" class='ordering__input' id='email' placeholder='Cartoonbelly@gmail.com'>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="ordering__column">
+                            <div class="ordering__title">Доставка
+                                <div class="ordering__icon">
+                                    <svg class="icon">
+                                        <use href="#info"></use>
+                                    </svg>
+                                    <ol class="ordering__hint">
+                                        <li>Для товарів під замовлення 10-20 робочих днів</li>
+                                        <li>Для товарів в наявності 1-3 дні</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="ordering__column">
+                            <div class="ordering__title">Оплата</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <load src="./components/footer.html" />
+    </div>
+</body>
+
+</html>
