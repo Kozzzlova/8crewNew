@@ -47,9 +47,8 @@
    border-radius: 4px;
    border: 1px solid var(--black-2);
    width: max-content;
-   align-self: center;
    transition: all 0.2s ease 0s;
-
+   height: max-content;
    &:hover {
       color: var(--green-accent);
       border-color: var(--green-accent);
@@ -77,23 +76,5 @@
 
    &:disabled {
       background-color: var(--gray);
-   }
-}
-
-.delivery-details {
-   display: flex;
-   flex-direction: column;
-   gap: 14px;
-   flex-wrap: wrap;
-
-   &__field {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-   }
-
-   &__title {
-      color: var(--black-2);
-      text-transform: uppercase;
    }
 }

@@ -1,32 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
-   const tabButtons = document.querySelectorAll('.order-tabs__button');
-   const tabContents = document.querySelectorAll('.order-tabs__content');
-   if (tabButtons.length === 0) {
-      return;
-   }
-   tabButtons.forEach((button) => {
-      button.addEventListener('click', () => {
-         tabButtons.forEach((btn) => btn.classList.remove('active'));
-         tabContents.forEach((content) => content.classList.remove('active'));
+   const orders = document.querySelectorAll('.order');
 
-         button.classList.add('active');
-         const tabId = button.getAttribute('data-tab');
-         document.getElementById(tabId).classList.add('active');
-      });
-   });
-});
+   orders.forEach((order) => {
+      const tabButtons = order.querySelectorAll('.order-tabs__button');
+      const tabContents = order.querySelectorAll('.order-tabs__content');
 
-document.addEventListener('DOMContentLoaded', () => {
-   const orderHeaders = document.querySelectorAll('.order__header');
-
-   orderHeaders.forEach((header) => {
-      header.addEventListener('click', () => {
-         // Найти родительский элемент с классом .order
-         const order = header.closest('.order');
-
-         if (order) {
+      if (tabButtons.length > 0) {
+         tabButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+               tabButtons.forEach((btn) => btn.classList.remove('active'));
+               tabContents.forEach((content) =>
+                  content.classList.remove('active')
+               );
+               button.classList.add('active');
+               const tabId = button.getAttribute('data-tab');
+               const activeContent = order.querySelector(`#${tabId}`);
+               if (activeContent) {
+                  activeContent.classList.add('active');
+               }
+            });
+         });
+      }
+      const orderHeader = order.querySelector('.order__header');
+      if (orderHeader) {
+         orderHeader.addEventListener('click', () => {
             order.classList.toggle('hidden');
-         }
-      });
+         });
+      }
    });
 });
