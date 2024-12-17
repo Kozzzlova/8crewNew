@@ -2,18 +2,17 @@ document.addEventListener('DOMContentLoaded', () => {
    const orders = document.querySelectorAll('.order');
 
    orders.forEach((order) => {
-      const selects = order.querySelectorAll('.cancel-select');
+      const selects = order.querySelectorAll('.select');
       selects.forEach((select) => {
-         const selected = select.querySelector('.cancel-select__selected');
-         const options = select.querySelectorAll('.cancel-select__option');
-         const text = select.querySelector('.cancel-select__text');
+         const selected = select.querySelector('.select__selected');
+         const options = select.querySelectorAll('.select__option');
+         const text = select.querySelector('.select__text');
          selected.addEventListener('click', () => {
             select.classList.toggle('open');
          });
          options.forEach((option) => {
             option.addEventListener('click', () => {
                text.textContent = option.textContent;
-               text.dataset.value = option.dataset.value;
                select.classList.remove('open');
             });
          });

@@ -5,6 +5,7 @@ input[type='radio'] {
    display: inline-block;
    background-color: var(--biege-2);
    cursor: pointer;
+   flex: 0 0 24px;
 }
 input[type='radio']:checked {
    width: 16px;
@@ -12,6 +13,7 @@ input[type='radio']:checked {
    border-radius: 50%; /* Делаем круг */
    background-color: var(--green-accent);
    border: 4px solid var(--biege-2);
+   flex: 0 0 16px;
 }
 
 input[type='checkbox'] {

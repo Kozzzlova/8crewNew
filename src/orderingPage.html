@@ -40,26 +40,6 @@
                         </div>
                         <div class="ordering__column">
                             <fieldset class="data-form__fieldset">
-
-                                <div class="delivery-options">
-                                    <label class='delivery-options__label'>
-                                        <input checked type="radio" name="delivery" value="new-post" id="new-post"> Адресна доставка
-                                        Новая Почта
-                                        (згідно тарифів)
-                                    </label>
-                                    <label class='delivery-options__label'>
-                                        <input type="radio" name="delivery" value="post-automat" id="post-automat"> Доставка у
-                                        поштомат,
-                                        відділення (згідно
-                                        тарифів)
-                                    </label>
-                                    <label class='delivery-options__label'>
-                                        <input type="radio" name="delivery" value="delivery-world" id="delivery-world"> Доставка
-                                        по
-                                        світу (згідно тарифів)
-                                    </label>
-                                </div>
-
                                 <legend class="data-form__title">
                                     <span>Доставка</span>
                                     <div class="data-form__info">
@@ -72,11 +52,30 @@
                                         </ol>
                                     </div>
                                 </legend>
+                                <div class="delivery-options">
+                                    <label class='delivery-options__label'>
+                                        <input class='delivery-options__radio' checked type="radio" name="delivery" value="local" id="new-post">Адресна доставка
+                                        Новая Почта
+                                        (згідно тарифів)
+                                    </label>
+                                    <label class='delivery-options__label'>
+                                        <input class='delivery-options__radio' type="radio" name="delivery" value="local" id="post-automat"> Доставка у
+                                        поштомат,
+                                        відділення (згідно
+                                        тарифів)
+                                    </label>
+                                    <label class='delivery-options__label'>
+                                        <input class='delivery-options__radio' type="radio" name="delivery" value="world" id="delivery-world"> Доставка
+                                        по
+                                        світу (згідно тарифів)
+                                    </label>
+                                </div>
 
-                                <div class="ordering__content ordering__local">
+
+                                <div class="ordering__content" id='content-local'>
                                     <div class="data-form__field">
-                                        <label class="data-form__label" class="data-form__label" for="city">Місто</label>
-                                        <input class="data-form__input" placeholder='Київ' type="text" id="city" name="city" required>
+                                        <label class="data-form__label" class="data-form__label" for="city-local">Місто</label>
+                                        <input class="data-form__input" placeholder='Київ' type="text" id="city-local" name="city_local" required>
 
                                         <svg class='data-form__icon'>
                                             <use href="#search"></use>
@@ -92,29 +91,41 @@
                                             </svg>
                                         </div>
 
-                                        <label class='data-form__checkbox'><input type="checkbox" checked id="save-world-address"> Зберегти адресу</label>
+                                        <label class='data-form__checkbox'><input type="checkbox" checked> Зберегти адресу</label>
                                     </div>
                                 </div>
 
-                                <div class="ordering__content ordering__world selected">
+                                <div class="ordering__content selected" id='content-world'>
                                     <div class="data-form__field">
                                         <label class="data-form__label" class="data-form__label" for="conutry">Країна</label>
-                                        <input class="data-form__input" placeholder='Australia' type="text" id="country" name="country" required>
-
-                                        <svg class='data-form__icon'>
-                                            <use href="#search"></use>
-                                        </svg>
+                                        <div class="select">
+                                            <div class="select__selected">
+                                                <span class='select__text'>Австралія</span>
+                                                <svg class='tab-arrow'>
+                                                    <use href="#arrow-tab"></use>
+                                                </svg>
+                                            </div>
+                                            <ul class="select__options">
+                                                <li class="select__option">Австралія</li>
+                                                <li class="select__option">Грузія</li>
+                                                <li class="select__option">Україна</li>
+                                                <li class="select__option">Литва</li>
+                                                <li class="select__option">Сінгапур</li>
+                                                <li class="select__option">Кіпр</li>
+                                                <li class="select__option">Латвія</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                     <div class="ordering__address">
                                         <div class="data-form__field">
-                                            <label class="data-form__label" for="city">Населений пункт </label>
-                                            <input class="data-form__input" placeholder='Київ' type="text" id="city" name="city" required>
+                                            <label class="data-form__label" for="city-world">Населений пункт </label>
+                                            <input class="data-form__input" placeholder='Київ' type="text" id="city-world" name="city_world" required>
                                             <svg class='data-form__icon'>
                                                 <use href="#search"></use>
                                             </svg>
                                         </div>
 
-                                        <label class='data-form__checkbox'><input type="checkbox" checked id="save-world-address"> Зберегти адресу</label>
+                                        <label class='data-form__checkbox'><input type="checkbox" checked> Зберегти адресу</label>
                                     </div>
                                     <div class="data-form__field">
                                         <label class="data-form__label" class="data-form__label" for="street">Вулиця</label>
@@ -144,39 +155,48 @@
                                     </div>
                                 </div>
                             </fieldset>
-                            <!-- 
-                                <div class="ordering__delivery">
-                                    
-
-                                    <div class="additional-content delivery-options__content" id="additional-content">
-                                    
-                                        <div id="delivery-options__default-content">
-                                            <form class="ordering__form">
-                                                <div class="ordering__field">
-                                                    <label for="city" class="ordering__label">Місто</label>
-                                                    <input required type="text" class='ordering__input' id='city' placeholder='Київ'>
-                                                </div>
-                                                <div class="ordering__field">
-                                                    <label for="department" class="ordering__label">Відділення нової пошти</label>
-                                                    <input required type="text" class='ordering__input' id='department' placeholder='Голосіївська 3'>
-                                                </div>
-                                                <label><input type="checkbox" id="save-world-address"> Зберегти адресу</label>
-                                            </form>
-                                        </div>
-
-                                        <div id="world-delivery-content" style="display: none;">
-                                        
-                                            <label>Місто/Країна:</label>
-                                            <input type="text" placeholder="Введіть місце доставки" id="world-city">
-                                            <label>Адреса:</label>
-                                            <input type="text" placeholder="Введіть адресу" id="world-address">
-                                            <label><input type="checkbox" id="save-world-address"> Зберегти адресу</label>
-                                        </div>
-                                    </div>
-                                </div> -->
                         </div>
                         <div class="ordering__column">
-                            <div class="ordering__title">Оплата</div>
+                            <fieldset class='data-form__fieldset'>
+                                <legend class="data-form__title">
+                                    Оплата
+                                </legend>
+                                <div class="delivery-options">
+                                    <label class='delivery-options__label'>
+                                        <input class='delivery-options__radio' checked type="radio" name='payment'>Онлайн оплата
+                                        картою
+                                    </label>
+                                    <label class='delivery-options__label'>
+                                        <input class='delivery-options__radio' type="radio" name="payment"> Оплата при отриманні(передплата 20-50%) 
+                                    </label>
+                                    <label class='delivery-options__label'>
+                                        <input class='delivery-options__radio' type="radio" name="payment">Оплата при отриманні (передплата 150 грн)
+                                    </label>
+                                    <label class='delivery-options__label'>
+                                        <input class='delivery-options__radio' type="radio" name="payment">Оплата криптовалютою ТРЦ20
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <a href='#' class="order-card ordering__card">
+                                <img class='order-card__image' src="img/products/product-1.png" alt="Ordered product image">
+                                <div class="order-card__details">
+                                    <h4 class="order-card__title">Adidas gazelle Y-3</h4>
+                                    <div class="order-card__info">
+                                        <span>White</span>
+                                        <span>42 EU</span>
+                                        <span>К-ть 1</span>
+                                    </div>
+                                    <div class="order-card__price">220$</div>
+                                </div>
+                            </a>
+                            <div class="data-form__field">
+                                <label class="data-form__label" class="data-form__label" for="promocode">Промокод</label>
+                                <input class="data-form__input" placeholder='3844749494894849498' type="text" id="promocode">
+                                <div class="data-form__tooltip">
+                                    -10% Застосовано
+                                </div>
+                            </div>
+                            <button type='button' class='main-button'>Сплатити 210 $</button>
                         </div>
                     </form>
                 </section>

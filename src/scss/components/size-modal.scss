@@ -53,8 +53,7 @@
    display: grid;
    grid-template-columns: 1fr;
    grid-template-rows: repeat(5, auto);
-   overflow-x: scroll;
-   overflow-x: auto; /* Используем auto для активации прокрутки */
+   overflow-x: auto;
    scrollbar-width: thin;
    scrollbar-color: var(--gray) var(--white);
    position: relative;

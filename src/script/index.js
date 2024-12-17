@@ -11,6 +11,8 @@ import './loginPopup';
 import './ordersTabs';
 import './ordersAccordion';
 import './cancelSelect';
+import './deliverySelect';
+import './deliveryContent';
 import './likeButtonsHandler';
 import './basketButtonsHandler';
 import './characteristicsOptionsHandler';
