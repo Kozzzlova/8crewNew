@@ -21,6 +21,7 @@
       width: 100%;
       @media (max-width: 767px) {
          max-width: 100%;
+         gap: 16px;
       }
    }
 
@@ -45,6 +46,13 @@
          .data-form__hint {
             opacity: 1;
             visibility: visible;
+         }
+      }
+
+      .icon {
+         @media (max-width: 767px) {
+            width: 16px;
+            height: 16px;
          }
       }
    }

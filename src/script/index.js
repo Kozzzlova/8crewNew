@@ -13,6 +13,7 @@ import './ordersAccordion';
 import './cancelSelect';
 import './deliverySelect';
 import './deliveryContent';
+import './orderingMobile';
 import './likeButtonsHandler';
 import './basketButtonsHandler';
 import './characteristicsOptionsHandler';
