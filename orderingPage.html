@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ordering</title>
   <script type="module" crossorigin src="/8crewNew/assets/vendor-BEQq00Ln.js"></script>
-  <script type="module" crossorigin src="/8crewNew/assets/index-vKk13N-w.js"></script>
-  <link rel="stylesheet" crossorigin href="/8crewNew/assets/index-C0F6og42.css">
+  <script type="module" crossorigin src="/8crewNew/assets/index-CFHx5auY.js"></script>
+  <link rel="stylesheet" crossorigin href="/8crewNew/assets/index-DcTsMrB_.css">
   <link rel="stylesheet" crossorigin href="/8crewNew/assets/vendor-DvB2Xm2x.css">
 </head>
 
@@ -384,7 +384,12 @@
                 <section class="main-section">
                     <h1 class="heading-3">Оформлення замовлення</h1>
                     <form class="ordering">
-                        <div class="ordering__column">
+                        <div class="ordering__pagination">
+                            <button class='ordering__page active' type='button' data-page='1'>1</button>
+                            <button class='ordering__page' type='button' data-page='2'>2</button>
+                            <button class='ordering__page' type='button' data-page='3'>3</button>
+                        </div>
+                        <div data-page='1' class="ordering__column active">
                             <fieldset class="data-form__fieldset">
                                 <legend class="data-form__title">Особисті дані</legend>
                                 <div class="data-form__field">
@@ -403,10 +408,10 @@
                                     <label class="data-form__label" for="email">Email</label>
                                     <input class="data-form__input" placeholder='Cartoonbelly@gmail.com' type="email" id="email" name="email" required>
                                 </div>
-
                             </fieldset>
+                            <button type='button' class='ordering__button ordering__next-button main-button'>Далі</button>
                         </div>
-                        <div class="ordering__column">
+                        <div data-page='2' class="ordering__column">
                             <fieldset class="data-form__fieldset">
                                 <legend class="data-form__title">
                                     <span>Доставка</span>
@@ -523,8 +528,9 @@
                                     </div>
                                 </div>
                             </fieldset>
+                            <button type='button' class='ordering__button ordering__next-button main-button'>Далі</button>
                         </div>
-                        <div class="ordering__column">
+                        <div data-page='3' class="ordering__column">
                             <fieldset class='data-form__fieldset'>
                                 <legend class="data-form__title">
                                     Оплата
@@ -564,7 +570,7 @@
                                     -10% Застосовано
                                 </div>
                             </div>
-                            <button type='button' class='main-button'>Сплатити 210 $</button>
+                            <button type='button' class='ordering__button main-button'>Сплатити 210 $</button>
                         </div>
                     </form>
                 </section>
