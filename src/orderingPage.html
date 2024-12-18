@@ -81,20 +81,34 @@
                                 <div class="ordering__content" id='content-local'>
                                     <div class="data-form__field">
                                         <label class="data-form__label" class="data-form__label" for="city-local">Місто</label>
-                                        <input class="data-form__input" placeholder='Київ' type="text" id="city-local" name="city_local" required>
+                                        <input class="data-form__input data-form__search" placeholder='Київ' type="text" id="city-local" name="city_local"
+                                            required>
 
                                         <svg class='data-form__icon'>
                                             <use href="#search"></use>
                                         </svg>
-
+                                        <div class="data-form__dropdown data-dropdown open">
+                                            <div class="data-dropdown__item">Київ</div>
+                                            <div class="data-dropdown__item">Донецьк</div>
+                                            <div class="data-dropdown__item">Маріуполь</div>
+                                        </div>
                                     </div>
                                     <div class="ordering__address">
                                         <div class="data-form__field">
                                             <label class="data-form__label" for="department">Відділення нової пошти</label>
-                                            <input class="data-form__input" placeholder='Голосіївська 3' type="text" id="department" name="department" required>
+                                            <input class="data-form__input data-form__search" placeholder='Голосіївська 3' type="text" id="department"
+                                                name="department" required>
                                             <svg class='data-form__icon'>
                                                 <use href="#search"></use>
                                             </svg>
+                                            <div class="data-form__dropdown data-dropdown">
+                                                <div class="data-dropdown__item">Відділення №1 <span class='data-dropdown__small'>Голосіївська 3, м. Київ</span>
+                                                </div>
+                                                <div class="data-dropdown__item">Відділення №1 <span class='data-dropdown__small'>Голосіївська 3, м. Київ</span>
+                                                </div>
+                                                <div class="data-dropdown__item">Відділення №1 <span class='data-dropdown__small'>Голосіївська 3, м. Київ</span>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <label class='data-form__checkbox'><input type="checkbox" checked> Зберегти адресу</label>
