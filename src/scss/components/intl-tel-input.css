@@ -42,25 +42,24 @@
    transition: all 0.2s ease 0s;
 }
 .iti__dropdown-content li:hover {
-   background-color: var(--biege);
+   background-color: var(--biege) !important;
 }
 .iti__selected-country-primary {
    padding: 0;
 }
 
 .iti__selected-country-primary:hover {
-   background-color: transparent;
+   background-color: transparent !important;
 }
 
 .iti__arrow {
-   border: none;
-   margin: 0;
-   width: 8px;
-   height: 8px;
-   border-top: 2px solid var(--black-2);
-   border-right: 2px solid var(--black-2);
-
-   transform: rotate(135deg) translateY(50%);
+   border: none !important;
+   margin: 0 !important;
+   width: 8px !important;
+   height: 8px !important;
+   border-top: 2px solid var(--black-2) !important;
+   border-right: 2px solid var(--black-2) !important;
+   transform: rotate(135deg) translateY(50%) !important;
 }
 .iti--allow-dropdown
    .iti__country-container:not(:has(+ input[disabled])):not(
@@ -73,5 +72,5 @@
    )
    .iti__selected-country:has(+ .iti__dropdown-content:hover)
    .iti__selected-country-primary {
-   background-color: transparent;
+   background-color: transparent !important;
 }
