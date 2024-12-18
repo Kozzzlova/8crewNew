@@ -11,6 +11,9 @@ importers:
       aos:
         specifier: ^2.3.4
         version: 2.3.4
+      intl-tel-input:
+        specifier: ^25.2.0
+        version: 25.2.0
       swiper:
         specifier: ^11.1.14
         version: 11.1.14
@@ -872,6 +875,9 @@ packages:
   internal-slot@1.0.7:
     resolution: {integrity: sha512-NGnrKwXzSms2qUUih/ILZ5JBqNTSa1+ZmP6flaIp6KmSElgE9qdndzS3cqjrDovwFdmwsGsLdeFgB6suw+1e9g==}
     engines: {node: '>= 0.4'}
+
+  intl-tel-input@25.2.0:
+    resolution: {integrity: sha512-1eUkLngMyQaeTo37KGCcR6AEro/lO8DIaZRhbmVPmMagyHa4APTnigdTkDEqymF/iOMouDt3JHrhsrIFDpz+5g==}
 
   is-accessor-descriptor@1.0.1:
     resolution: {integrity: sha512-YBUanLI8Yoihw923YeFUS5fs0fF2f5TSFTNiYAAzhhDscDa3lEqYuz1pDOEP5KvX94I9ey3vsqjJcLVFVU+3QA==}
@@ -2380,6 +2386,8 @@ snapshots:
       es-errors: 1.3.0
       hasown: 2.0.2
       side-channel: 1.0.6
+
+  intl-tel-input@25.2.0: {}
 
   is-accessor-descriptor@1.0.1:
     dependencies:

@@ -1,5 +1,6 @@
 import '../scss/index.scss';
 import 'virtual:svg-icons-register';
+import './intlTelInput';
 import './AOS';
 import './headerDropdown';
 import './searchMobile';
@@ -8,6 +9,7 @@ import './breadcrumps';
 import './accordion';
 import './sizeModal';
 import './loginPopup';
+import './cartPopup';
 import './ordersTabs';
 import './ordersAccordion';
 import './cancelSelect';

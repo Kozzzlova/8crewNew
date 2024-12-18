@@ -25,16 +25,17 @@
                             <fieldset class="data-form__fieldset">
                                 <legend class="data-form__title">Особисті дані</legend>
                                 <div class="data-form__field">
-                                    <label class="data-form__label" for="first-name">Імʼя</label>
+                                    <label class="data-form__label" for="first-name">Імʼя *</label>
                                     <input class="data-form__input" placeholder='Олександр' type="text" id="first-name" name="first_name" required>
                                 </div>
                                 <div class="data-form__field">
-                                    <label class="data-form__label" for="last-name">Прізвище</label>
+                                    <label class="data-form__label" for="last-name">Прізвище *</label>
                                     <input class="data-form__input" placeholder='Олександр' type="text" id="last-name" name="last_name" required>
                                 </div>
                                 <div class="data-form__field">
-                                    <label class="data-form__label" for="tel">Номер телефону</label>
-                                    <input class="data-form__input" placeholder='099 595 54 55' type="tel" id="tel" name="tel" required>
+                                    <label class="data-form__label" for="tel">Номер телефону *</label>
+                                    <input class="data-form__input" type="tel" id="tel" name="tel" placeholder='099 595 54 55' required />
+                                    <div id='tel-container'></div>
                                 </div>
                                 <div class="data-form__field">
                                     <label class="data-form__label" for="email">Email</label>
@@ -214,7 +215,7 @@
                                     <use href="#arrow-tab"></use>
                                 </svg>
                             </button>
-                            <div class="contacts-block__content open">
+                            <div class="contacts-block__content">
                                 <div class="questions-details__contacts">
                                     <div class="questions-details__column">
                                         <div class="questions-details__title">Номера телефону</div>

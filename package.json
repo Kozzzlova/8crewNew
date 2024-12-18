@@ -18,6 +18,7 @@
    },
    "dependencies": {
       "aos": "^2.3.4",
+      "intl-tel-input": "^25.2.0",
       "swiper": "^11.1.14"
    }
 }

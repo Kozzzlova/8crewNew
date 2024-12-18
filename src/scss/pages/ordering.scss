@@ -41,8 +41,8 @@
 
       @media (max-width: 767px) {
          display: none;
-         min-height: 80vh;
          position: relative;
+         padding-bottom: 120px;
          &.active {
             display: flex;
          }

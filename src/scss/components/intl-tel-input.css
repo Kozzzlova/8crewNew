@@ -1,0 +1,77 @@
+#tel {
+   width: 100%;
+}
+
+.iti__search-input {
+   display: none;
+}
+
+.iti__tel-input {
+   padding-left: 60px;
+}
+
+.iti__flag {
+   display: none !important;
+}
+.iti__selected-country {
+   flex-direction: row-reverse;
+   gap: 8px;
+   color: var(--black-2);
+   font-family: var(--font-primary);
+   padding-left: 8px;
+}
+
+.iti__dropdown-content {
+   background-color: var(--biege-2);
+}
+
+.iti--inline-dropdown .iti__country-list::-webkit-scrollbar {
+   width: 4px;
+}
+
+.iti--inline-dropdown .iti__country-list::-webkit-scrollbar-thumb {
+   background-color: var(--gray);
+   border-radius: 4px;
+}
+
+.iti--inline-dropdown .iti__country-list::-webkit-scrollbar-track {
+   background-color: var(--white);
+}
+
+.iti__dropdown-content li {
+   transition: all 0.2s ease 0s;
+}
+.iti__dropdown-content li:hover {
+   background-color: var(--biege);
+}
+.iti__selected-country-primary {
+   padding: 0;
+}
+
+.iti__selected-country-primary:hover {
+   background-color: transparent;
+}
+
+.iti__arrow {
+   border: none;
+   margin: 0;
+   width: 8px;
+   height: 8px;
+   border-top: 2px solid var(--black-2);
+   border-right: 2px solid var(--black-2);
+
+   transform: rotate(135deg) translateY(50%);
+}
+.iti--allow-dropdown
+   .iti__country-container:not(:has(+ input[disabled])):not(
+      :has(+ input[readonly])
+   )
+   .iti__selected-country-primary:hover,
+.iti--allow-dropdown
+   .iti__country-container:not(:has(+ input[disabled])):not(
+      :has(+ input[readonly])
+   )
+   .iti__selected-country:has(+ .iti__dropdown-content:hover)
+   .iti__selected-country-primary {
+   background-color: transparent;
+}
