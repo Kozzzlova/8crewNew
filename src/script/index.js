@@ -14,6 +14,7 @@ import './cancelSelect';
 import './deliverySelect';
 import './deliveryContent';
 import './orderingMobile';
+import './orderingContact';
 import './likeButtonsHandler';
 import './basketButtonsHandler';
 import './characteristicsOptionsHandler';
