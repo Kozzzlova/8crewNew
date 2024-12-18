@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ordering</title>
-  <script type="module" crossorigin src="/8crewNew/assets/vendor-BEQq00Ln.js"></script>
-  <script type="module" crossorigin src="/8crewNew/assets/index-DdmYrEIC.js"></script>
-  <link rel="stylesheet" crossorigin href="/8crewNew/assets/index-D-t436X3.css">
-  <link rel="stylesheet" crossorigin href="/8crewNew/assets/vendor-DvB2Xm2x.css">
+  <script type="module" crossorigin src="/8crewNew/assets/vendor-CRImDPBK.js"></script>
+  <script type="module" crossorigin src="/8crewNew/assets/index-DnM0U9_x.js"></script>
+  <link rel="stylesheet" crossorigin href="/8crewNew/assets/index-byD5KKb-.css">
+  <link rel="stylesheet" crossorigin href="/8crewNew/assets/vendor-c0p5VNgb.css">
 </head>
 
 <body>
@@ -64,7 +64,7 @@
             </div>
 
             <div class="header__menu">
-                <a class='active' href="#">
+                <a class='active' href="#" id='header-cart'>
                     <svg class="icon" width='24' height='24' viewBox="0 0 24 24">
 
                         <use xlink:href="#basket"></use>
@@ -393,16 +393,17 @@
                             <fieldset class="data-form__fieldset">
                                 <legend class="data-form__title">Особисті дані</legend>
                                 <div class="data-form__field">
-                                    <label class="data-form__label" for="first-name">Імʼя</label>
+                                    <label class="data-form__label" for="first-name">Імʼя *</label>
                                     <input class="data-form__input" placeholder='Олександр' type="text" id="first-name" name="first_name" required>
                                 </div>
                                 <div class="data-form__field">
-                                    <label class="data-form__label" for="last-name">Прізвище</label>
+                                    <label class="data-form__label" for="last-name">Прізвище *</label>
                                     <input class="data-form__input" placeholder='Олександр' type="text" id="last-name" name="last_name" required>
                                 </div>
                                 <div class="data-form__field">
-                                    <label class="data-form__label" for="tel">Номер телефону</label>
-                                    <input class="data-form__input" placeholder='099 595 54 55' type="tel" id="tel" name="tel" required>
+                                    <label class="data-form__label" for="tel">Номер телефону *</label>
+                                    <input class="data-form__input" type="tel" id="tel" name="tel" placeholder='099 595 54 55' required />
+                                    <div id='tel-container'></div>
                                 </div>
                                 <div class="data-form__field">
                                     <label class="data-form__label" for="email">Email</label>
@@ -582,7 +583,7 @@
                                     <use href="#arrow-tab"></use>
                                 </svg>
                             </button>
-                            <div class="contacts-block__content open">
+                            <div class="contacts-block__content">
                                 <div class="questions-details__contacts">
                                     <div class="questions-details__column">
                                         <div class="questions-details__title">Номера телефону</div>
