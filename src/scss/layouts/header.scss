@@ -4,7 +4,10 @@
    left: 0;
    background-color: var(--white);
    z-index: 10;
-   // .header__label
+
+   .container {
+      overflow: visible;
+   }
 
    // .header__main
 
@@ -241,6 +244,69 @@
 
       &.active {
          color: var(--white);
+      }
+   }
+}
+
+.header-account {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &__popup {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      transform: translateY(8px);
+      width: max-content;
+      z-index: 3;
+      background-color: var(--white);
+      border-radius: 3px;
+      box-shadow: 0px 2px 4px 0px #00000021;
+      padding: 16px;
+      display: none;
+
+      &.open {
+         display: flex;
+      }
+   }
+   &__login,
+   &__profile {
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 16px;
+
+      &.open {
+         display: flex;
+      }
+
+      a {
+         padding: 0px;
+         background-color: transparent;
+         border-radius: 0;
+         transition: all 0.2s ease 0s;
+         color: var(--black-2);
+         display: inline-block;
+
+         &:hover {
+            background-color: transparent;
+            color: var(--black);
+         }
+      }
+   }
+
+   &__button {
+      color: var(--black-2);
+      transition: all 0.2s ease 0s;
+
+      &:hover {
+         color: var(--black);
+      }
+
+      &.logout {
+         color: var(--red);
       }
    }
 }

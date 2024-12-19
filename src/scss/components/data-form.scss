@@ -150,12 +150,11 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      z-index: 10;
+      z-index: 5;
       transition: all 0.3s ease-in-out 0s;
       @media (max-width: 767px) {
          max-width: 100%;
       }
-
       &.open {
          transform: translateY(0);
       }
