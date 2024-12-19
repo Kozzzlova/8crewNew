@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
   <script type="module" crossorigin src="/8crewNew/assets/vendor-CRImDPBK.js"></script>
-  <script type="module" crossorigin src="/8crewNew/assets/index-BfrQO472.js"></script>
-  <link rel="stylesheet" crossorigin href="/8crewNew/assets/index-B0t0_YlG.css">
+  <script type="module" crossorigin src="/8crewNew/assets/index-DmpWSfTi.js"></script>
+  <link rel="stylesheet" crossorigin href="/8crewNew/assets/index-BuvyHyNT.css">
   <link rel="stylesheet" crossorigin href="/8crewNew/assets/vendor-c0p5VNgb.css">
 </head>
 
@@ -64,7 +64,7 @@
             </div>
 
             <div class="header__menu">
-                <a class='active' href="#" id='header-cart'>
+                <a href="#" id='header-cart'>
                     <svg class="icon" width='24' height='24' viewBox="0 0 24 24">
 
                         <use xlink:href="#basket"></use>
@@ -75,11 +75,24 @@
                         <use xlink:href="#like"></use>
                     </svg>
                 </a>
-                <a id='header-login' href="#">
-                    <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
-                        <use xlink:href="#person"></use>
-                    </svg>
-                </a>
+                <div class="header-account">
+                    <a id='header-login' href="#">
+                        <svg class="icon" width='24' height='24' viewBox="0 0 24 24" fill="none">
+                            <use xlink:href="#person"></use>
+                        </svg>
+                    </a>
+                    <div class="header-account__popup open">
+                        <div class="header-account__login">
+                            <button class="header-account__button" type='button'>Увійти</button>
+                            <button class="header-account__button" type='button'>Зареєструватися</button>
+                        </div>
+                        <div class="header-account__profile open">
+                            <a href='profilePage' class="header-account__button">Мої дані</a>
+                            <a href='ordersPage' class="header-account__button">Мої замовлення</a>
+                            <button class="header-account__button logout" type='button'>Вийти</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <nav class="header__nav-mobile">
                 <a href="#">Головна</a>
@@ -377,6 +390,9 @@
             </form>
 
         </div>
+        <div class="popup__logout open">
+
+        </div>
     </div>
 </header>
         <main class="main">
@@ -409,11 +425,14 @@
                             <div class="data-form__field">
                                 <label class="data-form__label" class="data-form__label" for="city">Місто</label>
                                 <input class="data-form__input" placeholder='Київ' type="text" id="city" name="city" required>
-
                                 <svg class='data-form__icon'>
                                     <use href="#search"></use>
                                 </svg>
-
+                                <div class="data-form__dropdown data-dropdown ">
+                                    <div class="data-dropdown__item">Київ</div>
+                                    <div class="data-dropdown__item">Донецьк</div>
+                                    <div class="data-dropdown__item">Маріуполь</div>
+                                </div>
                             </div>
                             <div class="data-form__field">
                                 <label class="data-form__label" for="department">Відділення нової пошти</label>
@@ -421,6 +440,14 @@
                                 <svg class='data-form__icon'>
                                     <use href="#search"></use>
                                 </svg>
+                                <div class="data-form__dropdown data-dropdown">
+                                    <div class="data-dropdown__item">Відділення №1 <span class='data-dropdown__small'>Голосіївська 3, м. Київ</span>
+                                    </div>
+                                    <div class="data-dropdown__item">Відділення №1 <span class='data-dropdown__small'>Голосіївська 3, м. Київ</span>
+                                    </div>
+                                    <div class="data-dropdown__item">Відділення №1 <span class='data-dropdown__small'>Голосіївська 3, м. Київ</span>
+                                    </div>
+                                </div>
                             </div>
                             <button type='button' class='button'>Додати адресу +</button>
                         </fieldset>
