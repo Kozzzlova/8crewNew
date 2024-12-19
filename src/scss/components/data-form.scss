@@ -182,7 +182,7 @@
       position: absolute;
       top: 100%;
       left: 0;
-      width: auto;
+      width: 100%;
       z-index: 10;
    }
 }
@@ -194,7 +194,6 @@
    color: var(--black-2);
    transition: all 0.2s ease 0s;
    cursor: pointer;
-   background-color: var(--white);
    border-radius: 3px;
    box-shadow: 0px 2px 4px 0px #00000021;
    max-height: 145px;

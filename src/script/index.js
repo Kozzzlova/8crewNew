@@ -12,6 +12,7 @@ import './loginPopup';
 import './cartPopup';
 import './ordersTabs';
 import './ordersAccordion';
+import './dataFormDropdown';
 import './cancelSelect';
 import './deliverySelect';
 import './deliveryContent';
