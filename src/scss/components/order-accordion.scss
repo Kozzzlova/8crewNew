@@ -14,13 +14,13 @@
       &.active {
          .order-accordion__header {
             color: var(--green-accent);
+            .tab-arrow {
+               transform: rotate(0deg);
+               color: var(--green-accent);
+            }
          }
          .order-accordion__content {
             display: grid;
-         }
-
-         .tab-arrow {
-            transform: rotate(0deg);
          }
       }
    }
