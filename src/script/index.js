@@ -9,6 +9,7 @@ import './breadcrumps';
 import './accordion';
 import './sizeModal';
 import './loginPopup';
+import './logoutPopup';
 import './cartPopup';
 import './ordersTabs';
 import './ordersAccordion';

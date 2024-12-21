@@ -23,6 +23,37 @@
       }
    }
 
+   &__logout {
+      padding: 24px;
+      background-color: var(--white);
+      border-radius: 3px;
+      box-shadow: 0px 2px 4px 0px #00000021;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--black-2);
+      display: none;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+      position: absolute;
+      z-index: 1000;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &.open {
+         display: flex;
+      }
+   }
+   &__buttons {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      gap: 16px;
+   }
+   &__button {
+      min-width: 180px;
+      height: auto;
+   }
    &__title {
       text-align: center;
       display: flex;
