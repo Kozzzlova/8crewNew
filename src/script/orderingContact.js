@@ -6,5 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
       button.addEventListener('click', () => {
          content.classList.toggle('open');
       });
+      document.addEventListener('click', (e) => {
+         if (!content.contains(e.target) && !button.contains(e.target)) {
+            content.classList.remove('open');
+         }
+      });
    }
 });
