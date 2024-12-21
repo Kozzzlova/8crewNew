@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Info</title>
-  <script type="module" crossorigin src="/8crewNew/assets/vendor-CRImDPBK.js"></script>
-  <script type="module" crossorigin src="/8crewNew/assets/index-DmpWSfTi.js"></script>
-  <link rel="stylesheet" crossorigin href="/8crewNew/assets/index-BuvyHyNT.css">
+  <script type="module" crossorigin src="/8crewNew/assets/vendor-BpBVGiK7.js"></script>
+  <script type="module" crossorigin src="/8crewNew/assets/index-DUfyKs64.js"></script>
+  <link rel="stylesheet" crossorigin href="/8crewNew/assets/index-DtsKqi-L.css">
   <link rel="stylesheet" crossorigin href="/8crewNew/assets/vendor-c0p5VNgb.css">
 </head>
 
@@ -83,15 +83,15 @@
                             <use xlink:href="#person"></use>
                         </svg>
                     </a>
-                    <div class="header-account__popup open">
+                    <div class="header-account__popup">
                         <div class="header-account__login">
-                            <button class="header-account__button" type='button'>Увійти</button>
-                            <button class="header-account__button" type='button'>Зареєструватися</button>
+                            <button class="header-account__button" data-target="popup-login" type='button'>Увійти</button>
+                            <button class="header-account__button" data-target="popup-register" type='button'>Зареєструватися</button>
                         </div>
-                        <div class="header-account__profile open">
+                        <div class="header-account__profile">
                             <a href='profilePage' class="header-account__button">Мої дані</a>
                             <a href='ordersPage' class="header-account__button">Мої замовлення</a>
-                            <button class="header-account__button logout" type='button'>Вийти</button>
+                            <button class="header-account__button logout" id='logout' type='button'>Вийти</button>
                         </div>
                     </div>
                 </div>
@@ -367,8 +367,8 @@
 
         </div>
     </div>
-    <div class="popup ">
-        <div class="popup__body">
+    <div class="popup open">
+        <div class="popup__body" id='popup-login'>
             <button type='button' class="popup__close">
                 <svg class="icon">
                     <use href="#close-circle"></use>
@@ -392,8 +392,102 @@
             </form>
 
         </div>
-        <div class="popup__logout open">
+        <div class="popup__body" id='popup-register'>
+            <button type='button' class="popup__close">
+                <svg class="icon">
+                    <use href="#close-circle"></use>
+                </svg>
+            </button>
+            <div class="popup__title">
+                <div class="heading-4">Зареєструватися на сервісі</div>
 
+            </div>
+            <form class="login-form">
+                <div class="login-form__fields">
+                    <div class="login-form__field">
+                        <div class="login-form__label">Імʼя</div>
+                        <input type="text" class="login-form__input" placeholder='Олександр'>
+                    </div>
+                    <div class="login-form__field">
+                        <div class="login-form__label">Прізвище</div>
+                        <input type="text" class="login-form__input" placeholder='Олександр'>
+                    </div>
+                    <div class="login-form__field">
+                        <div class="login-form__label">Email</div>
+                        <input type="email" class="login-form__input" placeholder='Cartoonbelly@gmail.com'>
+                    </div>
+                    <div class="login-form__field">
+                        <div class="login-form__label">Номер телефону</div>
+                        <input type="tel" class="login-form__input" placeholder='+380 099 595 54 55'>
+                    </div>
+                    <div class="login-form__field">
+                        <div class="login-form__label">Пароль</div>
+                        <input type="password" class="login-form__input" placeholder='***************'>
+                    </div>
+
+                </div>
+                <button type='button' class="login-form__button">Зареєструватися</button>
+            </form>
+        </div>
+        <div class="popup__body" id='popup-confirmation-code'>
+            <button type='button' class="popup__close">
+                <svg class="icon">
+                    <use href="#close-circle"></use>
+                </svg>
+            </button>
+            <div class="popup__title">
+                <div class="heading-4">Введіть код</div>
+                <div class="popup__subtitle">Ми вислали код на вашу електронну адресу, введіть його нижче щоб продовжити</div>
+
+            </div>
+            <form class="login-form">
+                <div class="login-form__fields">
+                    <div class="login-form__field">
+                        <div class="login-form__code">
+                            <input type="number" min="0" max="9" maxlength="1" oninput="this.value = this.value.slice(0, 1)" class=" login-form__cell"
+                                placeholder='1'>
+                            <input type="number" min="0" max="9" maxlength="1" oninput="this.value = this.value.slice(0, 1)" class=" login-form__cell"
+                                placeholder='2'>
+                            <input type="number" min="0" max="9" maxlength="1" oninput="this.value = this.value.slice(0, 1)" class=" login-form__cell"
+                                placeholder='3'>
+                            <input type="number" min="0" max="9" maxlength="1" oninput="this.value = this.value.slice(0, 1)" class=" login-form__cell"
+                                placeholder='4'>
+                            <input type="number" min="0" max="9" maxlength="1" oninput="this.value = this.value.slice(0, 1)" class=" login-form__cell"
+                                placeholder='5'>
+
+                        </div>
+                    </div>
+                </div>
+                <button type='button' class="login-form__button">Продовжити</button>
+            </form>
+        </div>
+        <div class="popup__body open" id='popup-forgot-password'>
+            <button type='button' class="popup__close">
+                <svg class="icon">
+                    <use href="#close-circle"></use>
+                </svg>
+            </button>
+            <div class="popup__title">
+                <div class="heading-4">Введіть свій Email</div>
+                <div class="popup-subtitle">Ми вишлемо на вашу пошту код для відновлення</div>
+            </div>
+            <form class="login-form">
+                <div class="login-form__fields">
+                    <div class="login-form__field">
+                        <div class="login-form__label">Email</div>
+                        <input type="email" class="login-form__input" placeholder='Ваша адреса пошти'>
+                    </div>
+
+                </div>
+                <button type='button' class="login-form__button">Сбросити пароль</button>
+            </form>
+        </div>
+        <div class="popup__logout" id='popup-logout'>
+            <span>Ви впевнені що хочете вийти?</span>
+            <div class="popup__buttons">
+                <button type='button' class='bordered-button popup__button' id='close-logout'>Ні</button>
+                <button type='button' class='main-button popup__button'>Так</button>
+            </div>
         </div>
     </div>
 </header>
