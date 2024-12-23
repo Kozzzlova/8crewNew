@@ -1,17 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
-   const buttons = document.querySelectorAll('.ordering__page');
-   const columns = document.querySelectorAll('.ordering__column');
+   const nextButtons = document.querySelectorAll('.ordering__next-button');
+   let currentPage = 1;
 
-   buttons.forEach((button) => {
-      button.addEventListener('click', () => {
-         const page = button.dataset.page;
-         buttons.forEach((btn) => btn.classList.remove('active'));
-         columns.forEach((col) => col.classList.remove('active'));
-         button.classList.add('active');
-         const activeColumn = [...columns].find(
-            (col) => col.dataset.page === page
-         );
-         if (activeColumn) activeColumn.classList.add('active');
+   if (nextButtons.length > 0) {
+      nextButtons.forEach((button) => {
+         button.addEventListener('click', () => {
+            const currentColumn = document.querySelector(
+               `.ordering__column[data-page='${currentPage}']`
+            );
+            const nextColumn = document.querySelector(
+               `.ordering__column[data-page='${currentPage + 1}']`
+            );
+            const currentPageIndicator = document.querySelector(
+               `.ordering__page[data-page='${currentPage}']`
+            );
+            const nextPageIndicator = document.querySelector(
+               `.ordering__page[data-page='${currentPage + 1}']`
+            );
+
+            if (nextColumn) {
+               currentColumn.classList.remove('active');
+               nextColumn.classList.add('active');
+
+               currentPageIndicator.classList.remove('active');
+               nextPageIndicator.classList.add('active');
+
+               currentPage++;
+            }
+         });
       });
-   });
+   }
 });
