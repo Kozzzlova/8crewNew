@@ -145,6 +145,7 @@
       bottom: 100%;
       transform: translateY(-16px);
       left: 0;
+      z-index: 2;
       padding: 16px;
       border-radius: 2px;
       background-color: var(--white);
@@ -155,7 +156,8 @@
          display: block;
       }
 
-      .questions-details__contacts {
+      .questions-details {
+         display: grid;
          grid-template-columns: repeat(3, 1fr);
          width: 100%;
       }
