@@ -1,6 +1,6 @@
 import intlTelInput from 'intl-tel-input';
 import 'intl-tel-input/build/css/intlTelInput.css';
-import '../scss/components/intl-tel-input.css';
+import '../scss/intl-tel-input.css';
 
 document.addEventListener('DOMContentLoaded', () => {
    const phoneInputs = document.querySelectorAll('input[type="tel"]');
