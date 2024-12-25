@@ -16,9 +16,9 @@
 .iti__selected-country {
    flex-direction: row-reverse;
    gap: 8px;
-   color: var(--black-2);
-   font-family: var(--font-primary);
-   padding-left: 8px;
+   color: var(--black-2) !important;
+   font-family: var(--font-primary) !important;
+   padding-left: 8px !important;
 }
 
 .iti__dropdown-content {
@@ -73,4 +73,7 @@
    .iti__selected-country:has(+ .iti__dropdown-content:hover)
    .iti__selected-country-primary {
    background-color: transparent !important;
+}
+
+.iti__country-container {
 }
