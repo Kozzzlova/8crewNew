@@ -3894,11 +3894,11 @@ input[type=checkbox]:checked::before {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 470px);
+  grid-auto-rows: minmax(auto, 470px);
 }
 @media (max-width: 992px) {
   .product__images {
-    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: minmax(auto, 370px);
   }
 }
 @media (max-width: 767px) {
@@ -3917,7 +3917,6 @@ input[type=checkbox]:checked::before {
 .product__image {
   width: 100%;
   height: 100%;
-  aspect-ratio: 1;
 }
 @media (max-width: 767px) {
   .product__image {
