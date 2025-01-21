@@ -33,6 +33,13 @@ body {
    &:has(.order-accordion) {
       overflow: visible;
    }
+   &:has(.product__content) {
+      overflow: visible;
+
+      @media (max-width: 767px) {
+         overflow: hidden;
+      }
+   }
 }
 
 .fixed {

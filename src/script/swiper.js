@@ -77,29 +77,6 @@ const arrivalsSwiper = new Swiper('.arrivals-swiper', {
    },
 });
 
-const swiperProductSmall = new Swiper('.product-swiper-small', {
-   loop: true,
-   freeMode: true,
-   slidesPerView: 'auto',
-
-   navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-   },
-
-   breakpoints: {
-      992: {
-         spaceBetween: 20,
-      },
-      767: {
-         spaceBetween: 30,
-      },
-      300: {
-         spaceBetween: 20,
-      },
-   },
-});
-
 const swiperProduct = new Swiper('.product-swiper', {
    slidesPerView: 'auto',
    spaceBetween: 20,
@@ -121,26 +98,4 @@ const swiperBanner = new Swiper('.main-swiper', {
       dynamicBullets: true,
       clickable: true,
    },
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-   const swiperContainer = document.querySelector(
-      '.product-swiper-wrapper-small'
-   );
-   if (swiperContainer) {
-      swiperContainer.addEventListener('click', (event) => {
-         const clickedSlide = event.target.closest(
-            '.product-swiper-slide-small'
-         );
-
-         if (clickedSlide) {
-            swiperContainer
-               .querySelectorAll('.product-swiper-slide-small')
-               .forEach((slide) => {
-                  slide.classList.remove('active');
-               });
-            clickedSlide.classList.add('active');
-         }
-      });
-   }
 });

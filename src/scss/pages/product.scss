@@ -53,8 +53,16 @@
       align-items: stretch;
       gap: 48px;
       width: 50%;
+      position: sticky;
+      top: 100px;
+      align-self: flex-start;
+      @media (max-width: 992px) {
+         top: 130px;
+      }
       @media (max-width: 767px) {
          width: 100%;
+         position: static;
+         top: 0;
       }
    }
 
