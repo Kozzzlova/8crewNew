@@ -1,0 +1,2235 @@
+# Translation of Plugins - Polylang - Stable (latest release) in Ukrainian
+# This file is distributed under the same license as the Plugins - Polylang - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-06-02 10:58:05+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.0-alpha.11\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - Polylang - Stable (latest release)\n"
+
+#: admin/admin-model.php:184
+msgid "The language does not seem to exist."
+msgstr "Мови, здається, не існує."
+
+#. translators: 1 is a post type or taxonomy label, 2 is a post type or
+#. taxonomy key.
+#: settings/settings-cpt.php:115 settings/settings-cpt.php:146
+msgctxt "content type setting choice"
+msgid "%1$s (%2$s)"
+msgstr "%1$s (%2$s)"
+
+#: modules/site-health/admin-site-health.php:176
+msgid "Synchronization disabled"
+msgstr "Синхронізація вимкнена"
+
+#: modules/site-health/admin-site-health.php:171
+msgid "The media are translated"
+msgstr "Медіа перекладено"
+
+#: modules/site-health/admin-site-health.php:168
+msgid "The media are not translated"
+msgstr "Медіа не перекладено"
+
+#: modules/site-health/admin-site-health.php:163
+msgid "The front page URL contains the page name or page id instead of the language code"
+msgstr "URL головної сторінки містить назву сторінки або id сторінки замість коду мови"
+
+#: modules/site-health/admin-site-health.php:140
+msgid "Display URL language information for default language"
+msgstr "Відображати інформацію мови в URL для мови за замовчуванням"
+
+#: modules/site-health/admin-site-health.php:126
+msgid "Detect browser language activated"
+msgstr "Визначення мови браузера увімкнено"
+
+#: modules/site-health/admin-site-health.php:123
+msgid "Detect browser language deactivated"
+msgstr "Визначення мови браузера вимкнено"
+
+#. translators: placeholder is the plugin name
+#: modules/site-health/admin-site-health.php:442
+msgid "%s information"
+msgstr "Інформація %s"
+
+#: modules/site-health/admin-site-health.php:434
+msgid "Not loaded. Contact your host provider."
+msgstr "Не завантажено. Зверніться до вашого провайдера."
+
+#: modules/site-health/admin-site-health.php:433
+msgid "PHP SimpleXML extension"
+msgstr "Розширення PHP SimpleXML"
+
+#: install/plugin-updater.php:256
+msgid "Update now."
+msgstr "Оновити зараз."
+
+#. translators: 1. and 4. are opening anchor tags 2. the new plugin version 3.
+#. and 5. are closing anchor tags.
+#: install/plugin-updater.php:245
+msgid "%1$sView version %2$s details%3$s or %4$supdate now%5$s."
+msgstr "%1$sПереглянути деталі %2$s %3$s або %4$sоновити зараз%5$s."
+
+#. translators: 1. opening anchor tag, do not translate 2. the new plugin
+#. version 3. closing anchor tag, do not translate.
+#: install/plugin-updater.php:236
+msgid "%1$sView version %2$s details%3$s."
+msgstr "%1$sПереглянути деталі версії %2$s%3$s."
+
+#: install/plugin-updater.php:231
+msgid "Contact your network administrator to install the update."
+msgstr "Будь ласка, зверніться до мережевого адміністратора, щоб встановити оновлення."
+
+#. translators: the plugin name.
+#: install/plugin-updater.php:225
+msgid "There is a new version of %1$s available."
+msgstr "Доступна нова версія %1$s."
+
+#: settings/settings-url.php:55
+msgid "Some themes or plugins may not be fully compatible with the language defined by the content or by domains."
+msgstr "Деякі теми чи плагіни можуть бути не повністю сумісними з мовою, визначеною вмістом чи доменами. "
+
+#: settings/settings-media.php:32
+msgid "Activate languages and translations for media only if you need to translate the text attached to the media: the title, the alternative text, the caption, the description... Note that the file is not duplicated."
+msgstr "Активуйте мови чи переклади для медіа, лише коли вам треба перекласти прикріплений до медіа текст: заголовок, альтернативний текст, напис або опис... Зауважте, що файл не дублюється. "
+
+#: settings/settings-browser.php:35
+msgid "When the front page is visited, redirects to itself in the browser preferred language. As this doesn't work if it is cached, Polylang will attempt to disable the front page cache for known cache plugins."
+msgstr "Під час відвідування головної сторінки відбувається переспрямування на себе мовою, якій браузер надає перевагу. Оскільки це не працює, якщо сторінка, кешується, Polylang спробує вимкнути кеш головної сторінки для відомих плагінів кешу. "
+
+#: modules/site-health/admin-site-health.php:422
+msgid "Terms without language"
+msgstr "Групи (таксономії) без мови"
+
+#: modules/site-health/admin-site-health.php:415
+msgid "Posts without language"
+msgstr "Записи без мови"
+
+#: modules/site-health/admin-site-health.php:394
+msgid "The homepage is not translated in all languages"
+msgstr "Домашню сторінку не перекладено всіма мовами"
+
+#: modules/site-health/admin-site-health.php:384
+msgid "It is mandatory to translate the static front page in all languages."
+msgstr "Треба обов'язково перекласти статичну домашню сторінку всіма мовами."
+
+#: modules/site-health/admin-site-health.php:376
+msgid "All languages have a translated homepage"
+msgstr "Усі мови мають перекладену домашню сторінку"
+
+#: modules/site-health/admin-site-health.php:360
+msgid "Homepage translated"
+msgstr "Домашню сторінку перекладено"
+
+#: modules/site-health/admin-site-health.php:345
+msgid "Undefined"
+msgstr "Не визначено"
+
+#. translators: placeholder is the flag image
+#: modules/site-health/admin-site-health.php:297
+msgid "Flag used in the language switcher: %s"
+msgstr "Прапор, що використовується в перемикачі мови: %s"
+
+#. translators: placeholder is the language name
+#: modules/site-health/admin-site-health.php:295
+msgid "Language: %s"
+msgstr "Мова: %s"
+
+#. translators: placeholder is the plugin name
+#: modules/site-health/admin-site-health.php:252
+msgid "%s options"
+msgstr "Налаштування %s"
+
+#: include/widget-calendar.php:248
+msgid "Previous and next months"
+msgstr "Попередній і наступний місяці"
+
+#. translators: %s: is the translated label of the 'Ignore' button
+#: modules/wizard/view-wizard-step-languages.php:130
+msgid "%s: stay at this step"
+msgstr "%s: залишитися на цьому кроці"
+
+#. translators: %s: is the translated label of the 'No' button
+#: modules/wizard/view-wizard-step-languages.php:121
+msgid "%s: don't add this language and continue to the next step"
+msgstr "%s: не додавати цю мову і перейти до наступного кроку"
+
+#. translators: %s: is the translated label of the 'Yes' button
+#: modules/wizard/view-wizard-step-languages.php:112
+msgid "%s: add this language and continue to the next step"
+msgstr "%s: додати цю мову і перейти до наступного кроку"
+
+#: modules/wizard/view-wizard-step-languages.php:105
+msgid "Do you want to add this language before continuing to the next step?"
+msgstr "Ви хочете додати цю мову перш ніж перейти до наступного кроку?"
+
+#. translators: %1$s: is a language flag image, %2$s: is a language native name
+#: modules/wizard/view-wizard-step-languages.php:98
+msgid "You selected %1$s %2$s but you didn't add it to the list before continuing to the next step."
+msgstr "Ви обрали %1$s %2$s, але не додали її до списку перед наступним кроком."
+
+#: modules/wizard/view-wizard-step-languages.php:75
+msgid "Languages already defined"
+msgstr "Мови вже визначено"
+
+#: modules/wizard/view-wizard-step-languages.php:63
+msgid "Remove"
+msgstr "Видалити"
+
+#: modules/wizard/view-wizard-step-languages.php:32
+msgid "Select a language to be added"
+msgstr "Оберіть мову для додання"
+
+#: modules/wizard/view-wizard-step-languages.php:26
+msgid "First we are going to define the languages that you will use on your website."
+msgstr "Спочатку ми визначимо мови для використання на вашому сайті."
+
+#: modules/wizard/view-wizard-step-languages.php:23
+msgid "This wizard will help you configure your Polylang settings, and get you started quickly with your multilingual website."
+msgstr "Цей майстер допоже налаштувати Polylang і швидко розпочати роботу з багатомовним сайтом."
+
+#: modules/wizard/html-wizard-notice.php:47
+msgid "Skip setup"
+msgstr "Пропустити налаштування"
+
+#: modules/wizard/html-wizard-notice.php:41
+msgid "Run the Setup Wizard"
+msgstr "Запустити майстер налаштування"
+
+#: modules/wizard/html-wizard-notice.php:33
+msgid "You&lsquo;re almost ready to translate your contents!"
+msgstr "Ви майже готові до перекладу вашого контенту!"
+
+#. translators: %s is the plugin name
+#: modules/wizard/html-wizard-notice.php:26
+msgid "Welcome to %s"
+msgstr "Вітаємо у %s"
+
+#: modules/wizard/view-wizard-step-licenses.php:24
+msgid "There is an error with a license key."
+msgstr "Виникла помилка з ключем ліцензії."
+
+#: modules/wizard/view-wizard-step-licenses.php:19
+msgid "Please enter your license key:"
+msgid_plural "Please enter your license keys:"
+msgstr[0] "Будь ласка, введіть ваш ключ ліцензії:"
+msgstr[1] "Будь ласка, введіть ваші ключі ліцензії:"
+msgstr[2] "Будь ласка, введіть ваших ключів ліцензій:"
+
+#: modules/wizard/view-wizard-step-licenses.php:18
+msgid "You are using plugins which require a license key."
+msgstr "Ви використовуєте плагіни, що потребують ключа ліцензії."
+
+#: modules/wizard/view-wizard-page.php:103
+msgid "Not right now"
+msgstr "Не зараз"
+
+#: modules/wizard/view-wizard-page.php:91
+msgid "Continue"
+msgstr "Продовжити"
+
+#. translators: %s is the plugin name
+#: modules/wizard/view-wizard-page.php:27
+msgid "%s &rsaquo; Setup"
+msgstr "%s &rsaquo; Налаштування"
+
+#: modules/wizard/view-wizard-step-media.php:54
+msgid "Help"
+msgstr "Допомога"
+
+#: modules/wizard/view-wizard-step-media.php:45
+msgid "Allow Polylang to translate media"
+msgstr "Дозволити Polylang перекладати медіа"
+
+#: modules/wizard/view-wizard-step-media.php:28
+msgid "You must activate media translation if you want to translate the title, the alternative text, the caption, or the description. Otherwise you can safely deactivate it."
+msgstr "Вам необхідно активувати переклад медіа, якщо ви хочете перекладати заголовок, альтернативний текст, напис або опис. Інакше ви можете безпечно дезактивувати його."
+
+#: modules/wizard/view-wizard-step-media.php:25
+msgid "When you want to insert media in a post, only the media in the language of the current post will be displayed."
+msgstr "Коли ви хочете додати медіа до запису, відображатимуться тільки медіа поточною мовою запису."
+
+#: modules/wizard/view-wizard-step-media.php:24
+msgid "When you translate a media, the file is not duplicated on your disk, however you will see one entry per language in the media library."
+msgstr "Коли ви перекладаєте медіа, файл не дублюється на диску, проте ви побачите по одному входженню для кожної мови у бібліотеці медіа."
+
+#: modules/wizard/view-wizard-step-media.php:23
+msgid "Polylang allows you to translate the text attached to your media, for example the title, the alternative text, the caption, or the description."
+msgstr "Polylang дозволяє перекладати текст, пов'язаний з медіа, наприклад, заголовок, альтернативний текст, напис або опис."
+
+#: modules/wizard/view-wizard-step-last.php:109
+msgid "Return to the Dashboard"
+msgstr "Повернутися до Майстерні"
+
+#: modules/wizard/view-wizard-step-last.php:91
+msgid "Polylang Business Pack"
+msgstr "Бізнес-пакет Polylang"
+
+#. translators: %s is the name of Polylang Business Pack product
+#: modules/wizard/view-wizard-step-last.php:90
+msgid "We have noticed that you are using Polylang with WooCommerce. To ensure a better compatibility, we recommend you use %s which includes both Polylang Pro and Polylang For WooCommerce."
+msgstr "Ми помітили, що ви використовуєте Polylang разом з WooCommerce. Щоб досягти кращої сумісності, ми рекомендуємо використовувати %s, що включає і Polylang Pro, і Polylang для WooCommerce."
+
+#: modules/wizard/view-wizard-step-last.php:85
+msgid "Purchase Polylang Business Pack"
+msgstr "Придбати бізнес-пакет Polylang"
+
+#: modules/wizard/view-wizard-step-last.php:84
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: modules/wizard/view-wizard-step-last.php:75
+#: modules/wizard/view-wizard-step-last.php:99
+msgid "Buy now"
+msgstr "Придбати зараз"
+
+#: modules/wizard/view-wizard-step-last.php:69
+msgid "Thank you for activating Polylang. If you want more advanced features - duplication, synchronization, REST API support, integration with other plugins, etc. - or further help provided by our Premium support, we recommend you upgrade to Polylang Pro."
+msgstr "Дякуємо за активацію Polylang. Якщо ви хочете більш просунуті функції: дуплікація, синхронізація, підтримка REST API, інтеграція з іншими плагінами тощо — або подальшу Преміум підтримку, рекомендуємо оновитися до Polylang Pro."
+
+#: modules/wizard/view-wizard-step-last.php:67
+msgid "Upgrade to Polylang Pro"
+msgstr "Оновитися до Polylang Pro"
+
+#: modules/wizard/view-wizard-step-last.php:66
+msgid "Polylang Pro"
+msgstr "Polylang Pro"
+
+#: modules/wizard/view-wizard-step-last.php:58
+msgid "View pages"
+msgstr "Перегляд сторінок"
+
+#: modules/wizard/view-wizard-step-last.php:53
+msgid "You're ready to translate the posts on your website."
+msgstr "Ви готові до перекладу записів на вашому сайті."
+
+#: modules/wizard/view-wizard-step-last.php:52
+msgid "Translate some pages"
+msgstr "Перекласти деякі сторінки"
+
+#: modules/wizard/view-wizard-step-last.php:38
+msgid "To get your website ready, there are still two steps you need to perform manually: add menus in each language, and add a language switcher to allow your visitors to select their preferred language."
+msgstr "До завершення робіт над сайтом залишилося два кроки: додайте меню для кожної мови та перемикач мови, що дозволить вашим відвідувачам обирати мову за бажанням."
+
+#: modules/wizard/view-wizard-step-last.php:36
+msgid "Create menus"
+msgstr "Створити меню"
+
+#: modules/wizard/view-wizard-step-last.php:35
+#: modules/wizard/view-wizard-step-last.php:51
+msgid "Next step"
+msgstr "Наступний крок"
+
+#: modules/wizard/view-wizard-step-last.php:26
+#: modules/wizard/view-wizard-step-last.php:44
+msgid "Read documentation"
+msgstr "Читати документацію"
+
+#: modules/wizard/view-wizard-step-last.php:18
+msgid "You're now able to translate your contents such as posts, pages, categories and tags. You can learn how to use Polylang by reading the documentation."
+msgstr "Тепер ви можете перекладати ваш контект, як-от записи, сторінки, категорії та мітки. Ви можете дізнатися, як використовувати Polylang за допомогою документації."
+
+#: modules/wizard/view-wizard-step-last.php:15
+msgid "You're ready to translate your contents!"
+msgstr "Ви готові до перекладу вашого вмісту!"
+
+#: modules/wizard/view-wizard-step-home-page.php:107
+msgid "If you add a new language, don't forget to translate your homepage."
+msgstr "Якщо ви додаєте нову мову, не забудьте перекласти домашню сторінку."
+
+#: modules/wizard/view-wizard-step-home-page.php:103
+msgid "One language is well defined and assigned to your home page."
+msgstr "Одна мова визначена і призначена для вашої домашньої сторінки."
+
+#: modules/wizard/view-wizard-step-home-page.php:97
+msgid "We are going to prepare this page in"
+msgstr "Ми збираємося підготувати цю сторінку"
+
+#: modules/wizard/view-wizard-step-home-page.php:60
+msgid "Your static homepage is already translated in"
+msgstr "Ваша статична домашня сторінка вже перекладена"
+
+#: modules/wizard/view-wizard-step-home-page.php:54
+msgid "After the pages is created, it is up to you to put the translated content in each page linked to each language."
+msgstr "Після створення сторінок за бажанням можете додати переклад кожної сторінки кожною мовою."
+
+#: modules/wizard/view-wizard-step-home-page.php:51
+msgid "For your site to work correctly, this page must be translated in all available languages."
+msgstr "Для коректної роботи сайту ця сторінка повинна бути перекладена усіма доступними мовами."
+
+#. translators: %s is the language of the front page ( flag, native name and
+#. locale )
+#: modules/wizard/view-wizard-step-home-page.php:46
+msgid "Its language is : %s."
+msgstr "Її мова : %s."
+
+#. translators: %s is the post title of the front page
+#: modules/wizard/view-wizard-step-home-page.php:38
+msgid "You defined this page as your static homepage: %s."
+msgstr "Ви визначили цю сторінку в якості статичної домашньої сторінки: %s."
+
+#: modules/wizard/wizard.php:820
+msgid "Ready!"
+msgstr "Готово!"
+
+#: modules/wizard/view-wizard-step-home-page.php:33
+#: modules/wizard/wizard.php:727 modules/wizard/wizard.php:760
+msgid "Homepage"
+msgstr "Домашня сторінка"
+
+#: modules/wizard/wizard.php:664
+msgid "Content"
+msgstr "Вміст"
+
+#: modules/wizard/wizard.php:492
+msgid "Remove this language"
+msgstr "Прибрати цю мову"
+
+#: modules/wizard/view-wizard-step-languages.php:131
+#: modules/wizard/wizard.php:491
+msgid "Ignore"
+msgstr "Ігнорувати"
+
+#: modules/wizard/view-wizard-step-languages.php:122
+#: modules/wizard/wizard.php:490
+msgid "No"
+msgstr "Ні"
+
+#: modules/wizard/view-wizard-step-languages.php:113
+#: modules/wizard/wizard.php:489
+msgid "Yes"
+msgstr "Так"
+
+#: modules/wizard/wizard.php:488
+msgid "A language wasn't added."
+msgstr "Мову не додано."
+
+#: modules/wizard/wizard.php:481
+msgid "You selected a language, however, to be able to continue, you need to add it."
+msgstr "Ви обрали мову, проте, щоб продовжити, потрібно її додати."
+
+#: modules/wizard/wizard.php:480
+msgid "You need to add at least one language."
+msgstr "Вам необхідно додати принаймні одну мову."
+
+#: modules/wizard/wizard.php:479
+msgid "You already added this language."
+msgstr "Ви вже додали цю мову."
+
+#: modules/wizard/wizard.php:478
+msgid "You need to select a language to be added."
+msgstr "Вам необхіно обрати мову для додання."
+
+#: modules/wizard/view-wizard-step-licenses.php:21
+#: modules/wizard/wizard.php:375
+msgid "Licenses"
+msgstr "Ліцензії"
+
+#: modules/wizard/wizard.php:195
+msgid "Sorry, you are not allowed to manage options for this site."
+msgstr "На жаль, вам не дозволено керувати параметрами цього сайту."
+
+#: modules/wizard/wizard.php:137
+msgid "Setup"
+msgstr "Налаштування"
+
+#: modules/wizard/view-wizard-step-untranslated-contents.php:23
+msgid "Choose the language to be assigned"
+msgstr "Оберіть мову для призначення"
+
+#: modules/wizard/view-wizard-step-untranslated-contents.php:20
+msgid "The selected language below will be applied to all your content without an assigned language."
+msgstr "Обрана мова буде застосована до усього вмісту без призначеної мови."
+
+#: modules/wizard/view-wizard-step-untranslated-contents.php:19
+msgid "For your site to work correctly, you need to assign a language to all your contents."
+msgstr "Для коректної роботи сайту необхідно призначити мову для усього контенту."
+
+#: modules/wizard/view-wizard-step-untranslated-contents.php:16
+msgid "Content without language"
+msgstr "Контент без мови"
+
+#: include/license.php:284
+msgid "Your license key has been disabled."
+msgstr "Ваш ліцензійний ключ відключено."
+
+#: admin/admin-filters.php:122
+msgid "Privacy Policy Page"
+msgstr "Сторінка політики конфіденційності"
+
+#. translators: 1: Plugin name 2: Current WordPress version 3: Required
+#. WordPress version
+#: install/install.php:74
+msgid "%1$s has deactivated itself because you are using an old version of WordPress. You are using using WordPress %2$s. %1$s requires at least WordPress %3$s."
+msgstr "%1$s деактивувався, тому що ви використовуєте застарілу версію WordPress. Ви використовуєте WordPress %2$s. %1$s вимагає принаймні WordPress %3$s."
+
+#. translators: 1: Plugin name 2: Current PHP version 3: Required PHP version
+#: install/install.php:50
+msgid "%1$s has deactivated itself because you are using an old version of PHP. You are using using PHP %2$s. %1$s requires PHP %3$s."
+msgstr "%1$s деактивувався, тому що ви використовуєте застарілу версію PHP. Ви використовуєте PHP %2$s. %1$s вимагає PHP %3$s."
+
+#: settings/flags.php:159
+msgid "North Macedonia"
+msgstr "Північна Македонія"
+
+#. translators: %1$s is a date, %2$s is link start tag, %3$s is link end tag.
+#: include/license.php:332
+msgid "Your license key will expire soon! Precisely, it will expire on %1$s. %2$sRenew your license key today!%3$s"
+msgstr "Дія вашого ліцензійного ключа незабаром закінчиться. Це станеться %1$s. %2$sОновіть ваш ліцензійний ключ сьогодні!%3$s."
+
+#: settings/settings-module.php:323
+msgid "To enable this feature, you need Polylang Pro."
+msgstr "Вам необхідний Polylang Pro для активації цієї фукнції."
+
+#: admin/admin-classic-editor.php:364
+msgid "If you attempt to modify them anyway, your changes will not be saved."
+msgstr "Якщо ви спробуєте змінити їх у будь-якому випадку, ваші зміни не збережуться."
+
+#: admin/admin-classic-editor.php:362
+msgid "Some taxonomies or metadata may be synchronized with existing translations that you are not allowed to modify."
+msgstr "Деякі таксономії або метадані можуть бути синхронизовані з існуючими перекладами, для яких ви не маєте права редагування."
+
+#. translators: %s is a comma separated list of native language names
+#: admin/admin-static-pages.php:144
+msgid "You must translate your static front page in %s."
+msgstr "Необхідно перекласта статичну домашню сторінку мовою %s."
+
+#. translators: %1$s is link start tag, %2$s is link end tag.
+#: admin/admin-notices.php:261
+msgid "We have noticed that you have been using Polylang for some time. We hope you love it, and we would really appreciate it if you would %1$sgive us a 5 stars rating%2$s."
+msgstr "Ми помітили, що ви користувалися Polylang деякий час. Сподіваємося, вам сподобалося. Ми будемо вдячні отримати від вас %1$sрейтинг в 5 зірочок%2$s."
+
+#. translators: %1$s is link start tag, %2$s is link end tag.
+#: admin/admin-notices.php:236
+msgid "We have noticed that you are using Polylang with WooCommerce. To ensure compatibility, we recommend you use %1$sPolylang for WooCommerce%2$s."
+msgstr "Ми помітили, що ви користуєтеся Polylang разом з WooCommerce. Щоб бути впевненним у сумісності, рекомендуємо скористатися %1$sPolylang для WooCommerce%2$s."
+
+#. translators: %1$s and %2$s are Polylang version numbers
+#: install/upgrade.php:92
+msgid "Before upgrading to %2$s, please upgrade to %1$s."
+msgstr "Перед оновленням до %2$s, будь ласка, оновіться до %1$s."
+
+#. Author of the plugin
+msgid "WP SYNTEX"
+msgstr "WP SYNTEX"
+
+#. translators: accessibility text
+#: admin/admin-notices.php:217 modules/wizard/wizard.php:371
+#: modules/wizard/wizard.php:472 modules/wizard/wizard.php:661
+#: settings/settings.php:327
+msgid "Dismiss this notice."
+msgstr "Пропустити це сповіщення."
+
+#: include/filters.php:432
+msgid "User"
+msgstr "Користувача"
+
+#. translators: %s is a language native name
+#: include/filters.php:423
+msgid "User description - %s"
+msgstr "Опис користувача - %s"
+
+#: include/filters.php:399
+msgid "Translated user descriptions"
+msgstr "Перекладені описи користувача"
+
+#: settings/flags.php:234
+msgid "Tibet"
+msgstr "Тибет"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://polylang.pro"
+msgstr "https://polylang.pro"
+
+#. translators: %1$s is link start tag, %2$s is link end tag.
+#: settings/view-about.php:24
+msgid "Support and extra features are available to %1$sPolylang Pro%2$s users."
+msgstr "Підтримка і додаткові функції достіпні користувачам %1$sPolylang Pro%2$s."
+
+#: settings/settings-module.php:325
+msgid "Upgrade now."
+msgstr "Оновити зараз."
+
+#. translators: %s is a date
+#: include/license.php:340
+msgid "Your license key expires on %s."
+msgstr "Термін дії ліцензійного ключа завершується %s."
+
+#: include/license.php:327
+msgid "The license key never expires."
+msgstr "Ліцензійний ключ вічний."
+
+#. translators: %1$s is link start tag, %2$s is link end tag
+#: include/license.php:315
+msgid "Your license key has reached its activation limit. %1$sView possible upgrades%2$s now."
+msgstr "Ліцензійний ключ досяг ліміту активацій. %1$sПерегляньте можливі оновлення%2$s зараз."
+
+#. translators: %s is a product name
+#: include/license.php:309
+msgid "This is not a %s license key."
+msgstr "Це не ліцензійний ключ %s."
+
+#. translators: %1$s is a product name, %2$s is link start tag, %3$s is link
+#. end tag.
+#: include/license.php:300
+msgid "Your %1$s license key is not active for this URL. Please %2$svisit your account page%3$s to manage your license key URLs."
+msgstr "Ваш ліцензійний ключ не активовано для URL %1$s. Будь ласка, %2$sвідвідайте сторінку облікового запису%3$s для керування вашими URL."
+
+#. translators: %1$s is link start tag, %2$s is link end tag.
+#: include/license.php:290
+msgid "Invalid license. Please %1$svisit your account page%2$s and verify it."
+msgstr "Невірна ліцензія. Будь ласка, %1$sвідвідайте сторінку облікового запису%2$s і перевірте її."
+
+#. translators: %1$s is a date, %2$s is link start tag, %3$s is link end tag.
+#: include/license.php:275
+msgid "Your license key expired on %1$s. Please %2$srenew your license key%3$s."
+msgstr "Ваш ліцензійний ключ закінчився %1$s. Будь ласка, %2$sоновіть ваш ліцензійний ключ%3$s."
+
+#: settings/settings-licenses.php:39
+msgid "Manage licenses for Polylang Pro and add-ons."
+msgstr "Керування ліцензіями Polylang Pro і додатків."
+
+#: settings/settings-licenses.php:38
+msgid "License keys"
+msgstr "Ліцензійні ключі"
+
+#: modules/translate-slugs/settings-preview-translate-slugs.php:46
+msgid "Allows to translate custom post types and taxonomies slugs in URLs."
+msgstr "Дозволяє перекладати типи користувацьких записів і уривки таксономій в посиланнях."
+
+#: modules/translate-slugs/settings-preview-translate-slugs.php:32
+msgid "Translate slugs"
+msgstr "Перекладати частини посилання"
+
+#: modules/share-slug/settings-preview-share-slug.php:46
+msgid "Allows to share the same URL slug across languages for posts and terms."
+msgstr "Дозволяє розділяти ті самі частини посилань між мовами для записів і груп."
+
+#: modules/share-slug/settings-preview-share-slug.php:32
+msgid "Share slugs"
+msgstr "Розділяти частини посилань"
+
+#: install/plugin-updater.php:488
+msgid "Error"
+msgstr "Помилка"
+
+#: install/plugin-updater.php:488
+msgid "You do not have permission to install plugin updates"
+msgstr "У вас недостатньо повноважень для оновлення плагінів"
+
+#. translators: Post calendar label. %s: Date.
+#: include/widget-calendar.php:221
+msgid "Posts published on %s"
+msgstr "Записи оприлюднені %s"
+
+#: include/widget-calendar.php:219
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "F j, Y"
+
+#: settings/view-tab-lang.php:140
+msgid "Choose a flag for the language."
+msgstr "Оберіть прапор для мови."
+
+#. translators: accessibility text
+#: settings/table-string.php:349
+msgid "Filter by group"
+msgstr "Фільтрувати за групою"
+
+#. translators:  accessibility text, %s is a string potentially in any language
+#: settings/table-string.php:102
+msgid "Select %s"
+msgstr "Вибрати %s"
+
+#: settings/table-settings.php:149
+msgid "Description"
+msgstr "Опис"
+
+#: settings/table-settings.php:148
+msgid "Module"
+msgstr "Модуль"
+
+#: settings/settings-module.php:145
+msgid "Save Changes"
+msgstr "Зберегти Зміни"
+
+#: settings/settings-module.php:144 js/build/block-editor.js:80
+#: js/build/classic-editor.js:80
+msgid "Cancel"
+msgstr "Відміна"
+
+#: settings/table-languages.php:211
+msgid "Delete this language and all its associated data"
+msgstr "Видалити цю мову і усі пов'язані дані"
+
+#. translators: accessibility text, %s is a native language name
+#: settings/table-languages.php:117
+msgid "Choose %s as default language"
+msgstr "Обрати %s, як мову за замовчуванням"
+
+#: settings/table-languages.php:114
+msgid "Select as default language"
+msgstr "Обрати у якості мови за замовчуванням"
+
+#: settings/table-languages.php:93 settings/table-languages.php:205
+msgid "Edit this language"
+msgstr "Редагувати цю мову"
+
+#: settings/settings.php:345
+msgid "You can set them all to the default language."
+msgstr "Ви можете виставити їх усі в мову за замовчуванням."
+
+#: modules/wizard/view-wizard-step-untranslated-contents.php:18
+#: settings/settings.php:343
+msgid "There are posts, pages, categories or tags without language."
+msgstr "Є записи, сторінки, категорії чи мітки без мови."
+
+#. translators: %s is an url
+#: settings/settings-url.php:326
+msgid "Polylang was unable to access the %s URL. Please check that the URL is valid."
+msgstr "Polylang не зміг отримати доступ до URL %s. Будь ласка, перевірте коректність URL."
+
+#. translators: %s is a native language name
+#: settings/settings-url.php:270
+msgid "Please enter a valid URL for %s."
+msgstr "Будь ласка, введіть дійсну URL-адресу для %s."
+
+#: settings/settings-url.php:39
+msgid "Decide how your URLs will look like."
+msgstr "Вирішіть, як виглядатимуть ваші URL."
+
+#: settings/settings-module.php:140
+msgid "Deactivated"
+msgstr "Дезактивовано"
+
+#: settings/settings-module.php:135
+msgid "Activate this module"
+msgstr "Активувати цей модуль"
+
+#: include/license.php:324 settings/settings-module.php:131
+msgid "Deactivate"
+msgstr "Деактивуйте"
+
+#: settings/settings-module.php:129
+msgid "Deactivate this module"
+msgstr "Дезактивувати цей модуль"
+
+#: settings/settings-module.php:123
+msgid "Configure this module"
+msgstr "Налаштувати цей модуль"
+
+#: settings/settings-cpt.php:60
+msgid "Activate languages and translations management for the custom post types and the taxonomies."
+msgstr "Активуйте керування мовами і перекладами для типів користувацьких записів і таксономій."
+
+#: settings/settings-cpt.php:59
+msgid "Custom post types and Taxonomies"
+msgstr "Типи користувацьких записів і таксономії"
+
+#: settings/flags.php:266
+msgid "Zimbabwe"
+msgstr "Зімбабве"
+
+#: settings/flags.php:265
+msgid "Zambia"
+msgstr "Замбія"
+
+#: settings/flags.php:264
+msgid "South Africa"
+msgstr "ПАР"
+
+#: settings/flags.php:263
+msgid "Mayotte"
+msgstr "Майотта"
+
+#: settings/flags.php:262
+msgid "Yemen"
+msgstr "Ємен"
+
+#: settings/flags.php:261
+msgid "Western Samoa"
+msgstr "Західне Самоа"
+
+#: settings/flags.php:260
+msgid "Wallis and Futuna"
+msgstr "Уолліс та Футуна"
+
+#: settings/flags.php:259
+msgid "Wales"
+msgstr "Уельс"
+
+#: settings/flags.php:258
+msgid "Vanuatu"
+msgstr "Вануату"
+
+#: settings/flags.php:257
+msgid "Vietnam"
+msgstr "Вʼєтнам"
+
+#: settings/flags.php:256
+msgid "United States Virgin Islands"
+msgstr "Віргінські острови Сполучених Штатів"
+
+#: settings/flags.php:255
+msgid "British Virgin Islands"
+msgstr "Британські Віргінські острови"
+
+#: settings/flags.php:254
+msgid "Veneto"
+msgstr "Венето"
+
+#: settings/flags.php:253
+msgid "Venezuela"
+msgstr "Венесуела"
+
+#: settings/flags.php:252
+msgid "Saint Vincent and the Grenadines"
+msgstr "Сент-Вінсент і Гренадини"
+
+#: settings/flags.php:251
+msgid "Vatican"
+msgstr "Ватикан"
+
+#: settings/flags.php:250
+msgid "Uzbekistan"
+msgstr "Узбекистан"
+
+#: settings/flags.php:249
+msgid "Uruguay"
+msgstr "Уругвай"
+
+#: settings/flags.php:248
+msgid "United States"
+msgstr "США"
+
+#: settings/flags.php:247
+msgid "Uganda"
+msgstr "Уганда"
+
+#: settings/flags.php:246
+msgid "Ukraine"
+msgstr "Україна"
+
+#: settings/flags.php:245
+msgid "Tanzania"
+msgstr "Танзанія"
+
+#: settings/flags.php:244
+msgid "Taiwan"
+msgstr "Тайвань"
+
+#: settings/flags.php:243
+msgid "Tuvalu"
+msgstr "Тувалу"
+
+#: settings/flags.php:242
+msgid "Trinidad and Tobago"
+msgstr "Тринідад і Тобаго"
+
+#: settings/flags.php:241
+msgid "Turkey"
+msgstr "Туреччина"
+
+#: settings/flags.php:240
+msgid "Tonga"
+msgstr "Тонга"
+
+#: settings/flags.php:239
+msgid "Tunisia"
+msgstr "Туніс"
+
+#: settings/flags.php:238
+msgid "Turkmenistan"
+msgstr "Туркменистан"
+
+#: settings/flags.php:237
+msgid "Timor-Leste"
+msgstr "Тимор-Лешті"
+
+#: settings/flags.php:236
+msgid "Tokelau"
+msgstr "Токелау"
+
+#: settings/flags.php:235
+msgid "Tajikistan"
+msgstr "Таджикистан"
+
+#: settings/flags.php:233
+msgid "Thailand"
+msgstr "Таїланд"
+
+#: settings/flags.php:232
+msgid "Togo"
+msgstr "Того"
+
+#: settings/flags.php:231
+msgid "French Southern Territories"
+msgstr "Французькі Південні Території"
+
+#: settings/flags.php:230
+msgid "Chad"
+msgstr "Чад"
+
+#: settings/flags.php:229
+msgid "Turks and Caicos Islands"
+msgstr "Теркс і Кайкос острова"
+
+#: settings/flags.php:228
+msgid "Swaziland"
+msgstr "Свазіленд"
+
+#: settings/flags.php:227
+msgid "Syria"
+msgstr "Сирія"
+
+#: settings/flags.php:226
+msgid "El Salvador"
+msgstr "Сальвадор"
+
+#: settings/flags.php:225
+msgid "São Tomé and Príncipe"
+msgstr "Сан-Томе і Прінсіпі"
+
+#: settings/flags.php:224
+msgid "South Sudan"
+msgstr "Південний Судан"
+
+#: settings/flags.php:223
+msgid "Suriname"
+msgstr "Суринам"
+
+#: settings/flags.php:222
+msgid "Somalia"
+msgstr "Сомалі"
+
+#: settings/flags.php:221
+msgid "Senegal"
+msgstr "Сенегал"
+
+#: settings/flags.php:220
+msgid "San Marino"
+msgstr "Сан-Марино"
+
+#: settings/flags.php:219
+msgid "Sierra Leone"
+msgstr "Сьєрра-Леоне"
+
+#: settings/flags.php:218
+msgid "Slovakia"
+msgstr "Словакія"
+
+#: settings/flags.php:217
+msgid "Slovenia"
+msgstr "Словенія"
+
+#: settings/flags.php:216
+msgid "Saint Helena"
+msgstr "Острів Святої Єлени"
+
+#: settings/flags.php:215
+msgid "Singapore"
+msgstr "Сінгапур"
+
+#: settings/flags.php:214
+msgid "Sweden"
+msgstr "Швеція"
+
+#: settings/flags.php:213
+msgid "Sudan"
+msgstr "Судан"
+
+#: settings/flags.php:212
+msgid "Scotland"
+msgstr "Шотландія"
+
+#: settings/flags.php:211
+msgid "Seychelles"
+msgstr "Сейшели"
+
+#: settings/flags.php:210
+msgid "Solomon Islands"
+msgstr "Соломонові Острови"
+
+#: settings/flags.php:209
+msgid "Saudi Arabia"
+msgstr "Саудівська Аравія"
+
+#: settings/flags.php:208
+msgid "Rwanda"
+msgstr "Руанда"
+
+#: settings/flags.php:207
+msgid "Russia"
+msgstr "Росія"
+
+#: settings/flags.php:206
+msgid "Serbia"
+msgstr "Сербія"
+
+#: settings/flags.php:205
+msgid "Romania"
+msgstr "Румунія"
+
+#: settings/flags.php:204
+msgid "Quebec"
+msgstr "Квебек"
+
+#: settings/flags.php:203
+msgid "Qatar"
+msgstr "Катар"
+
+#: settings/flags.php:202
+msgid "Paraguay"
+msgstr "Парагвай"
+
+#: settings/flags.php:201
+msgid "Belau"
+msgstr "Белау"
+
+#: settings/flags.php:200
+msgid "Portugal"
+msgstr "Португалія"
+
+#: settings/flags.php:199
+msgid "Palestinian Territory"
+msgstr "Палестинська територія"
+
+#: settings/flags.php:198
+msgid "Puerto Rico"
+msgstr "Порт Ріко"
+
+#: settings/flags.php:197
+msgid "Pitcairn"
+msgstr "Піткерн"
+
+#: settings/flags.php:196
+msgid "Saint Pierre and Miquelon"
+msgstr "Сен-П'єр і Мікелон"
+
+#: settings/flags.php:195
+msgid "Poland"
+msgstr "Польща"
+
+#: settings/flags.php:194
+msgid "Pakistan"
+msgstr "Пакистан"
+
+#: settings/flags.php:193
+msgid "Philippines"
+msgstr "Філіппіни"
+
+#: settings/flags.php:192
+msgid "Papua New Guinea"
+msgstr "Папуа Нова Гвінея"
+
+#: settings/flags.php:191
+msgid "French Polynesia"
+msgstr "Французька Полінезія"
+
+#: settings/flags.php:190
+msgid "Peru"
+msgstr "Перу"
+
+#: settings/flags.php:189
+msgid "Panama"
+msgstr "Панама"
+
+#: settings/flags.php:188
+msgid "Oman"
+msgstr "Оман"
+
+#: settings/flags.php:187
+msgid "Occitania"
+msgstr "Окситанія"
+
+#: settings/flags.php:186
+msgid "New Zealand"
+msgstr "Нова Зеландія"
+
+#: settings/flags.php:185
+msgid "Niue"
+msgstr "Ніуе"
+
+#: settings/flags.php:184
+msgid "Nauru"
+msgstr "Науру"
+
+#: settings/flags.php:183
+msgid "Nepal"
+msgstr "Непал"
+
+#: settings/flags.php:182
+msgid "Norway"
+msgstr "Норвегія"
+
+#: settings/flags.php:181
+msgid "Netherlands"
+msgstr "Нідерланди"
+
+#: settings/flags.php:180
+msgid "Nicaragua"
+msgstr "Нікарагуа"
+
+#: settings/flags.php:179
+msgid "Nigeria"
+msgstr "Нігерія"
+
+#: settings/flags.php:178
+msgid "Norfolk Island"
+msgstr "Острів Норфолк"
+
+#: settings/flags.php:177
+msgid "Niger"
+msgstr "Нігер"
+
+#: settings/flags.php:176
+msgid "New Caledonia"
+msgstr "Нова Каледонія"
+
+#: settings/flags.php:175
+msgid "Namibia"
+msgstr "Намібія"
+
+#: settings/flags.php:174
+msgid "Mozambique"
+msgstr "Мозамбік"
+
+#: settings/flags.php:173
+msgid "Malaysia"
+msgstr "Малайзія"
+
+#: settings/flags.php:172
+msgid "Mexico"
+msgstr "Мексика"
+
+#: settings/flags.php:171
+msgid "Malawi"
+msgstr "Малаві"
+
+#: settings/flags.php:170
+msgid "Maldives"
+msgstr "Мальдіви"
+
+#: settings/flags.php:169
+msgid "Mauritius"
+msgstr "Маврикій"
+
+#: settings/flags.php:168
+msgid "Malta"
+msgstr "Мальта"
+
+#: settings/flags.php:167
+msgid "Montserrat"
+msgstr "Монтсеррат"
+
+#: settings/flags.php:166
+msgid "Mauritania"
+msgstr "Мавританія"
+
+#: settings/flags.php:165
+msgid "Martinique"
+msgstr "Мартинюк"
+
+#: settings/flags.php:164
+msgid "Northern Mariana Islands"
+msgstr "Північні Маріанські острови"
+
+#: settings/flags.php:163
+msgid "Macao"
+msgstr "Макао"
+
+#: settings/flags.php:162
+msgid "Mongolia"
+msgstr "Монголія"
+
+#: settings/flags.php:161
+msgid "Myanmar"
+msgstr "М'янма"
+
+#: settings/flags.php:160
+msgid "Mali"
+msgstr "Малі"
+
+#: settings/flags.php:158
+msgid "Marshall Islands"
+msgstr "Маршаллові Острови"
+
+#: settings/flags.php:157
+msgid "Madagascar"
+msgstr "Мадагаскар"
+
+#: settings/flags.php:156
+msgid "Montenegro"
+msgstr "Чорногорія"
+
+#: settings/flags.php:155
+msgid "Moldova"
+msgstr "Молдова"
+
+#: settings/flags.php:154
+msgid "Monaco"
+msgstr "Монако"
+
+#: settings/flags.php:153
+msgid "Morocco"
+msgstr "Марокко"
+
+#: settings/flags.php:152
+msgid "Libya"
+msgstr "Лівія"
+
+#: settings/flags.php:151
+msgid "Latvia"
+msgstr "Латвія"
+
+#: settings/flags.php:150
+msgid "Luxembourg"
+msgstr "Люксембург"
+
+#: settings/flags.php:149
+msgid "Lithuania"
+msgstr "Литва"
+
+#: settings/flags.php:148
+msgid "Lesotho"
+msgstr "Лесото"
+
+#: settings/flags.php:147
+msgid "Liberia"
+msgstr "Ліберія"
+
+#: settings/flags.php:146
+msgid "Sri Lanka"
+msgstr "Шрі-Ланка"
+
+#: settings/flags.php:145
+msgid "Liechtenstein"
+msgstr "Ліхтенштейн"
+
+#: settings/flags.php:144
+msgid "Saint Lucia"
+msgstr "Сент-Люсія"
+
+#: settings/flags.php:143
+msgid "Lebanon"
+msgstr "Ліван"
+
+#: settings/flags.php:142
+msgid "Laos"
+msgstr "Лаос"
+
+#: settings/flags.php:141
+msgid "Kazakhstan"
+msgstr "Казахстан"
+
+#: settings/flags.php:140
+msgid "Cayman Islands"
+msgstr "Кайманові острови"
+
+#: settings/flags.php:139
+msgid "Kuwait"
+msgstr "Кувейт"
+
+#: settings/flags.php:138
+msgid "Kurdistan"
+msgstr "Курдистан"
+
+#: settings/flags.php:137
+msgid "South Korea"
+msgstr "Південна Корея"
+
+#: settings/flags.php:136
+msgid "North Korea"
+msgstr "Північна Корея"
+
+#: settings/flags.php:135
+msgid "Saint Kitts and Nevis"
+msgstr "Сент-Кітс і Невіс"
+
+#: settings/flags.php:134
+msgid "Comoros"
+msgstr "Коморські Острови"
+
+#: settings/flags.php:133
+msgid "Kiribati"
+msgstr "Кірибаті"
+
+#: settings/flags.php:132
+msgid "Cambodia"
+msgstr "Камбоджа"
+
+#: settings/flags.php:131
+msgid "Kyrgyzstan"
+msgstr "Киргизстан"
+
+#: settings/flags.php:130
+msgid "Kenya"
+msgstr "Кенія"
+
+#: settings/flags.php:129
+msgid "Japan"
+msgstr "Японія"
+
+#: settings/flags.php:128
+msgid "Jordan"
+msgstr "Йорданія"
+
+#: settings/flags.php:127
+msgid "Jamaica"
+msgstr "Ямайка"
+
+#: settings/flags.php:126
+msgid "Italy"
+msgstr "Італія"
+
+#: settings/flags.php:125
+msgid "Iceland"
+msgstr "Ісландія"
+
+#: settings/flags.php:124
+msgid "Iran"
+msgstr "Іран"
+
+#: settings/flags.php:123
+msgid "Iraq"
+msgstr "Ірак"
+
+#: settings/flags.php:122
+msgid "British Indian Ocean Territory"
+msgstr "Британська територія Індійського океану"
+
+#: settings/flags.php:121
+msgid "India"
+msgstr "Індія"
+
+#: settings/flags.php:120
+msgid "Israel"
+msgstr "Ізраїль"
+
+#: settings/flags.php:119
+msgid "Republic of Ireland"
+msgstr "Ірландія"
+
+#: settings/flags.php:118
+msgid "Indonesia"
+msgstr "Індонезія"
+
+#: settings/flags.php:117
+msgid "Hungary"
+msgstr "Угорщина"
+
+#: settings/flags.php:116
+msgid "Haiti"
+msgstr "Гаїті"
+
+#: settings/flags.php:115
+msgid "Croatia"
+msgstr "Хорватія"
+
+#: settings/flags.php:114
+msgid "Honduras"
+msgstr "Гондурас"
+
+#: settings/flags.php:113
+msgid "Heard Island and McDonald Islands"
+msgstr "Острів Херд і острови Макдональд"
+
+#: settings/flags.php:112
+msgid "Hong Kong"
+msgstr "Гонконґ О.А.Р. Китаю"
+
+#: settings/flags.php:111
+msgid "Guyana"
+msgstr "Guyana"
+
+#: settings/flags.php:110
+msgid "Guinea-Bissau"
+msgstr "Гвінея-Біссау"
+
+#: settings/flags.php:109
+msgid "Guam"
+msgstr "Гуам"
+
+#: settings/flags.php:108
+msgid "Guatemala"
+msgstr "Гватемала"
+
+#: settings/flags.php:107
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "Південна Джорджія та Південні Сендвічські острови"
+
+#: settings/flags.php:106
+msgid "Greece"
+msgstr "Греція"
+
+#: settings/flags.php:105
+msgid "Equatorial Guinea"
+msgstr "Екваторіальна Гвінея"
+
+#: settings/flags.php:104
+msgid "Guadeloupe"
+msgstr "Гваделупа"
+
+#: settings/flags.php:103
+msgid "Guinea"
+msgstr "Гвінея"
+
+#: settings/flags.php:102
+msgid "Gambia"
+msgstr "Гамбія"
+
+#: settings/flags.php:101
+msgid "Greenland"
+msgstr "Гренландія"
+
+#: settings/flags.php:100
+msgid "Gibraltar"
+msgstr "Гібралтар"
+
+#: settings/flags.php:99
+msgid "Ghana"
+msgstr "Гана"
+
+#: settings/flags.php:98
+msgid "Georgia"
+msgstr "Грузія"
+
+#: settings/flags.php:97
+msgid "Grenada"
+msgstr "Гренада"
+
+#: settings/flags.php:96
+msgid "United Kingdom"
+msgstr "Великобританія"
+
+#: settings/flags.php:95
+msgid "Galicia"
+msgstr "Галіція"
+
+#: settings/flags.php:94
+msgid "Gabon"
+msgstr "Габон"
+
+#: settings/flags.php:93
+msgid "France"
+msgstr "Франція"
+
+#: settings/flags.php:92
+msgid "Faroe Islands"
+msgstr "Фарерські острови"
+
+#: settings/flags.php:91
+msgid "Micronesia"
+msgstr "Мікронезія"
+
+#: settings/flags.php:90
+msgid "Falkland Islands"
+msgstr "Фолклендські острови"
+
+#: settings/flags.php:89
+msgid "Fiji"
+msgstr "Фіджі"
+
+#: settings/flags.php:88
+msgid "Finland"
+msgstr "Фінляндія"
+
+#: settings/flags.php:87
+msgid "Ethiopia"
+msgstr "Ефіопія"
+
+#: settings/flags.php:86
+msgid "Esperanto"
+msgstr "Есперанто"
+
+#: settings/flags.php:85
+msgid "Spain"
+msgstr "Іспанія"
+
+#: settings/flags.php:84
+msgid "Eritrea"
+msgstr "Еритрея"
+
+#: settings/flags.php:83
+msgid "England"
+msgstr "Англія"
+
+#: settings/flags.php:82
+msgid "Western Sahara"
+msgstr "Західна Сахара"
+
+#: settings/flags.php:81
+msgid "Egypt"
+msgstr "Єгипет"
+
+#: settings/flags.php:80
+msgid "Estonia"
+msgstr "Естонія"
+
+#: settings/flags.php:79
+msgid "Ecuador"
+msgstr "Еквадор"
+
+#: settings/flags.php:78
+msgid "Algeria"
+msgstr "Алжир"
+
+#: settings/flags.php:77
+msgid "Dominican Republic"
+msgstr "Домініканська Республіка"
+
+#: settings/flags.php:76
+msgid "Dominica"
+msgstr "Домінік"
+
+#: settings/flags.php:75
+msgid "Denmark"
+msgstr "Данія"
+
+#: settings/flags.php:74
+msgid "Djibouti"
+msgstr "Джібуті"
+
+#: settings/flags.php:73
+msgid "Germany"
+msgstr "Німеччина"
+
+#: settings/flags.php:72
+msgid "Czech Republic"
+msgstr "Чеська республіка"
+
+#: settings/flags.php:71
+msgid "Cyprus"
+msgstr "Кіпр"
+
+#: settings/flags.php:70
+msgid "Christmas Island"
+msgstr "Острів Різдва"
+
+#: settings/flags.php:69
+msgid "Cape Verde"
+msgstr "Кабо-Верде"
+
+#: settings/flags.php:68
+msgid "Cuba"
+msgstr "Куба"
+
+#: settings/flags.php:67
+msgid "Costa Rica"
+msgstr "Коста-Рика"
+
+#: settings/flags.php:66
+msgid "Colombia"
+msgstr "Колумбія"
+
+#: settings/flags.php:65
+msgid "China"
+msgstr "Китай"
+
+#: settings/flags.php:64
+msgid "Cameroon"
+msgstr "Камерун"
+
+#: settings/flags.php:63
+msgid "Chile"
+msgstr "Чилі"
+
+#: settings/flags.php:62
+msgid "Cook Islands"
+msgstr "Острови Кука"
+
+#: settings/flags.php:61
+msgid "Ivory Coast"
+msgstr "Кот д’Івуар"
+
+#: settings/flags.php:60
+msgid "Switzerland"
+msgstr "Швейцарія"
+
+#: settings/flags.php:59
+msgid "Congo"
+msgstr "Конго"
+
+#: settings/flags.php:58
+msgid "Central African Republic"
+msgstr "Центральноафриканська Республіка"
+
+#: settings/flags.php:57
+msgid "Democratic Republic of the Congo"
+msgstr "Демократична Республіка Конґо"
+
+#: settings/flags.php:56
+msgid "Cocos"
+msgstr "Кокосові острови"
+
+#: settings/flags.php:55
+msgid "Catalonia"
+msgstr "Каталонія"
+
+#: settings/flags.php:54
+msgid "Canada"
+msgstr "Канада"
+
+#: settings/flags.php:53
+msgid "Belize"
+msgstr "Белиз"
+
+#: settings/flags.php:52
+msgid "Belarus"
+msgstr "Білорусь"
+
+#: settings/flags.php:51
+msgid "Botswana"
+msgstr "Ботсвана"
+
+#: settings/flags.php:50
+msgid "Bhutan"
+msgstr "Бутан"
+
+#: settings/flags.php:49
+msgid "Bahamas"
+msgstr "Багами"
+
+#: settings/flags.php:48
+msgid "Brazil"
+msgstr "Бразилія"
+
+#: settings/flags.php:47
+msgid "Bolivia"
+msgstr "Болівія"
+
+#: settings/flags.php:46
+msgid "Brunei"
+msgstr "Бруней"
+
+#: settings/flags.php:45
+msgid "Bermuda"
+msgstr "Бермудські Острови"
+
+#: settings/flags.php:44
+msgid "Benin"
+msgstr "Бенін"
+
+#: settings/flags.php:43
+msgid "Burundi"
+msgstr "Бурунді"
+
+#: settings/flags.php:42
+msgid "Bahrain"
+msgstr "Бахрейн"
+
+#: settings/flags.php:41
+msgid "Bulgaria"
+msgstr "Болгарія"
+
+#: settings/flags.php:40
+msgid "Burkina Faso"
+msgstr "Буркіна-Фасо"
+
+#: settings/flags.php:39
+msgid "Belgium"
+msgstr "Бельгія"
+
+#: settings/flags.php:38
+msgid "Bangladesh"
+msgstr "Бангладеш"
+
+#: settings/flags.php:37
+msgid "Barbados"
+msgstr "Барбадос"
+
+#: settings/flags.php:36
+msgid "Basque Country"
+msgstr "Країна басків"
+
+#: settings/flags.php:35
+msgid "Bosnia and Herzegovina"
+msgstr "Боснія і Герцоговина"
+
+#: settings/flags.php:34
+msgid "Azerbaijan"
+msgstr "Азербайджан"
+
+#: settings/flags.php:33
+msgid "Åland Islands"
+msgstr "Аландські острови"
+
+#: settings/flags.php:32
+msgid "Aruba"
+msgstr "Аруба"
+
+#: settings/flags.php:31
+msgid "Australia"
+msgstr "Австралія"
+
+#: settings/flags.php:30
+msgid "Austria"
+msgstr "Австрія"
+
+#: settings/flags.php:29
+msgid "American Samoa"
+msgstr "Американське Самоа"
+
+#: settings/flags.php:28
+msgid "Arab league"
+msgstr "Арабська ліга"
+
+#: settings/flags.php:27
+msgid "Argentina"
+msgstr "Аргентина"
+
+#: settings/flags.php:26
+msgid "Angola"
+msgstr "Ангола"
+
+#: settings/flags.php:25
+msgid "Netherlands Antilles"
+msgstr "Нідерландські Антильські острови"
+
+#: settings/flags.php:24
+msgid "Armenia"
+msgstr "Вірменія"
+
+#: settings/flags.php:23
+msgid "Albania"
+msgstr "Албанія"
+
+#: settings/flags.php:22
+msgid "Anguilla"
+msgstr "Ангілья"
+
+#: settings/flags.php:21
+msgid "Antigua and Barbuda"
+msgstr "Антигуа і Барбуда"
+
+#: settings/flags.php:20
+msgid "Afghanistan"
+msgstr "Афганістан"
+
+#: settings/flags.php:19
+msgid "United Arab Emirates"
+msgstr "Обʼєднані Арабські Емірати"
+
+#: settings/flags.php:18
+msgid "Andorra"
+msgstr "Андорра"
+
+#. translators: accessibility text
+#: admin/view-translations-post.php:58 admin/view-translations-term.php:77
+msgid "Translation"
+msgstr "Переклад"
+
+#: admin/admin-static-pages.php:56
+msgid "Posts Page"
+msgstr "Сторінка записів"
+
+#: admin/admin-static-pages.php:52
+msgid "Front Page"
+msgstr "Головна сторінка"
+
+#: admin/admin-nav-menu.php:82
+msgid "Add to Menu"
+msgstr "Додати до меню"
+
+#: admin/admin-model.php:399 modules/wizard/wizard.php:487
+msgid "The flag does not exist"
+msgstr "Прапору не існує"
+
+#. translators: accessibility text, %s is a native language name
+#: admin/admin-links.php:27
+msgid "Add a translation in %s"
+msgstr "Додати переклад мовою %s"
+
+#. translators: accessibility text, %s is a native language name
+#: admin/admin-filters-columns.php:196 admin/admin-filters-columns.php:333
+msgid "This item is in %s"
+msgstr "Цей елемент доступний мовою %s"
+
+#. translators: accessibility text, %s is a native language name
+#: admin/admin-filters-columns.php:177 admin/admin-filters-columns.php:319
+#: admin/admin-links.php:54
+msgid "Edit the translation in %s"
+msgstr "Редагувати переклад мовою %s"
+
+#. translators: accessibility text, %s is a native language name
+#: admin/admin-filters-columns.php:173 admin/admin-filters-columns.php:315
+msgid "Edit this item in %s"
+msgstr "Редагувати елемент мовою %s"
+
+#. Description of the plugin
+msgid "Adds multilingual capability to WordPress"
+msgstr "Додає магатомовні властивості до WordPress"
+
+#. Plugin Name of the plugin
+msgid "Polylang"
+msgstr "Polylang"
+
+#: settings/settings-module.php:137
+msgid "Activate"
+msgstr "Активувати"
+
+#: settings/settings-module.php:139
+msgid "Activated"
+msgstr "Активовано"
+
+#: settings/settings-licenses.php:43
+msgid "Close"
+msgstr "Закрити"
+
+#: install/upgrade.php:89
+msgid "Polylang has been deactivated because you upgraded from a too old version."
+msgstr "Polylang був відключений, тому що ви оновили з занадто старої версії."
+
+#: include/widget-languages.php:121
+msgid "Title:"
+msgstr "Назва:"
+
+#: include/widget-languages.php:23
+msgid "Displays a language switcher"
+msgstr "Відображає перемикач мови"
+
+#. translators: Calendar caption: 1: Month name, 2: 4-digit year.
+#: include/widget-calendar.php:149
+msgctxt "calendar caption"
+msgid "%1$s %2$s"
+msgstr "%1$s %2$s"
+
+#: include/switcher.php:46
+msgid "Displays as a dropdown"
+msgstr "Відображати як меню, що випадає"
+
+#: include/switcher.php:51
+msgid "Hides languages with no translation"
+msgstr "Приховати мови без перекладу"
+
+#: include/switcher.php:50
+msgid "Hides the current language"
+msgstr "Приховувати поточну мову"
+
+#: include/switcher.php:49
+msgid "Forces link to front page"
+msgstr "Примусовий перехід на головну сторінку"
+
+#: include/switcher.php:48
+msgid "Displays flags"
+msgstr "Відображати прапорці"
+
+#: include/switcher.php:47
+msgid "Displays language names"
+msgstr "Відображати назви мов"
+
+#: integrations/wp-importer/wordpress-importer.php:45
+msgid "Import <strong>posts, pages, comments, custom fields, categories, and tags</strong> from a WordPress export file."
+msgstr "Імпортувати <strong>записи, сторінки, коментарі, користувацькі поля, категорії, та позначки</strong> з файлу експорту WordPress."
+
+#: admin/admin-default-term.php:135
+msgid "Uncategorized"
+msgstr "Без категорії"
+
+#. translators: Hidden accessibility text.
+#: frontend/frontend-filters-search.php:116
+#: frontend/frontend-filters-search.php:118
+msgid "Search"
+msgstr "Шукати"
+
+#: settings/view-tab-strings.php:21
+msgid "Use this to remove unused strings from database, for example after a plugin has been uninstalled."
+msgstr "Використовуйте це, щоб видалити з бази даних рядки, які не використовуються. Наприклад, після видалення плаґіну."
+
+#: settings/view-tab-strings.php:19
+msgid "Clean strings translation database"
+msgstr "Очистити базу даних перекладу строк"
+
+#: settings/view-tab-strings.php:16
+msgid "Search translations"
+msgstr "Пошук перекладів"
+
+#: modules/sync/settings-sync.php:32
+msgid "The synchronization options allow to maintain exact same values (or translations in the case of taxonomies and page parent) of meta content between the translations of a post or page."
+msgstr "Опція синхронізації дозволяє підтримувати точно таке саме значення (або переклад у випадку таксономій та батьківської сторінки) метаданих вмісту між всіма перекладами публікації або сторінки."
+
+#: modules/sync/settings-sync.php:31
+msgid "Synchronization"
+msgstr "Синхронізація"
+
+#: settings/settings-cpt.php:156
+msgid "Activate languages and translations for custom taxonomies."
+msgstr "Активувати мови та переклади для власних таксономії."
+
+#: settings/settings-cpt.php:131
+msgid "Custom taxonomies"
+msgstr "Власні таксономії"
+
+#: settings/settings-cpt.php:125
+msgid "Activate languages and translations for custom post types."
+msgstr "Активувати мови та переклади для власних типів публікацій."
+
+#: settings/settings-cpt.php:100
+msgid "Custom post types"
+msgstr "Власні типи публікації"
+
+#: modules/wizard/view-wizard-step-media.php:21 modules/wizard/wizard.php:607
+#: settings/settings-media.php:31
+msgid "Media"
+msgstr "Медіа"
+
+#: settings/settings-browser.php:34
+msgid "Detect browser language"
+msgstr "Визначати мову браузера"
+
+#. translators: %1$s example url when the option is active. %2$s example url
+#. when the option is not active
+#: settings/settings-url.php:195
+msgid "Example: %1$s instead of %2$s"
+msgstr "Приклад: %1$s замість %2$s"
+
+#: modules/site-health/admin-site-health.php:160 settings/settings-url.php:183
+msgid "The front page URL contains the language code instead of the page name or page id"
+msgstr "URL головної сторінки містить код мови замість назви сторінки або id сторінки"
+
+#: modules/site-health/admin-site-health.php:133 settings/settings-url.php:161
+msgid "Keep /language/ in pretty permalinks"
+msgstr "Залишити /language/ в акуратних постійних посиланнях"
+
+#: modules/site-health/admin-site-health.php:130 settings/settings-url.php:150
+msgid "Remove /language/ in pretty permalinks"
+msgstr "Вилучити /language/ в акуратних постійних посиланнях"
+
+#: modules/site-health/admin-site-health.php:137 settings/settings-url.php:128
+msgid "Hide URL language information for default language"
+msgstr "Приховати інформацію мови в URL для мови за замовчуванням"
+
+#: modules/site-health/admin-site-health.php:154 settings/settings-url.php:93
+msgid "The language is set from different domains"
+msgstr "Мова встановлена з іншого домену"
+
+#: modules/site-health/admin-site-health.php:151 settings/settings-url.php:82
+msgid "The language is set from the subdomain name in pretty permalinks"
+msgstr "Мова встановлена з субдомену в постійному посиланні"
+
+#: settings/settings-url.php:75 settings/settings-url.php:86
+#: settings/settings-url.php:154 settings/settings-url.php:165
+msgid "Example:"
+msgstr "Приклад:"
+
+#: settings/settings-url.php:71
+msgid "The language is set from the code in the URL"
+msgstr "Мова встановлена з коду в URL"
+
+#: modules/site-health/admin-site-health.php:148 settings/settings-url.php:71
+msgid "The language is set from the directory name in pretty permalinks"
+msgstr "Мова встановлена з назви каталогу в постійному посиланні"
+
+#: settings/settings-url.php:65
+msgid "Posts, pages, categories and tags URLs will not be modified."
+msgstr "URL публікацій, сторінок, категорій та теґів не змінюються."
+
+#: modules/site-health/admin-site-health.php:145 settings/settings-url.php:61
+msgid "The language is set from content"
+msgstr "Мова встановлена з вмісту"
+
+#: settings/settings-url.php:38
+msgid "URL modifications"
+msgstr "Модифікації URL"
+
+#. translators: accessibility text
+#: modules/wizard/view-wizard-step-home-page.php:77
+#: modules/wizard/view-wizard-step-home-page.php:92
+#: modules/wizard/view-wizard-step-home-page.php:124
+#: modules/wizard/view-wizard-step-languages.php:71
+#: modules/wizard/view-wizard-step-languages.php:86
+#: settings/table-languages.php:133 settings/table-languages.php:152
+msgid "Default language"
+msgstr "Мова за замовчуванням"
+
+#: settings/view-tab-lang.php:172
+msgid "Update"
+msgstr "Оновити"
+
+#: settings/view-tab-lang.php:151
+msgid "Position of the language in the language switcher"
+msgstr "Положення мови в перемикачі мов"
+
+#: settings/view-tab-lang.php:120
+msgid "Choose the text direction for the language"
+msgstr "Виберіть напрямок тексту для мови"
+
+#: settings/view-tab-lang.php:117
+msgid "right to left"
+msgstr "зправа наліво"
+
+#: settings/view-tab-lang.php:112
+msgid "left to right"
+msgstr "зліва направо"
+
+#: settings/view-tab-lang.php:107
+msgid "Text direction"
+msgstr "Напрямок тексту"
+
+#: settings/view-tab-lang.php:103
+msgid "Language code - preferably 2-letters ISO 639-1  (for example: en)"
+msgstr "Код мови - бажано 2-символьний ISO 639-1 (наприклад, en)"
+
+#: settings/view-tab-lang.php:96
+msgid "Language code"
+msgstr "Код мови"
+
+#: settings/view-tab-lang.php:92
+msgid "WordPress Locale for the language (for example: en_US). You will need to install the .mo file for this language."
+msgstr "Локаль WordPress для мови (наприклад, en_US). Вам потрібно буде встановити файл .mo для даної мови."
+
+#: settings/view-tab-lang.php:81
+msgid "The name is how it is displayed on your site (for example: English)."
+msgstr "Це ім'я, як воно відображається на вашому сайті (наприклад, Англійська)."
+
+#: settings/view-tab-lang.php:70
+msgid "You can choose a language in the list or directly edit it below."
+msgstr "Ви можете вибрати мову зі списку або безпосередньо відредагувати її нижче."
+
+#: include/widget-languages.php:60 settings/view-tab-lang.php:53
+msgid "Choose a language"
+msgstr "Вибрати мову"
+
+#: modules/wizard/view-wizard-step-languages.php:50
+#: modules/wizard/view-wizard-step-languages.php:54
+#: settings/view-tab-lang.php:32 settings/view-tab-lang.php:172
+msgid "Add new language"
+msgstr "Додати нову мову"
+
+#: settings/view-tab-lang.php:32
+msgid "Edit language"
+msgstr "Редагувати мову"
+
+#. translators: %1$s is link start tag, %2$s is link end tag.
+#: settings/view-about.php:16
+msgid "Polylang is provided with an extensive %1$sdocumentation%2$s (in English). It includes information on how to set up your multilingual site and use it on a daily basis; FAQs, and documentation for developers to adapt their plugins and themes."
+msgstr "Polylang постачається з розширеною %1$sдокументацією%2$s (англійською). Вона містить інформацію про налаштування багатомовного сайту і його щоденне використання, часті запитання та відповіді, документацію для розробників, щоб адаптувати плагіни і теми."
+
+#: settings/table-string.php:368
+msgid "Filter"
+msgstr "Фільтр"
+
+#: settings/table-string.php:355
+msgid "View all groups"
+msgstr "Переглянути всі групи"
+
+#: admin/admin-base.php:129 admin/view-translations-media.php:13
+#: admin/view-translations-post.php:12 admin/view-translations-term.php:14
+#: admin/view-translations-term.php:21 settings/table-string.php:164
+msgid "Translations"
+msgstr "Переклади"
+
+#: settings/table-string.php:163
+msgid "Group"
+msgstr "Група"
+
+#: settings/table-string.php:162
+msgid "Name"
+msgstr "Назва"
+
+#: settings/table-string.php:161
+msgid "String"
+msgstr "Рядок"
+
+#: settings/table-languages.php:155
+msgid "Posts"
+msgstr "Публікації"
+
+#: settings/table-languages.php:154 settings/view-tab-lang.php:124
+msgid "Flag"
+msgstr "Прапор"
+
+#: settings/table-languages.php:153 settings/view-tab-lang.php:144
+msgid "Order"
+msgstr "Порядок"
+
+#: settings/table-languages.php:151
+msgid "Code"
+msgstr "Код"
+
+#: settings/table-languages.php:150 settings/view-tab-lang.php:85
+msgid "Locale"
+msgstr "Локаль"
+
+#: settings/table-languages.php:149 settings/view-tab-lang.php:74
+msgid "Full name"
+msgstr "Повне ім'я"
+
+#: settings/table-languages.php:214 settings/table-string.php:317
+msgid "Delete"
+msgstr "Видалити"
+
+#: settings/table-languages.php:213
+msgid "You are about to permanently delete this language. Are you sure?"
+msgstr "Ви збираєтесь остаточно видалити цю мову. Ви впевнені?"
+
+#: modules/sync/settings-sync.php:112
+msgid "Featured image"
+msgstr "Головне зображення"
+
+#: modules/sync/settings-sync.php:111
+msgid "Page order"
+msgstr "Номер сторінки"
+
+#: modules/sync/settings-sync.php:110
+msgid "Page template"
+msgstr "Шаблон сторінки"
+
+#: modules/sync/settings-sync.php:109
+msgid "Page parent"
+msgstr "Батьківська сторінка"
+
+#: modules/sync/settings-sync.php:108
+msgid "Post format"
+msgstr "Формат публікації"
+
+#: modules/sync/settings-sync.php:107
+msgid "Published date"
+msgstr "Дата публікації"
+
+#: modules/sync/settings-sync.php:106
+msgid "Sticky posts"
+msgstr "Прикріплені публікації"
+
+#: modules/sync/settings-sync.php:105
+msgid "Ping status"
+msgstr "Статус пінгу"
+
+#: modules/sync/settings-sync.php:104
+msgid "Comment status"
+msgstr "Статус коментарю"
+
+#: modules/sync/settings-sync.php:103
+msgid "Custom fields"
+msgstr "Власні поля"
+
+#: modules/sync/settings-sync.php:102
+msgid "Taxonomies"
+msgstr "Таксономії"
+
+#: settings/settings-licenses.php:113 settings/settings-module.php:264
+msgid "Settings saved."
+msgstr "Налаштування збережено."
+
+#: settings/table-string.php:422
+msgid "Translations updated."
+msgstr "Переклади оновлені."
+
+#: settings/settings.php:146
+msgid "Strings translations"
+msgstr "Переклади рядків"
+
+#: settings/settings.php:116
+msgid "About Polylang"
+msgstr "Про Polylang"
+
+#: settings/settings.php:194
+msgid "The language was created, but the WordPress language file was not downloaded. Please install it manually."
+msgstr "Мова була створена, але файл мовний файл WordPress не був завантажений. Будь ласка, встановіть його вручну."
+
+#: admin/admin-base.php:505 admin/admin-base.php:523
+msgid "Filters content by language"
+msgstr "Фільтрує вміст за мовою"
+
+#: admin/admin-base.php:496
+msgid "Show all languages"
+msgstr "Показати всі мови"
+
+#: admin/admin-base.php:132 admin/admin.php:104
+#: settings/settings-module.php:125
+msgid "Settings"
+msgstr "Налаштування"
+
+#: admin/admin-strings.php:70
+msgid "Widget text"
+msgstr "Текст віджету"
+
+#: admin/admin-strings.php:69
+msgid "Widget title"
+msgstr "Назва віджету"
+
+#: admin/admin-nav-menu.php:49 include/nav-menu.php:72
+#: include/widget-languages.php:21
+msgid "Language switcher"
+msgstr "Перемикач мов"
+
+#: admin/admin-model.php:387 modules/wizard/wizard.php:486
+msgid "The language must have a name"
+msgstr "Мова повинна мати ім'я"
+
+#: admin/admin-model.php:380 modules/wizard/wizard.php:485
+msgid "The language code must be unique"
+msgstr "Код мови повинен бути унікальним"
+
+#: admin/admin-model.php:374 modules/wizard/wizard.php:484
+msgid "The language code contains invalid characters"
+msgstr "Код мови містить недопустимі символи"
+
+#: admin/admin-model.php:369 modules/wizard/wizard.php:483
+msgid "Enter a valid WordPress locale"
+msgstr "Введіть дійсну локаль WordPress"
+
+#: settings/settings.php:224
+msgid "Language updated."
+msgstr "Мова оновлена."
+
+#: settings/settings.php:209
+msgid "Language deleted."
+msgstr "Мова видалена."
+
+#: settings/settings.php:187
+msgid "Language added."
+msgstr "Мова додана."
+
+#: admin/admin-model.php:48 modules/wizard/wizard.php:482
+msgid "Impossible to add the language."
+msgstr "Неможливо додати мову."
+
+#: include/filters-widgets-options.php:51 include/translated-post.php:189
+msgid "All languages"
+msgstr "Всі мови"
+
+#: include/filters-widgets-options.php:66
+msgid "The widget is displayed for:"
+msgstr "Віджет відображається для:"
+
+#: admin/admin-filters-term.php:464
+msgid "None"
+msgstr "Немає"
+
+#: admin/admin-filters-term.php:140 admin/admin-filters-term.php:213
+msgid "Sets the language"
+msgstr "Встановити мову"
+
+#: settings/table-languages.php:207
+msgid "Edit"
+msgstr "Редагувати"
+
+#: admin/admin-classic-editor.php:243
+msgid "(no parent)"
+msgstr "(без предка)"
+
+#: admin/admin-base.php:125 admin/admin-base.php:149
+#: admin/admin-classic-editor.php:75 admin/admin-nav-menu.php:72
+#: admin/admin-nav-menu.php:75 admin/admin-nav-menu.php:108
+#: admin/admin-notices.php:110 include/nav-menu.php:71
+#: include/translated-post.php:187
+#: modules/wizard/view-wizard-step-languages.php:28
+#: modules/wizard/wizard.php:498 settings/settings.php:126
+msgid "Languages"
+msgstr "Мови"
+
+#: admin/admin-classic-editor.php:127 admin/admin-filters-columns.php:234
+#: admin/admin-filters-media.php:62 admin/admin-filters-term.php:138
+#: admin/admin-filters-term.php:211 include/translated-post.php:188
+#: modules/wizard/view-wizard-step-languages.php:62
+msgid "Language"
+msgstr "Мова"
+
+#: admin/admin-filters-columns.php:220
+msgid "&mdash; No Change &mdash;"
+msgstr "&mdash; Без змін &mdash;"

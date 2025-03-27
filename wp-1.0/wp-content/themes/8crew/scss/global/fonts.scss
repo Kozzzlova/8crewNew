@@ -1,0 +1,34 @@
+@font-face {
+   font-family: 'Unbounded';
+   src: url('../fonts/Unbounded-Regular.woff2') format('woff2'),
+      url('../fonts/Unbounded-Regular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Gill Sans';
+   src: url('../fonts/GillSans-SemiBold.woff2') format('woff2'),
+      url('../fonts/GillSans-SemiBold.woff') format('woff');
+   font-weight: 600;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Gill Sans';
+   src: url('../fonts/GillSans.woff2') format('woff2'), url('../fonts/GillSans.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Gill Sans';
+   src: url('../fonts/GillSans-SemiBoldItalic.woff2') format('woff2'),
+      url('../fonts/GillSans-SemiBoldItalic.woff') format('woff');
+   font-weight: 600;
+   font-style: italic;
+   font-display: swap;
+}

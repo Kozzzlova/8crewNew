@@ -1,0 +1,14 @@
+import '../scss/index.scss';
+import 'virtual:svg-icons-register';
+import './AOS';
+import './headerDropdown';
+import './searchMobile';
+import './searchDropdown';
+import './breadcrumps';
+import './accordion';
+import './sizeModal';
+import './loginPopup';
+import './likeButtonsHandler';
+import './basketButtonsHandler';
+import './characteristicsOptionsHandler';
+import './swiper';

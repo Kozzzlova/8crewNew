@@ -1,0 +1,25 @@
+.icon-link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 8px;
+   background-color: var(--biege-2);
+   border-radius: 2px;
+   transition: all 0.2s ease 0s;
+   color: var(--black);
+   &.active {
+      background-color: var(--biege);
+      color: var(--green-accent);
+   }
+   &:hover {
+      background-color: var(--biege);
+      color: var(--green-accent);
+   }
+}
+.icon {
+   width: 24px;
+   height: 24px;
+   &.hidden {
+      display: none;
+   }
+}

@@ -1,0 +1,35 @@
+.breadcrumps {
+   // .breadcrupms__list
+
+   &__list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      @media (max-width: 767px) {
+         padding-top: 12px;
+      }
+   }
+
+   // .breadcrupms__item
+
+   &__item {
+      color: var(--black-2);
+
+      &:last-child {
+         color: var(--black);
+         a {
+            cursor: auto;
+         }
+      }
+   }
+
+   &__icon {
+      width: 10px;
+      height: 16px;
+      color: var(--black-2);
+      margin: 0 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+}

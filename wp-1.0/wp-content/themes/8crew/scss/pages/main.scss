@@ -1,0 +1,230 @@
+.main__container {
+   padding: 19px 0 92px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   gap: 120px;
+
+   @media (max-width: 992px) {
+      gap: 80px;
+   }
+   @media (max-width: 767px) {
+      gap: 48px;
+      padding-bottom: 80px;
+   }
+}
+
+.first-section {
+   display: grid;
+   justify-content: space-between;
+   grid-template-columns: repeat(2, minmax(330px, 570px));
+   grid-template-rows: 1fr;
+   gap: 20px;
+   align-items: stretch;
+
+   @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+   }
+   // .first-section__column
+
+   &__column {
+      max-width: 570px;
+      @media (max-width: 767px) {
+         max-width: 767px;
+         overflow: hidden;
+      }
+      @media (max-width: 500px) {
+      }
+   }
+
+   // .first-section__header
+
+   &__header {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 32px;
+      height: 100%;
+      justify-content: space-between;
+   }
+
+   // .first-section__content
+
+   &__content {
+      display: block;
+      position: relative;
+      @media (max-width: 767px) {
+         display: none;
+      }
+   }
+
+   // .first-section__image
+
+   &__image {
+      width: 100%;
+      height: 252px;
+      border-radius: 5px;
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   // .first-section__slider
+
+   &__slider {
+      height: 100%;
+      @media (max-width: 767px) {
+         height: 500px;
+      }
+      @media (max-width: 500px) {
+         height: 349px;
+      }
+   }
+}
+
+.basic-section {
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   gap: 80px;
+
+   @media (max-width: 767px) {
+      gap: 48px;
+   }
+   // .basic-block__title
+
+   &__block {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 24px;
+   }
+
+   &__title {
+      @media (max-width: 992px) {
+         font-size: 30px;
+      }
+      @media (max-width: 767px) {
+         font-size: 20px;
+      }
+   }
+
+   // .basic-block__slider
+
+   &__slider {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 24px;
+      position: relative;
+   }
+   &__link {
+      align-self: center;
+      display: inline-block;
+   }
+   // .basic-block__blog
+
+   &__blog {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      gap: 20px;
+      @media (max-width: 500px) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: 390px) {
+         grid-template-columns: repeat(1, 1fr);
+      }
+   }
+}
+
+.section-label {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   max-width: 50%;
+   width: 100%;
+   background-color: var(--white);
+   border-radius: 3px;
+   padding: 8px;
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+
+   // .section-label__title
+
+   &__title {
+      color: var(--green-accent);
+   }
+
+   // .section-label__amount
+
+   &__amount {
+      font-size: 12px;
+      color: var(--black-2);
+   }
+}
+
+// ----------------------------  Main Swiper  --------------------------------------------//
+
+.main-arrow {
+   position: absolute;
+   top: 0;
+   right: 0;
+   box-sizing: border-box;
+}
+
+.main-swiper {
+   height: 100%;
+}
+
+.main-swiper-wrapper {
+   height: 100%;
+}
+
+.main-swiper-slide {
+   position: relative;
+   display: block;
+
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+}
+
+.main-swiper-pagination {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   background-color: var(--white);
+   border-radius: 3px;
+   padding: 8px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
+   z-index: 3;
+   max-width: 112px;
+   @media (max-width: 767px) {
+      flex-direction: column;
+      max-width: 48px;
+   }
+
+   .swiper-pagination-bullet {
+      background-color: var(--biege-2);
+      border-radius: 2px;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+   }
+   .swiper-pagination-bullet-active {
+      background-color: var(--green-accent);
+      width: 32px;
+      height: 32px;
+   }
+}
